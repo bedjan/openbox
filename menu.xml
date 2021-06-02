@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Youtube video">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh mpv_youtube</execute>
+			</action>
+		</item>
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh terminal</execute>
+			</action>
+		</item>
+		<item label="Palemoon">
+			<action name="Execute">
+				<execute>palemoon --new-window</execute>
+			</action>
+		</item>
+		<item label="Youtube audio">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh mpv_youtube_audio</execute>
+			</action>
+		</item>
+		<item label="Youtube video mute">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh mpv_youtube_mute</execute>
+			</action>
+		</item>
+		<item label="monitor">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh monitor</execute>
+			</action>
+		</item>
+		<item label="dpms">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh  dpms</execute>
+			</action>
+		</item>
+		<item label="mixer">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh mixer</execute>
+			</action>
+		</item>
+		<item label="Netsurf">
+			<action name="Execute">
+				<execute>netsurf www.google.cz #x-www-browser</execute>
+			</action>
+		</item>
+		<menu id="root-menu-551431" label="Download">
+			<item label="youtubedl_video">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh youtubedl_video</execute>
+				</action>
+			</item>
+			<item label="youtubedl_audio">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh youtubedl_audio</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-983120" label="Banky">
+			<item label="CS george">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh cs</execute>
+				</action>
+			</item>
+			<item label="Sparkasse">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh sparkasse</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-335925" label="Web">
+			<item label="gkeep">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh gkeep</execute>
+				</action>
+			</item>
+			<item label="gmail">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh gmail</execute>
+				</action>
+			</item>
+			<item label="gtranslate">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh gtranslate</execute>
+				</action>
+			</item>
+			<item label="yahoo_email">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh yahoo_email</execute>
+				</action>
+			</item>
+			<item label="seznam_email">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh seznam_email</execute>
+				</action>
+			</item>
+			<item label="gsites">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh gsites</execute>
+				</action>
+			</item>
+			<item label="gphotos">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh gphotos</execute>
+				</action>
+			</item>
+			<item label="gdocs">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh gdocs</execute>
+				</action>
+			</item>
+			<item label="gdisk">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh gdisk</execute>
+				</action>
+			</item>
+			<item label="difm">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh difm</execute>
+				</action>
+			</item>
+			<item label="soundcloud">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh soundcloud</execute>
+				</action>
+			</item>
+			<item label="vinted">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh vinted</execute>
+				</action>
+			</item>
+			<item label="ulozto">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh ulozto</execute>
+				</action>
+			</item>
+			<item label="seznam_ftp">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh seznam_ftp</execute>
+				</action>
+			</item>
+			<item label="seznam_sweb">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh seznam_sweb</execute>
+				</action>
+			</item>
+			<item label="tvprogram">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh tvprogram</execute>
+				</action>
+			</item>
+			<item label="dropbox">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh dropbox</execute>
+				</action>
+			</item>
+			<item label="kalendar">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh kalendar</execute>
+				</action>
+			</item>
+			<item label="cas">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh cas</execute>
+				</action>
+			</item>
+			<item label="linuxexpress">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh linuxexpress</execute>
+				</action>
+			</item>
+			<item label="nemcina_youtube">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh nemcina_youtube</execute>
+				</action>
+			</item>
+			<item label="tvonline">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh tvonline</execute>
+				</action>
+			</item>
+			<item label="csfd">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh csfd</execute>
+				</action>
+			</item>
+			<item label="ctzive">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh ctzive</execute>
+				</action>
+			</item>
+			<item label="ct">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh ct</execute>
+				</action>
+			</item>
+			<item label="bazos">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh bazos</execute>
+				</action>
+			</item>
+			<item label="youtube">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh youtube</execute>
+				</action>
+			</item>
+			<item label="Facebook">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh facebook</execute>
+				</action>
+			</item>
+			<item label="github_all">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh github_all</execute>
+				</action>
+			</item>
+			<item label="github">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh github</execute>
+				</action>
+			</item>
+			<item label="dropbox">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh dropbox</execute>
+				</action>
+			</item>
+			<item label="web">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh web</execute>
+				</action>
+			</item>
+			<item label="simplenote">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh simplenote</execute>
+				</action>
+			</item>
+			<item label="root">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh root</execute>
+				</action>
+			</item>
+			<item label="gtakeout">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh gtakeout</execute>
+				</action>
+			</item>
+			<item label="jobs">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh  jobs</execute>
+				</action>
+			</item>
+			<item label="seznam">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh seznam</execute>
+				</action>
+			</item>
+			<item label="zdrojak">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh zdrojak</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-141918" label="Web ostatni">
+			<item label="github_zajmy">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh github_zajmy</execute>
+				</action>
+			</item>
+			<item label="open_with_nastaveni">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh open_with_nastaveni</execute>
+				</action>
+			</item>
+			<item label="open_with">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh open_with</execute>
+				</action>
+			</item>
+			<item label="github_home">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh github_home</execute>
+				</action>
+			</item>
+			<item label="github_windows">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh github_windows</execute>
+				</action>
+			</item>
+			<item label="github_manipulace">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh github_manipulace</execute>
+				</action>
+			</item>
+			<item label="minimalismus1">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh minimalismus1</execute>
+				</action>
+			</item>
+			<item label="minimalismus">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh minimalismus</execute>
+				</action>
+			</item>
+			<item label="zw3">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh zw3</execute>
+				</action>
+			</item>
+			<item label="zw2">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh zw2</execute>
+				</action>
+			</item>
+			<item label="zw1">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh zw1</execute>
+				</action>
+			</item>
+			<item label="zw">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh zw</execute>
+				</action>
+			</item>
+			<item label="statistiky">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh statistiky</execute>
+				</action>
+			</item>
+			<item label="epsychologie">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh epsychologie</execute>
+				</action>
+			</item>
+			<item label="psychologie">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh psychologie</execute>
+				</action>
+			</item>
+			<item label="github_akupresura">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh github_akupresura</execute>
+				</action>
+			</item>
+			<item label="pronaladu">
+				<action name="Execute">
+					<execute>psh ~/skripty/all.sh ronaladu</execute>
+				</action>
+			</item>
+			<item label="mzp">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh mzp</execute>
+				</action>
+			</item>
+			<item label="enviweb">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh enviweb</execute>
+				</action>
+			</item>
+			<item label="github_linux">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh github_linux</execute>
+				</action>
+			</item>
+			<item label="linux">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh linux</execute>
+				</action>
+			</item>
+			<item label="programovani">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh programovani</execute>
+				</action>
+			</item>
+			<item label="github_poznamky">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh github_poznamky</execute>
+				</action>
+			</item>
+			<item label="tinyurl">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh tinyurl</execute>
+				</action>
+			</item>
+			<item label="githack">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh githack</execute>
+				</action>
+			</item>
+			<item label="dillinger">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh dillinger</execute>
+				</action>
+			</item>
+			<item label="protectedtext">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh protectedtext</execute>
+				</action>
+			</item>
+			<item label="jdem">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh jdem</execute>
+				</action>
+			</item>
+			<item label="bitly">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh  bitly</execute>
+				</action>
+			</item>
+			<item label="thinfi">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh thinfi</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-383343" label="Vypnout">
+			<item label="vypnout">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh vypnout</execute>
+				</action>
+			</item>
+			<item label="vypnout0">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh vypnout0</execute>
+				</action>
+			</item>
+			<item label="vypnout1">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh vypnout1</execute>
+				</action>
+			</item>
+			<item label="vypnout2">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh vypnout2</execute>
+				</action>
+			</item>
+			<item label="restart">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh restart</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="ytdl_download">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh ytdl_download</execute>
+			</action>
+		</item>
+		<item label="files">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh files</execute>
+			</action>
+		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="Abclinuxu">
+			<action name="Execute">
+				<execute>netsurf www.abclinuxu.cz  #links2 -g www.abclinuxu.cz</execute>
+			</action>
+		</item>
+		<item label="Chromium">
+			<action name="Execute">
+				<execute>chromium</execute>
+			</action>
+		</item>
+		<item label="procesy">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh procesy</execute>
+			</action>
+		</item>
+		<item label="Monitor">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh monitor</execute>
+			</action>
+		</item>
+		<item label="easystroke">
+			<action name="Execute">
+				<execute>easystroke</execute>
+			</action>
+		</item>
+		<item label="streamtuner2">
+			<action name="Execute">
+				<execute>streamtuner2 --gtk3</execute>
+			</action>
+		</item>
+		<item label="mpc-qt">
+			<action name="Execute">
+				<execute>mpc-qt</execute>
+			</action>
+		</item>
+		<item label="Kalkulacka">
+			<action name="Execute">
+				<execute>calcoo</execute>
+			</action>
+		</item>
+		<menu id="root-menu-905337" label="Radia">
+			<item label="Humor">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh humor</execute>
+				</action>
+			</item>
+			<item label="City 80">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh city80</execute>
+				</action>
+			</item>
+			<item label="City 90">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh city90</execute>
+				</action>
+			</item>
+			<item label="4U">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh 4u</execute>
+				</action>
+			</item>
+			<item label="cr_online">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh cr_online</execute>
+				</action>
+			</item>
+			<item label="Radia">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh radia</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-925535" label="TV_DE">
+			<item label="tv_nemecke">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh tv_nemecke</execute>
+				</action>
+			</item>
+			<item label="ard">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh ard</execute>
+				</action>
+			</item>
+			<item label="rtl2">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh rtl2</execute>
+				</action>
+			</item>
+			<item label="ntv">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh ntv</execute>
+				</action>
+			</item>
+			<item label="rtlnitro">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh rtlnitro</execute>
+				</action>
+			</item>
+			<item label="superrtl">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh superrtl</execute>
+				</action>
+			</item>
+			<item label="tlc">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh tlc</execute>
+				</action>
+			</item>
+			<item label="pro7">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh pro7</execute>
+				</action>
+			</item>
+			<item label="pro7maxx">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh pro7maxx</execute>
+				</action>
+			</item>
+			<item label="kabel1">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh kabel1</execute>
+				</action>
+			</item>
+			<item label="sat1">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh sat1</execute>
+				</action>
+			</item>
+			<item label="sixx">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh sixx</execute>
+				</action>
+			</item>
+			<item label="dmax">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh dmax</execute>
+				</action>
+			</item>
+			<item label="kabel1doku">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh kabel1doku</execute>
+				</action>
+			</item>
+			<item label="sat1">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh sat1</execute>
+				</action>
+			</item>
+			<item label="sixx">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh sixx</execute>
+				</action>
+			</item>
+			<item label="dmax">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh dmax</execute>
+				</action>
+			</item>
+			<item label="kabel1doku">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh kabel1doku</execute>
+				</action>
+			</item>
+			<item label="disney">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh disney</execute>
+				</action>
+			</item>
+			<item label="tele5">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh tele5</execute>
+				</action>
+			</item>
+			<item label="zdf">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh zdf</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-26123" label="TV">
+			<item label="ulice">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh ulice</execute>
+				</action>
+			</item>
+			<item label="ruzovka">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh ruzovka</execute>
+				</action>
+			</item>
+			<item label="Ard">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh Ard</execute>
+				</action>
+			</item>
+			<item label="TV_1">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh TV_1</execute>
+				</action>
+			</item>
+			<item label="TV_2">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh TV_2</execute>
+				</action>
+			</item>
+			<item label="Erste">
+				<action name="Execute">
+					<execute>sh ~/skripty/all.sh Erste</execute>
+				</action>
+			</item>
+			<item label="Das erste d">
+				<action name="Execute">
+					<execute>vlc --loop https://mcdn.daserste.de/daserste/de/master.m3u8</execute>
+				</action>
+			</item>
+			<item label="Hr d">
+				<action name="Execute">
+					<execute>vlc --loop https://hrhls.akamaized.net/hls/live/2024525/hrhls/index.m3u8</execute>
+				</action>
+			</item>
+			<item label="Kulturmd d">
+				<action name="Execute">
+					<execute>vlc --loop https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:kulturmd_high/playlist.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ndr hamburg d">
+				<action name="Execute">
+					<execute>vlc --loop https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/index_3776_av-p.m3u8</execute>
+				</action>
+			</item>
+			<item label="Nrwision d">
+				<action name="Execute">
+					<execute>vlc --loop https://fms.nrwision.de/live/livestreamHD.stream_source/chunklist.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ok dessau d">
+				<action name="Execute">
+					<execute>vlc --loop rtmp://62.113.210.250/medienasa-live/ok-dessau_high</execute>
+				</action>
+			</item>
+			<item label="Ok kassel d">
+				<action name="Execute">
+					<execute>vlc --loop https://s.ok54.de/mok-ks/kassel/playlist.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ok kiel d">
+				<action name="Execute">
+					<execute>vlc --loop https://d1lv1lpzlrjn3y.cloudfront.net/play/hls/kieltv/index.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ok ludwigshafen d">
+				<action name="Execute">
+					<execute>vlc --loop https://s.ok54.de/oklu/livestream/playlist.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ok magdeburg d">
+				<action name="Execute">
+					<execute>vlc --loop rtmp://62.113.210.250/medienasa-live/ok-magdeburg_high</execute>
+				</action>
+			</item>
+			<item label="Ok Merseburg d">
+				<action name="Execute">
+					<execute>vlc --loop rtmp://62.113.210.250/medienasa-live/ok-merseburg_high</execute>
+				</action>
+			</item>
+			<item label="Ok nahetv d">
+				<action name="Execute">
+					<execute>vlc --loop https://s.ok54.de/nahetv/webstream/chunks.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ok rhein main d">
+				<action name="Execute">
+					<execute>vlc --loop https://s.ok54.de/mok-rm/mok-rm/playlist.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ok rheinlokal d">
+				<action name="Execute">
+					<execute>vlc --loop https://s.ok54.de/rheinlokal/rheinlOKal_stream/chunks.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ok salzwedel d">
+				<action name="Execute">
+					<execute>vlc --loop rtmp://62.113.210.250/medienasa-live/ok-salzwedel_high</execute>
+				</action>
+			</item>
+			<item label="Ok stendal d">
+				<action name="Execute">
+					<execute>vlc --loop rtmp://62.113.210.250/medienasa-live/ok-stendal_high</execute>
+				</action>
+			</item>
+			<item label="Ok suedwestpfalz d">
+				<action name="Execute">
+					<execute>vlc --loop https://s.ok54.de/okswp/test/chunks.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ok weinstrasse d">
+				<action name="Execute">
+					<execute>vlc --loop https://s.ok54.de/okweinstrasse/okweinstrasse/chunks.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ok wernigerode d">
+				<action name="Execute">
+					<execute>vlc --loop rtmp://62.113.210.250/medienasa-live/ok-wernigerode_high</execute>
+				</action>
+			</item>
+			<item label="Ok54 trier d">
+				<action name="Execute">
+					<execute>vlc --loop https://s.ok54.de/ott/webstream/tv/webstream_720p/chunks.m3u8</execute>
+				</action>
+			</item>
+			<item label="Tagesschau24 d">
+				<action name="Execute">
+					<execute>vlc --loop https://tagesschau-lh.akamaihd.net/i/tagesschau_1@119231/index_3776_av-b.m3u8</execute>
+				</action>
+			</item>
+			<item label="Tidetv d">
+				<action name="Execute">
+					<execute>vlc --loop https://5889e7d0d6e28.streamlock.net/tide-live/_definst_/smil:livestream.smil/playlist.m3u8</execute>
+				</action>
+			</item>
+			<item label="Tvhalle d">
+				<action name="Execute">
+					<execute>vlc --loop https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:tvhalle_high/playlist.m3u8</execute>
+				</action>
+			</item>
+			<item label="Wdr d">
+				<action name="Execute">
+					<execute>vlc --loop https://wdrfs247.akamaized.net/hls/live/681509/wdr_msl4_fs247/master_3628.m3u8</execute>
+				</action>
+			</item>
+			<item label="Wtv ok wettin d">
+				<action name="Execute">
+					<execute>vlc --loop rtmp://62.113.210.250/medienasa-live/ok-wettin_high</execute>
+				</action>
+			</item>
+			<item label="Punktum d">
+				<action name="Execute">
+					<execute>vlc --loop https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:punktum_high/playlist.m3u8</execute>
+				</action>
+			</item>
+			<item label="Ran1 d">
+				<action name="Execute">
+					<execute>vlc --loop https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:ran1_high/playlist.m3u8</execute>
+				</action>
+			</item>
+			<item label="Rockland d">
+				<action name="Execute">
+					<execute>vlc --loop http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8</execute>
+				</action>
+			</item>
+			<item label="Rt d">
+				<action name="Execute">
+					<execute>vlc --loop https://rt-news.secure.footprint.net/1103.m3u8</execute>
+				</action>
+			</item>
+			<item label="Studio47 d">
+				<action name="Execute">
+					<execute>vlc --loop https://5852afe96c9bb.streamlock.net/studio47-live/_definst_/mp4:livestream/playlist.m3u8</execute>
+				</action>
+			</item>
+			<item label="Dw e">
+				<action name="Execute">
+					<execute>vlc --loop http://dwstream1-lh.akamaihd.net/i/dwstream1_live@120422/index_1_av-p.m3u8</execute>
+				</action>
+			</item>
+			<item label="Dw d">
+				<action name="Execute">
+					<execute>vlc --loop https://dwstream6-lh.akamaihd.net/i/dwstream6_live@123962/index_1_av-p.m3u8</execute>
+				</action>
+			</item>
+			<item label="Dw+ d">
+				<action name="Execute">
+					<execute>vlc --loop http://dwstream52-lh.akamaihd.net/i/dwstream52_live@500528/index_1_av-p.m3u8</execute>
+				</action>
+			</item>
+			<item label="Elbekanal d">
+				<action name="Execute">
+					<execute>vlc --loop http://62.113.210.250/medienasa-live/_definst_/mp4:elbe_high/playlist.m3u8</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-674522" label="Openbox">
+			<item label="Ob start">
+				<action name="Execute">
+					<execute>mousepad /home/d/.config/openbox/autostart</execute>
+				</action>
+			</item>
+			<item label="Ob rc">
+				<action name="Execute">
+					<execute>mousepad /home/d/.config/openbox/rc.xml</execute>
+				</action>
+			</item>
+			<item label="Ob menu">
+				<action name="Execute">
+					<execute>mousepad /home/d/.config/openbox/menu.xml</execute>
+				</action>
+			</item>
+			<item label="sysv-rc-conf">
+				<action name="Execute">
+					<execute>xterm -hold -e sudo sysv-rc-conf</execute>
+				</action>
+			</item>
+			<item label="HP tiskarna instalace">
+				<action name="Execute">
+					<execute>sudo hp-setup -i</execute>
+				</action>
+			</item>
+			<item label="Xdotool kill">
+				<action name="Execute">
+					<execute>killall xdotool</execute>
+				</action>
+			</item>
+			<item label="Xdootool levy">
+				<action name="Execute">
+					<execute>xdotool behave_screen_edge --quiesce 750 --delay 999  left  exec sh skripty/mpv_youtube.sh</execute>
+				</action>
+			</item>
+			<item label="Xdootool pravy">
+				<action name="Execute">
+					<execute>xdotool behave_screen_edge --quiesce 750 --delay 999 right exec sh skripty/mpv_youtube.sh</execute>
+				</action>
+			</item>
+			<item label="Xdootool nahore">
+				<action name="Execute">
+					<execute>xdotool behave_screen_edge --quiesce 750 --delay 999 top exec amixer sset Master,0 toggle #sakura #sh skripty/mpv_youtube.sh</execute>
+				</action>
+			</item>
+			<item label="Xdootool dole">
+				<action name="Execute">
+					<execute>xdotool behave_screen_edge --quiesce 750 --delay 999 bottom exec sh skripty/mpv_youtube.sh</execute>
+				</action>
+			</item>
+		</menu>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
+		<separator/>
+		<menu id="/Debian"/>
+		<!-- <menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications"/> -->
+		<separator/>
+		<item label="ObConf">
+			<action name="Execute">
+				<execute>obconf</execute>
+			</action>
+		</item>
+		<item label="Obmenu">
+			<action name="Execute">
+				<execute>obmenu</execute>
+			</action>
+		</item>
+		<item label="Reconfigure">
+			<action name="Reconfigure"/>
+		</item>
+		<item label="Restart">
+			<action name="Restart"/>
+		</item>
+		<item label="All edit">
+			<action name="Execute">
+				<execute>mousepad ~/skripty/all.sh</execute>
+			</action>
+		</item>
+		<item label="Github_all">
+			<action name="Execute">
+				<execute>sh ~/skripty/all.sh github_all</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Exit">
+			<action name="Exit"/>
+		</item>
+		<separator/>
+		<item label="Vypnout">
+			<action name="Execute">
+				<execute>sudo poweroff</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>

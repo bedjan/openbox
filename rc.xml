@@ -120,7 +120,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>- 1 -</name>
@@ -151,7 +151,7 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>18</top>
+    <top>19</top>
     <bottom>24</bottom>
     <left>0</left>
     <right>0</right>
@@ -521,11 +521,11 @@
         <action name="Unshade"/>
       </mousebind>
       <mousebind button="Middle" action="Press">
-<!--    <action name="Lower"/>
+        <!--    <action name="Lower"/>
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>   -->
         <action name="ToggleAlwaysOnTop"/>
-      </mousebind>  
+      </mousebind>
       <mousebind button="Right" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -680,17 +680,16 @@
     </context>
     <context name="Desktop">
       <mousebind button="Up" action="Click">
-            <action name="GoToDesktop">
-       <to>previous</to>
-        </action>  
-      </mousebind>
-          <mousebind button="Down" action="Click">
         <action name="GoToDesktop">
-         <to>next</to> 
-        </action> 
-
+          <to>previous</to>
+        </action>
       </mousebind>
-     <mousebind button="A-Up" action="Click">
+      <mousebind button="Down" action="Click">
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
+      </mousebind>
+      <mousebind button="A-Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
         </action>

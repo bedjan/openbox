@@ -39,7 +39,7 @@ fi;;
    "ytdl_update") xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
    "ytdl_download") xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
 
-   "mixer") echo "$choose volume";xterm -hold -e alsamixer;;
+   "mixer") echo "$choose volume";alsamixergui ;;
 
 ##PROGRAMY##
 
@@ -102,10 +102,39 @@ fi;;
    "4u") xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  http://mpc.mediacp.eu:8302/stream";;
    "radia") bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
 
-##TV##
+
+##TV_VSE##
+
+"tv_nemecke") firefox https://www.2ix2.com/;;
+
+"ard") mpv --ytdl https://www.2ix2.com/ard/;;
+"rtl2") mpv --ytdl https://www.2ix2.com/rtl2-live/;;
+"ntv") mpv --ytdl https://www.2ix2.com/n-tv-live/;;
+"rtlnitro") mpv --ytdl https://www.2ix2.com/rtl-nitro-live/;;
+"superrtl") mpv --ytdl https://www.2ix2.com/super-rtl-live/;;
+"tlc") mpv --ytdl https://www.2ix2.com/tlc/;;
+"pro7") mpv --ytdl https://www.2ix2.com/pro7/;;
+"pro7maxx") mpv --ytdl https://www.2ix2.com/prosieben-maxx/;;
+"kabel1") mpv --ytdl https://www.2ix2.com/kabel-1/;;
+"sat1") mpv --ytdl https://www.2ix2.com/sat1/;;
+"sixx") mpv --ytdl https://www.2ix2.com/sixx/;;
+"dmax") mpv --ytdl https://www.2ix2.com/dmax/;;
+"kabel1doku") mpv --ytdl https://www.2ix2.com/kabel-1-doku/;;
+"disney") mpv --ytdl https://www.2ix2.com/disney-channel/;;
+"tele5") mpv --ytdl https://www.2ix2.com/tele-5/;;
+"zdf") mpv --ytdl https://www.2ix2.com/zdf/;;
+
+##TV_VSE##
+
+"TV_1") palemoon https://www.2ix2.com/sat1-gold/;;
+
+"TV_2") palemoon https://nydus.org/stream/;;
+
+"Erste") palemoon https://live.daserste.de/;;
 
 "Das_erste") vlc --loop https://mcdn.daserste.de/daserste/de/master.m3u8;;
-	
+
+"Ard") palemoon https://fernsehzone.online/ard-live/;;	
 
 "Hr") vlc --loop https://hrhls.akamaized.net/hls/live/2024525/hrhls/index.m3u8;;
 	

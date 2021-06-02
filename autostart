@@ -3,17 +3,22 @@ xset s 300 300 &
 #hpanel &
 #hpanel &
 #stalonetray &
-#tint2 &
+tint2 &
 ##fbpanel &
 ##sudo modprobe snd-mixer-oss &
-##conky &
+
+conky &
 numlockx &
-fspanel  &
-stalonetray  &
-volumeicon  &
+#fspanel  &
+stalonetray -t --icon-size 16  &
+
+#volumeicon  &
+pnmixer &
+
 ## Start Clipboard manager
 #(sleep 3s && clipit) &
 ## Set root window colour
 #hsetroot -solid "#002B36" &
+
 setxkbmap -layout cz,us -variant qwerty -option grp:alt_shift_toggle &
 xsetroot -solid "black" &
