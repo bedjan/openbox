@@ -1,7 +1,11 @@
 #!/bin/bash
 
 #stazeni git
+#https://github.com/bedjan/openbox/raw/main/install.sh
+#http://install.jdem.cz/ http://debian.jdem.cz/
+
 which git || sudo apt install git
+which wget || sudo apt install wget
 
 # prvni instalace do ~/.config/openbox
 cd ~/.config/openbox && git clone https://github.com/bedjan/openbox/
