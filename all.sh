@@ -102,8 +102,19 @@ fi;;
    "4u") xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  http://mpc.mediacp.eu:8302/stream";;
    "radia") bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
 
+##TV_CESKO##
 
-##TV_VSE##
+"tv_ceske") firefox https://www.spustit.cz;;
+"ct1") mpv --ytdl https://www.ceskatelevize.cz/ivysilani/zive/ct1;;
+"ct2") mpv --ytdl https://www.ceskatelevize.cz/ivysilani/zive/ct2;;
+"prima") firefox -new-window https://prima.iprima.cz/#main-wrapper;;
+"primamax") firefox -new-window https://max.iprima.cz/#main-wrapper;;
+"primacool") firefox -new-window https://cool.iprima.cz/#main-wrapper;;
+"primakrimi") firefox -new-window https://krimi.iprima.cz/#main-wrapper;;
+"primalove") firefox -new-window https://love.iprima.cz/#main-wrapper;;
+"primazoom") firefox -new-window https://zoom.iprima.cz/#main-wrapper;;
+
+##TV_NEMECKO##
 
 "tv_nemecke") firefox https://www.2ix2.com/;;
 

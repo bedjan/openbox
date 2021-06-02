@@ -3,12 +3,12 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Youtube video">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh mpv_youtube</execute>
+				<execute>sh ~/.config/openbox/all.sh mpv_youtube</execute>
 			</action>
 		</item>
 		<item label="Terminal">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh terminal</execute>
+				<execute>sh ~/.config/openbox/all.sh terminal</execute>
 			</action>
 		</item>
 		<item label="Palemoon">
@@ -18,27 +18,27 @@
 		</item>
 		<item label="Youtube audio">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh mpv_youtube_audio</execute>
+				<execute>sh ~/.config/openbox/all.sh mpv_youtube_audio</execute>
 			</action>
 		</item>
 		<item label="Youtube video mute">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh mpv_youtube_mute</execute>
+				<execute>sh ~/.config/openbox/all.sh mpv_youtube_mute</execute>
 			</action>
 		</item>
 		<item label="monitor">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh monitor</execute>
+				<execute>sh ~/.config/openbox/all.sh monitor</execute>
 			</action>
 		</item>
 		<item label="dpms">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh  dpms</execute>
+				<execute>sh ~/.config/openbox/all.sh  dpms</execute>
 			</action>
 		</item>
 		<item label="mixer">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh mixer</execute>
+				<execute>sh ~/.config/openbox/all.sh mixer</execute>
 			</action>
 		</item>
 		<item label="Netsurf">
@@ -49,406 +49,406 @@
 		<menu id="root-menu-551431" label="Download">
 			<item label="youtubedl_video">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh youtubedl_video</execute>
+					<execute>sh ~/.config/openbox/all.sh youtubedl_video</execute>
 				</action>
 			</item>
 			<item label="youtubedl_audio">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh youtubedl_audio</execute>
+					<execute>sh ~/.config/openbox/all.sh youtubedl_audio</execute>
 				</action>
 			</item>
 		</menu>
 		<menu id="root-menu-983120" label="Banky">
 			<item label="CS george">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh cs</execute>
+					<execute>sh ~/.config/openbox/all.sh cs</execute>
 				</action>
 			</item>
 			<item label="Sparkasse">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh sparkasse</execute>
+					<execute>sh ~/.config/openbox/all.sh sparkasse</execute>
 				</action>
 			</item>
 		</menu>
 		<menu id="root-menu-335925" label="Web">
 			<item label="gkeep">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh gkeep</execute>
+					<execute>sh ~/.config/openbox/all.sh gkeep</execute>
 				</action>
 			</item>
 			<item label="gmail">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh gmail</execute>
+					<execute>sh ~/.config/openbox/all.sh gmail</execute>
 				</action>
 			</item>
 			<item label="gtranslate">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh gtranslate</execute>
+					<execute>sh ~/.config/openbox/all.sh gtranslate</execute>
 				</action>
 			</item>
 			<item label="yahoo_email">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh yahoo_email</execute>
+					<execute>sh ~/.config/openbox/all.sh yahoo_email</execute>
 				</action>
 			</item>
 			<item label="seznam_email">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh seznam_email</execute>
+					<execute>sh ~/.config/openbox/all.sh seznam_email</execute>
 				</action>
 			</item>
 			<item label="gsites">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh gsites</execute>
+					<execute>sh ~/.config/openbox/all.sh gsites</execute>
 				</action>
 			</item>
 			<item label="gphotos">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh gphotos</execute>
+					<execute>sh ~/.config/openbox/all.sh gphotos</execute>
 				</action>
 			</item>
 			<item label="gdocs">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh gdocs</execute>
+					<execute>sh ~/.config/openbox/all.sh gdocs</execute>
 				</action>
 			</item>
 			<item label="gdisk">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh gdisk</execute>
+					<execute>sh ~/.config/openbox/all.sh gdisk</execute>
 				</action>
 			</item>
 			<item label="difm">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh difm</execute>
+					<execute>sh ~/.config/openbox/all.sh difm</execute>
 				</action>
 			</item>
 			<item label="soundcloud">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh soundcloud</execute>
+					<execute>sh ~/.config/openbox/all.sh soundcloud</execute>
 				</action>
 			</item>
 			<item label="vinted">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh vinted</execute>
+					<execute>sh ~/.config/openbox/all.sh vinted</execute>
 				</action>
 			</item>
 			<item label="ulozto">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh ulozto</execute>
+					<execute>sh ~/.config/openbox/all.sh ulozto</execute>
 				</action>
 			</item>
 			<item label="seznam_ftp">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh seznam_ftp</execute>
+					<execute>sh ~/.config/openbox/all.sh seznam_ftp</execute>
 				</action>
 			</item>
 			<item label="seznam_sweb">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh seznam_sweb</execute>
+					<execute>sh ~/.config/openbox/all.sh seznam_sweb</execute>
 				</action>
 			</item>
 			<item label="tvprogram">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh tvprogram</execute>
+					<execute>sh ~/.config/openbox/all.sh tvprogram</execute>
 				</action>
 			</item>
 			<item label="dropbox">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh dropbox</execute>
+					<execute>sh ~/.config/openbox/all.sh dropbox</execute>
 				</action>
 			</item>
 			<item label="kalendar">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh kalendar</execute>
+					<execute>sh ~/.config/openbox/all.sh kalendar</execute>
 				</action>
 			</item>
 			<item label="cas">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh cas</execute>
+					<execute>sh ~/.config/openbox/all.sh cas</execute>
 				</action>
 			</item>
 			<item label="linuxexpress">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh linuxexpress</execute>
+					<execute>sh ~/.config/openbox/all.sh linuxexpress</execute>
 				</action>
 			</item>
 			<item label="nemcina_youtube">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh nemcina_youtube</execute>
+					<execute>sh ~/.config/openbox/all.sh nemcina_youtube</execute>
 				</action>
 			</item>
 			<item label="tvonline">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh tvonline</execute>
+					<execute>sh ~/.config/openbox/all.sh tvonline</execute>
 				</action>
 			</item>
 			<item label="csfd">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh csfd</execute>
+					<execute>sh ~/.config/openbox/all.sh csfd</execute>
 				</action>
 			</item>
 			<item label="ctzive">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh ctzive</execute>
+					<execute>sh ~/.config/openbox/all.sh ctzive</execute>
 				</action>
 			</item>
 			<item label="ct">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh ct</execute>
+					<execute>sh ~/.config/openbox/all.sh ct</execute>
 				</action>
 			</item>
 			<item label="bazos">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh bazos</execute>
+					<execute>sh ~/.config/openbox/all.sh bazos</execute>
 				</action>
 			</item>
 			<item label="youtube">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh youtube</execute>
+					<execute>sh ~/.config/openbox/all.sh youtube</execute>
 				</action>
 			</item>
 			<item label="Facebook">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh facebook</execute>
+					<execute>sh ~/.config/openbox/all.sh facebook</execute>
 				</action>
 			</item>
 			<item label="github_all">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh github_all</execute>
+					<execute>sh ~/.config/openbox/all.sh github_all</execute>
 				</action>
 			</item>
 			<item label="github">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh github</execute>
+					<execute>sh ~/.config/openbox/all.sh github</execute>
 				</action>
 			</item>
 			<item label="dropbox">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh dropbox</execute>
+					<execute>sh ~/.config/openbox/all.sh dropbox</execute>
 				</action>
 			</item>
 			<item label="web">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh web</execute>
+					<execute>sh ~/.config/openbox/all.sh web</execute>
 				</action>
 			</item>
 			<item label="simplenote">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh simplenote</execute>
+					<execute>sh ~/.config/openbox/all.sh simplenote</execute>
 				</action>
 			</item>
 			<item label="root">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh root</execute>
+					<execute>sh ~/.config/openbox/all.sh root</execute>
 				</action>
 			</item>
 			<item label="gtakeout">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh gtakeout</execute>
+					<execute>sh ~/.config/openbox/all.sh gtakeout</execute>
 				</action>
 			</item>
 			<item label="jobs">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh  jobs</execute>
+					<execute>sh ~/.config/openbox/all.sh  jobs</execute>
 				</action>
 			</item>
 			<item label="seznam">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh seznam</execute>
+					<execute>sh ~/.config/openbox/all.sh seznam</execute>
 				</action>
 			</item>
 			<item label="zdrojak">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh zdrojak</execute>
+					<execute>sh ~/.config/openbox/all.sh zdrojak</execute>
 				</action>
 			</item>
 		</menu>
 		<menu id="root-menu-141918" label="Web ostatni">
 			<item label="github_zajmy">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh github_zajmy</execute>
+					<execute>sh ~/.config/openbox/all.sh github_zajmy</execute>
 				</action>
 			</item>
 			<item label="open_with_nastaveni">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh open_with_nastaveni</execute>
+					<execute>sh ~/.config/openbox/all.sh open_with_nastaveni</execute>
 				</action>
 			</item>
 			<item label="open_with">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh open_with</execute>
+					<execute>sh ~/.config/openbox/all.sh open_with</execute>
 				</action>
 			</item>
 			<item label="github_home">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh github_home</execute>
+					<execute>sh ~/.config/openbox/all.sh github_home</execute>
 				</action>
 			</item>
 			<item label="github_windows">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh github_windows</execute>
+					<execute>sh ~/.config/openbox/all.sh github_windows</execute>
 				</action>
 			</item>
 			<item label="github_manipulace">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh github_manipulace</execute>
+					<execute>sh ~/.config/openbox/all.sh github_manipulace</execute>
 				</action>
 			</item>
 			<item label="minimalismus1">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh minimalismus1</execute>
+					<execute>sh ~/.config/openbox/all.sh minimalismus1</execute>
 				</action>
 			</item>
 			<item label="minimalismus">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh minimalismus</execute>
+					<execute>sh ~/.config/openbox/all.sh minimalismus</execute>
 				</action>
 			</item>
 			<item label="zw3">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh zw3</execute>
+					<execute>sh ~/.config/openbox/all.sh zw3</execute>
 				</action>
 			</item>
 			<item label="zw2">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh zw2</execute>
+					<execute>sh ~/.config/openbox/all.sh zw2</execute>
 				</action>
 			</item>
 			<item label="zw1">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh zw1</execute>
+					<execute>sh ~/.config/openbox/all.sh zw1</execute>
 				</action>
 			</item>
 			<item label="zw">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh zw</execute>
+					<execute>sh ~/.config/openbox/all.sh zw</execute>
 				</action>
 			</item>
 			<item label="statistiky">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh statistiky</execute>
+					<execute>sh ~/.config/openbox/all.sh statistiky</execute>
 				</action>
 			</item>
 			<item label="epsychologie">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh epsychologie</execute>
+					<execute>sh ~/.config/openbox/all.sh epsychologie</execute>
 				</action>
 			</item>
 			<item label="psychologie">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh psychologie</execute>
+					<execute>sh ~/.config/openbox/all.sh psychologie</execute>
 				</action>
 			</item>
 			<item label="github_akupresura">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh github_akupresura</execute>
+					<execute>sh ~/.config/openbox/all.sh github_akupresura</execute>
 				</action>
 			</item>
 			<item label="pronaladu">
 				<action name="Execute">
-					<execute>psh ~/skripty/all.sh ronaladu</execute>
+					<execute>psh ~/.config/openbox/all.sh ronaladu</execute>
 				</action>
 			</item>
 			<item label="mzp">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh mzp</execute>
+					<execute>sh ~/.config/openbox/all.sh mzp</execute>
 				</action>
 			</item>
 			<item label="enviweb">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh enviweb</execute>
+					<execute>sh ~/.config/openbox/all.sh enviweb</execute>
 				</action>
 			</item>
 			<item label="github_linux">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh github_linux</execute>
+					<execute>sh ~/.config/openbox/all.sh github_linux</execute>
 				</action>
 			</item>
 			<item label="linux">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh linux</execute>
+					<execute>sh ~/.config/openbox/all.sh linux</execute>
 				</action>
 			</item>
 			<item label="programovani">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh programovani</execute>
+					<execute>sh ~/.config/openbox/all.sh programovani</execute>
 				</action>
 			</item>
 			<item label="github_poznamky">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh github_poznamky</execute>
+					<execute>sh ~/.config/openbox/all.sh github_poznamky</execute>
 				</action>
 			</item>
 			<item label="tinyurl">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh tinyurl</execute>
+					<execute>sh ~/.config/openbox/all.sh tinyurl</execute>
 				</action>
 			</item>
 			<item label="githack">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh githack</execute>
+					<execute>sh ~/.config/openbox/all.sh githack</execute>
 				</action>
 			</item>
 			<item label="dillinger">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh dillinger</execute>
+					<execute>sh ~/.config/openbox/all.sh dillinger</execute>
 				</action>
 			</item>
 			<item label="protectedtext">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh protectedtext</execute>
+					<execute>sh ~/.config/openbox/all.sh protectedtext</execute>
 				</action>
 			</item>
 			<item label="jdem">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh jdem</execute>
+					<execute>sh ~/.config/openbox/all.sh jdem</execute>
 				</action>
 			</item>
 			<item label="bitly">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh  bitly</execute>
+					<execute>sh ~/.config/openbox/all.sh  bitly</execute>
 				</action>
 			</item>
 			<item label="thinfi">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh thinfi</execute>
+					<execute>sh ~/.config/openbox/all.sh thinfi</execute>
 				</action>
 			</item>
 		</menu>
 		<menu id="root-menu-383343" label="Vypnout">
 			<item label="vypnout">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh vypnout</execute>
+					<execute>sh ~/.config/openbox/all.sh vypnout</execute>
 				</action>
 			</item>
 			<item label="vypnout0">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh vypnout0</execute>
+					<execute>sh ~/.config/openbox/all.sh vypnout0</execute>
 				</action>
 			</item>
 			<item label="vypnout1">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh vypnout1</execute>
+					<execute>sh ~/.config/openbox/all.sh vypnout1</execute>
 				</action>
 			</item>
 			<item label="vypnout2">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh vypnout2</execute>
+					<execute>sh ~/.config/openbox/all.sh vypnout2</execute>
 				</action>
 			</item>
 			<item label="restart">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh restart</execute>
+					<execute>sh ~/.config/openbox/all.sh restart</execute>
 				</action>
 			</item>
 		</menu>
 		<item label="ytdl_download">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh ytdl_download</execute>
+				<execute>sh ~/.config/openbox/all.sh ytdl_download</execute>
 			</action>
 		</item>
 		<item label="files">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh files</execute>
+				<execute>sh ~/.config/openbox/all.sh files</execute>
 			</action>
 		</item>
 		<item label="Firefox">
@@ -468,12 +468,12 @@
 		</item>
 		<item label="procesy">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh procesy</execute>
+				<execute>sh ~/.config/openbox/all.sh procesy</execute>
 			</action>
 		</item>
 		<item label="Monitor">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh monitor</execute>
+				<execute>sh ~/.config/openbox/all.sh monitor</execute>
 			</action>
 		</item>
 		<item label="easystroke">
@@ -499,171 +499,218 @@
 		<menu id="root-menu-905337" label="Radia">
 			<item label="Humor">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh humor</execute>
+					<execute>sh ~/.config/openbox/all.sh humor</execute>
 				</action>
 			</item>
 			<item label="City 80">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh city80</execute>
+					<execute>sh ~/.config/openbox/all.sh city80</execute>
 				</action>
 			</item>
 			<item label="City 90">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh city90</execute>
+					<execute>sh ~/.config/openbox/all.sh city90</execute>
 				</action>
 			</item>
 			<item label="4U">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh 4u</execute>
+					<execute>sh ~/.config/openbox/all.sh 4u</execute>
 				</action>
 			</item>
 			<item label="cr_online">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh cr_online</execute>
+					<execute>sh ~/.config/openbox/all.sh cr_online</execute>
 				</action>
 			</item>
 			<item label="Radia">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh radia</execute>
+					<execute>sh ~/.config/openbox/all.sh radia</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-822837" label="TV_CZ">
+			<item label="tv_ceske">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh tv_ceske</execute>
+				</action>
+			</item>
+			<item label="ct1">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh ct1</execute>
+				</action>
+			</item>
+			<item label="ct2">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh ct2</execute>
+				</action>
+			</item>
+			<item label="prima">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh prima</execute>
+				</action>
+			</item>
+			<item label="primamax">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh primamax</execute>
+				</action>
+			</item>
+			<item label="primacool">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh primacool</execute>
+				</action>
+			</item>
+			<item label="primakrimi">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh primakrimi</execute>
+				</action>
+			</item>
+			<item label="primalove">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh primalove</execute>
+				</action>
+			</item>
+			<item label="primazoom">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh primazoom</execute>
 				</action>
 			</item>
 		</menu>
 		<menu id="root-menu-925535" label="TV_DE">
 			<item label="tv_nemecke">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh tv_nemecke</execute>
+					<execute>sh ~/.config/openbox/all.sh tv_nemecke</execute>
 				</action>
 			</item>
 			<item label="ard">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh ard</execute>
+					<execute>sh ~/.config/openbox/all.sh ard</execute>
 				</action>
 			</item>
 			<item label="rtl2">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh rtl2</execute>
+					<execute>sh ~/.config/openbox/all.sh rtl2</execute>
 				</action>
 			</item>
 			<item label="ntv">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh ntv</execute>
+					<execute>sh ~/.config/openbox/all.sh ntv</execute>
 				</action>
 			</item>
 			<item label="rtlnitro">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh rtlnitro</execute>
+					<execute>sh ~/.config/openbox/all.sh rtlnitro</execute>
 				</action>
 			</item>
 			<item label="superrtl">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh superrtl</execute>
+					<execute>sh ~/.config/openbox/all.sh superrtl</execute>
 				</action>
 			</item>
 			<item label="tlc">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh tlc</execute>
+					<execute>sh ~/.config/openbox/all.sh tlc</execute>
 				</action>
 			</item>
 			<item label="pro7">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh pro7</execute>
+					<execute>sh ~/.config/openbox/all.sh pro7</execute>
 				</action>
 			</item>
 			<item label="pro7maxx">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh pro7maxx</execute>
+					<execute>sh ~/.config/openbox/all.sh pro7maxx</execute>
 				</action>
 			</item>
 			<item label="kabel1">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh kabel1</execute>
+					<execute>sh ~/.config/openbox/all.sh kabel1</execute>
 				</action>
 			</item>
 			<item label="sat1">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh sat1</execute>
+					<execute>sh ~/.config/openbox/all.sh sat1</execute>
 				</action>
 			</item>
 			<item label="sixx">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh sixx</execute>
+					<execute>sh ~/.config/openbox/all.sh sixx</execute>
 				</action>
 			</item>
 			<item label="dmax">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh dmax</execute>
+					<execute>sh ~/.config/openbox/all.sh dmax</execute>
 				</action>
 			</item>
 			<item label="kabel1doku">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh kabel1doku</execute>
+					<execute>sh ~/.config/openbox/all.sh kabel1doku</execute>
 				</action>
 			</item>
 			<item label="sat1">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh sat1</execute>
+					<execute>sh ~/.config/openbox/all.sh sat1</execute>
 				</action>
 			</item>
 			<item label="sixx">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh sixx</execute>
+					<execute>sh ~/.config/openbox/all.sh sixx</execute>
 				</action>
 			</item>
 			<item label="dmax">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh dmax</execute>
+					<execute>sh ~/.config/openbox/all.sh dmax</execute>
 				</action>
 			</item>
 			<item label="kabel1doku">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh kabel1doku</execute>
+					<execute>sh ~/.config/openbox/all.sh kabel1doku</execute>
 				</action>
 			</item>
 			<item label="disney">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh disney</execute>
+					<execute>sh ~/.config/openbox/all.sh disney</execute>
 				</action>
 			</item>
 			<item label="tele5">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh tele5</execute>
+					<execute>sh ~/.config/openbox/all.sh tele5</execute>
 				</action>
 			</item>
 			<item label="zdf">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh zdf</execute>
+					<execute>sh ~/.config/openbox/all.sh zdf</execute>
 				</action>
 			</item>
 		</menu>
 		<menu id="root-menu-26123" label="TV">
 			<item label="ulice">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh ulice</execute>
+					<execute>sh ~/.config/openbox/all.sh ulice</execute>
 				</action>
 			</item>
 			<item label="ruzovka">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh ruzovka</execute>
+					<execute>sh ~/.config/openbox/all.sh ruzovka</execute>
 				</action>
 			</item>
 			<item label="Ard">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh Ard</execute>
+					<execute>sh ~/.config/openbox/all.sh Ard</execute>
 				</action>
 			</item>
 			<item label="TV_1">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh TV_1</execute>
+					<execute>sh ~/.config/openbox/all.sh TV_1</execute>
 				</action>
 			</item>
 			<item label="TV_2">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh TV_2</execute>
+					<execute>sh ~/.config/openbox/all.sh TV_2</execute>
 				</action>
 			</item>
 			<item label="Erste">
 				<action name="Execute">
-					<execute>sh ~/skripty/all.sh Erste</execute>
+					<execute>sh ~/.config/openbox/all.sh Erste</execute>
 				</action>
 			</item>
 			<item label="Das erste d">
@@ -912,12 +959,12 @@
 		</item>
 		<item label="All edit">
 			<action name="Execute">
-				<execute>mousepad ~/skripty/all.sh</execute>
+				<execute>mousepad sh ~/.config/openbox/all.sh</execute>
 			</action>
 		</item>
 		<item label="Github_all">
 			<action name="Execute">
-				<execute>sh ~/skripty/all.sh github_all</execute>
+				<execute>sh ~/.config/openbox/all.sh github_all</execute>
 			</action>
 		</item>
 		<separator/>
