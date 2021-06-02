@@ -232,6 +232,7 @@ systray_icon_size = 24
 systray_icon_asb = 100 0 0
 systray_monitor = 1
 systray_name_filter = 
+systray_sort = ascending
 
 #-------------------------------------
 # Launcher
@@ -263,7 +264,7 @@ launcher_item_app = /usr/share/applications/calcoo.desktop
 launcher_item_app = /usr/share/applications/pnmixer.desktop
 launcher_item_app = ~/.local/share/applications/Multimediální přehrávač VLC.desktop
 launcher_item_app = ~/.local/share/applications/gMTP.desktop
-launcher_item_app = /usr/share/applications/viber.desktop
+#launcher_item_app = /usr/share/applications/viber.desktop
 
 #-------------------------------------
 # Clock
