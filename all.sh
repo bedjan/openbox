@@ -104,7 +104,8 @@ fi;;
 
 ##TV_CESKO##
 
-"tv_ceske") firefox https://www.spustit.cz;;
+"tvprogram") firefox https://www.tvprogram.cz/;;
+"tv_ceske") firefox https://www.tvonline.cz/;;
 "ct1") mpv --ytdl https://www.ceskatelevize.cz/ivysilani/zive/ct1;;
 "ct2") mpv --ytdl https://www.ceskatelevize.cz/ivysilani/zive/ct2;;
 "prima") firefox -new-window https://prima.iprima.cz/#main-wrapper;;
@@ -113,6 +114,8 @@ fi;;
 "primakrimi") firefox -new-window https://krimi.iprima.cz/#main-wrapper;;
 "primalove") firefox -new-window https://love.iprima.cz/#main-wrapper;;
 "primazoom") firefox -new-window https://zoom.iprima.cz/#main-wrapper;;
+"tvnatura") firefox -new-window https://www.tvnatura.cz;;
+"nova") firefox https://novaplus.nova.cz/;echo "Nova Plus - bedjan@/o1" | osd_cat -d 60 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';;
 
 ##TV_NEMECKO##
 
@@ -272,7 +275,7 @@ fi;;
    "jobs") firefox https://www.jobs.cz/;;
    "seznam") firefox https://www.seznam.cz/;;
    "abclinuxu") firefox https://www.abclinuxu.cz/;;
-   "tvprogram") firefox https://www.tvprogram.cz/;;
+
    "root") firefox https://www.root.cz/;;
    "simplenote") firefox https://app.simplenote.com/login/;;
    "gtakeout") firefox https://takeout.google.com/settings/takeout?pli=1;;

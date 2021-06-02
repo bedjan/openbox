@@ -529,6 +529,11 @@
 			</item>
 		</menu>
 		<menu id="root-menu-822837" label="TV_CZ">
+			<item label="tvprogram">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh tvprogram</execute>
+				</action>
+			</item>
 			<item label="tv_ceske">
 				<action name="Execute">
 					<execute>sh ~/.config/openbox/all.sh tv_ceske</execute>
@@ -572,6 +577,16 @@
 			<item label="primazoom">
 				<action name="Execute">
 					<execute>sh ~/.config/openbox/all.sh primazoom</execute>
+				</action>
+			</item>
+			<item label="tvnatura">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh tvnatura</execute>
+				</action>
+			</item>
+			<item label="nova">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh nova</execute>
 				</action>
 			</item>
 		</menu>
