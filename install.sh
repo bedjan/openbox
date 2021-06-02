@@ -8,7 +8,8 @@ which git || sudo apt install git
 which wget || sudo apt install wget
 
 # prvni instalace do ~/.config/openbox
-cd ~/.config/openbox && git clone https://github.com/bedjan/openbox/
+#cd ~/.config/openbox && git clone https://github.com/bedjan/openbox/
+mkdir ~/.config/glue && cd ~/.config/glue && git clone https://github.com/bedjan/openbox/
 
 which mc || sudo apt install mc 
 which openbox || sudo apt install openbox

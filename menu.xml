@@ -11,6 +11,16 @@
 				<execute>sh ~/.config/openbox/all.sh terminal</execute>
 			</action>
 		</item>
+		<item label="youtube_audio">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh youtubedl_audio</execute>
+			</action>
+		</item>
+		<item label="youtube_video">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh youtubedl_video</execute>
+			</action>
+		</item>
 		<item label="Palemoon">
 			<action name="Execute">
 				<execute>palemoon --new-window</execute>
@@ -497,9 +507,49 @@
 			</action>
 		</item>
 		<menu id="root-menu-905337" label="Radia">
+			<item label="Radiaonline">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh radiaonline</execute>
+				</action>
+			</item>
+			<item label="Tranceup">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh tranceup</execute>
+				</action>
+			</item>
 			<item label="Humor">
 				<action name="Execute">
 					<execute>sh ~/.config/openbox/all.sh humor</execute>
+				</action>
+			</item>
+			<item label="4U">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh 4u</execute>
+				</action>
+			</item>
+			<item label="E2">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh e2</execute>
+				</action>
+			</item>
+			<item label="E2movin">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh e2movin</execute>
+				</action>
+			</item>
+			<item label="E2flashback">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh e2flashback</execute>
+				</action>
+			</item>
+			<item label="E2top40">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh e2top40</execute>
+				</action>
+			</item>
+			<item label="Freerave">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh freerave</execute>
 				</action>
 			</item>
 			<item label="City 80">
@@ -510,11 +560,6 @@
 			<item label="City 90">
 				<action name="Execute">
 					<execute>sh ~/.config/openbox/all.sh city90</execute>
-				</action>
-			</item>
-			<item label="4U">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh 4u</execute>
 				</action>
 			</item>
 			<item label="cr_online">

@@ -100,7 +100,14 @@ fi;;
    "city90") xterm -geometry 80x20-60-60 -title 80_radio -e bash -c "mpg123 -b 10240 -v http://ice.abradio.cz/city80128.mp3";;
    "city80") xterm -geometry 80x20-60-60 -title 90_radio -e bash -c "mpg123 -b 10240 -v http://ice.abradio.cz/city90128.mp3";;
    "4u") xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  http://mpc.mediacp.eu:8302/stream";;
+   "e2") xterm -geometry 80x20-60-60 -title E2 -e bash -c "mpv https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu";;
+   "e2movin") xterm -geometry 80x20-60-60 -title E2_movin -e bash -c "mpv https://ice.actve.net/web-e2-movin";;
+   "e2flashback") xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mpv https://ice.actve.net/web-e2-flashback";;
+   "e2top40") xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mpv https://ice.actve.net/web-e2-top40";;
+   "freerave") xterm -geometry 80x20-60-60 -title Freerave -e bash -c "mpv http://164.68.122.137:8061/;";;
+   "tranceup") xterm -geometry 80x20-60-60 -title Tranceup -e bash -c "mpv http://5.39.71.159:8223/stream";;
    "radia") bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
+   "radiaonline") firefox https://online-radio.eu/country/Czech%20Republic;;
 
 ##TV_CESKO##
 
