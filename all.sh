@@ -324,7 +324,7 @@ fi;;
    "ruzovka") firefox https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2;;
 
 ##FIREFOX_ROZSIRENI##
-
+   "firefox_ucet") firefox https://accounts.firefox.com/signin?context=fx_desktop_v3&entrypoint=fxa_app_menu&action=email&service=sync;echo "Firefox account/ bedjan@/o1" | osd_cat -d 10 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';;
    "open_with") firefox https://addons.mozilla.org/cs/firefox/addon/open-with/;;
    "open_with_nastaveni") wget https://github.com/darktrojan/openwith/raw/master/webextension/native/open_with_linux.py;chmod u+x open_with_linux.py;./open_with_linux.py install;;
 

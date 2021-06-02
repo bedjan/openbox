@@ -1,24 +1,32 @@
+##setreni dpms 6 minut
 xset s 300 300 &
-#fbpanel &
-#hpanel &
-#hpanel &
-#stalonetray &
-tint2 &
-##fbpanel &
-##sudo modprobe snd-mixer-oss &
 
+##panel
+#fbpanel & sudo modprobe snd-mixer-oss &
+#fspanel &
+tint2 &
+
+
+#informace
 conky &
+
+##numericka klavesnice
 numlockx &
-#fspanel  &
+
+##systray
 stalonetray -t --icon-size 16  &
 
+##hlasitost
 #volumeicon  &
 pnmixer &
 
-## Start Clipboard manager
-#(sleep 3s && clipit) &
-## Set root window colour
-#hsetroot -solid "#002B36" &
 
+##klavesnice
 setxkbmap -layout cz,us -variant qwerty -option grp:alt_shift_toggle &
+
+##wallpaper cerny
 xsetroot -solid "black" &
+
+##clipbord
+#(sleep 3s && clipit) &
+
