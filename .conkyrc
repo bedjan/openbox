@@ -1,0 +1,66 @@
+-- vim: ts=4 sw=4 noet ai cindent syntax=lua
+--[[
+Conky, a system monitor, based on torsmo
+
+Any original torsmo code is licensed under the BSD license
+
+All code written since the fork of torsmo is licensed under the GPL
+
+Please see COPYING for details
+
+Copyright (c) 2004, Hannu Saransaari and Lauri Hakkarainen
+Copyright (c) 2005-2012 Brenden Matthews, Philip Kovacs, et. al. (see AUTHORS)
+All rights reserved.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+]]
+
+conky.config = {
+    alignment = 'top_left',
+    background = false,
+    border_width = 0,
+    cpu_avg_samples = 2,
+	default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    draw_borders = false,
+    draw_graph_borders = false,
+    draw_outline = false,
+    draw_shades = false,
+    use_xft = true,
+    font = 'DejaVu Sans Mono:size=6',
+    gap_x = 0,
+    gap_y = 0,
+    minimum_height = 2,
+	minimum_width = 1366,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    own_window = true,
+    own_window_class = 'Conky',
+own_window_type = 'override',
+own_window_hints = 'undecorated,sticky,skip_taskbar,skip_pager',
+
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    show_graph_range = false
+}
+
+conky.text = [[
+${alignc}${color grey}${execi 2 xset q |  grep "DPMS is" | cut -c 10-17}${color white} ${uptime_short} ${color grey} ${memeasyfree} ${membar 5,50}${color white} ${cpu cpu0} | ${cpu cpu1} ${color grey} ${fs_free /home} ${color white} ${fs_free /} ${color grey} ${wireless_essid wlan0}  ${color white}${wireless_link_bar  5,50 wlan0} ${color grey} ${downspeed wlan0} ${color white}${upspeed wlan0}${color grey} ${top name 1} ${color white}${top cpu 1} ${color grey}${top mem 1} ${color white} ${top_mem name 1}${color grey}${top_mem mem 1}
+]]
