@@ -24,7 +24,7 @@ case $choose in
 
 ##OVLADANI##
 
-   "sluzby") gmessage "Vybirej opatrne" -center -title "Vyber sluzbu" -font "Sans bold 10" -default "Cancel" -buttons "_Cancel":1,"_Log out":2,"_PC_restart":3,"_PC_vypnuti":4 >/dev/null
+   "sluzby") gmessage "Vybirej opatrne" -center -title "Vyber sluzbu" -font "Sans bold 10" -default "Opustit" -buttons "_Cancel":1,"_Odhlaseni":2,"_! PC restart !":3,"_! PC vypnuti !":4 >/dev/null
 
 case $? in
 1)
@@ -37,6 +37,51 @@ sudo sudo reboot;;
 sudo sudo poweroff;;
 esac ;;
 
+   "TV") gmessage "Vyber YOUTUBE, nebo TV" -center -title "Vyber TV" -font "Sans bold 10" -default "Opustit" -buttons "_Cancel":1,"_Youtube":2,"_TV program":3,"_CT1":4,"_CT2":5,"_Ard":6 >/dev/null
+
+case $? in
+1)
+echo "Exit";;
+2)
+smtube;;
+3)
+sh ~/.config/openbox/all.sh tvprogram;;
+4)
+sh ~/.config/openbox/all.sh ct1;;
+5)
+sh ~/.config/openbox/all.sh ct2;;
+6)
+sh ~/.config/openbox/all.sh ard;;
+esac ;;
+
+   "RADIA") gmessage "Vybirej opatrne" -center -title "Vyber RADIO" -font "Sans bold 10" -default "Opustit" -buttons "_Radia online":0,"_TV program":1,"_CT1":2,"_CT2":3,"_Ard":4 >/dev/null
+
+case $? in
+0)
+sh ~/.config/openbox/all.sh radiaonline;;
+1)
+sh ~/.config/openbox/all.sh humor;;
+2)
+sh ~/.config/openbox/all.sh 4u;;
+3)
+sh ~/.config/openbox/all.sh tranceup;;
+4)
+sh ~/.config/openbox/all.sh e2;;
+5)
+sh ~/.config/openbox/all.sh e2movin;;
+6)
+sh ~/.config/openbox/all.sh e2flashback;;
+7)
+sh ~/.config/openbox/all.sh e2top40;;
+8)
+sh ~/.config/openbox/all.sh freerave;;
+9)
+sh ~/.config/openbox/all.sh city80;;
+10)
+sh ~/.config/openbox/all.sh city90;;
+11)
+sh ~/.config/openbox/all.sh cr_online;;
+esac ;;
 
 
    "down") echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 -5%;;

@@ -46,374 +46,18 @@
 				<execute>calcoo</execute>
 			</action>
 		</item>
-		<menu id="root-menu-551431" label="Download">
-			<item label="youtubedl_video">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh youtubedl_video</execute>
-				</action>
-			</item>
-			<item label="youtubedl_audio">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh youtubedl_audio</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="root-menu-983120" label="Banky">
-			<item label="CS george">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh cs</execute>
-				</action>
-			</item>
-			<item label="Sparkasse">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh sparkasse</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="root-menu-335925" label="Web">
-			<item label="gkeep">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh gkeep</execute>
-				</action>
-			</item>
-			<item label="gmail">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh gmail</execute>
-				</action>
-			</item>
-			<item label="gtranslate">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh gtranslate</execute>
-				</action>
-			</item>
-			<item label="yahoo_email">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh yahoo_email</execute>
-				</action>
-			</item>
-			<item label="seznam_email">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh seznam_email</execute>
-				</action>
-			</item>
-			<item label="gsites">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh gsites</execute>
-				</action>
-			</item>
-			<item label="gphotos">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh gphotos</execute>
-				</action>
-			</item>
-			<item label="gdocs">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh gdocs</execute>
-				</action>
-			</item>
-			<item label="gdisk">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh gdisk</execute>
-				</action>
-			</item>
-			<item label="difm">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh difm</execute>
-				</action>
-			</item>
-			<item label="soundcloud">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh soundcloud</execute>
-				</action>
-			</item>
-			<item label="vinted">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh vinted</execute>
-				</action>
-			</item>
-			<item label="ulozto">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh ulozto</execute>
-				</action>
-			</item>
-			<item label="seznam_ftp">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh seznam_ftp</execute>
-				</action>
-			</item>
-			<item label="seznam_sweb">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh seznam_sweb</execute>
-				</action>
-			</item>
-			<item label="tvprogram">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh tvprogram</execute>
-				</action>
-			</item>
-			<item label="dropbox">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh dropbox</execute>
-				</action>
-			</item>
-			<item label="kalendar">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh kalendar</execute>
-				</action>
-			</item>
-			<item label="cas">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh cas</execute>
-				</action>
-			</item>
-			<item label="linuxexpress">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh linuxexpress</execute>
-				</action>
-			</item>
-			<item label="nemcina_youtube">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh nemcina_youtube</execute>
-				</action>
-			</item>
-			<item label="tvonline">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh tvonline</execute>
-				</action>
-			</item>
-			<item label="csfd">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh csfd</execute>
-				</action>
-			</item>
-			<item label="ctzive">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh ctzive</execute>
-				</action>
-			</item>
-			<item label="ct">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh ct</execute>
-				</action>
-			</item>
-			<item label="bazos">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh bazos</execute>
-				</action>
-			</item>
-			<item label="youtube">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh youtube</execute>
-				</action>
-			</item>
-			<item label="Facebook">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh facebook</execute>
-				</action>
-			</item>
-			<item label="github_all">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh github_all</execute>
-				</action>
-			</item>
-			<item label="github">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh github</execute>
-				</action>
-			</item>
-			<item label="dropbox">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh dropbox</execute>
-				</action>
-			</item>
-			<item label="web">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh web</execute>
-				</action>
-			</item>
-			<item label="simplenote">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh simplenote</execute>
-				</action>
-			</item>
-			<item label="root">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh root</execute>
-				</action>
-			</item>
-			<item label="gtakeout">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh gtakeout</execute>
-				</action>
-			</item>
-			<item label="jobs">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh  jobs</execute>
-				</action>
-			</item>
-			<item label="seznam">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh seznam</execute>
-				</action>
-			</item>
-			<item label="zdrojak">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh zdrojak</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="root-menu-141918" label="Web ostatni">
-			<item label="github_zajmy">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh github_zajmy</execute>
-				</action>
-			</item>
-			<item label="open_with_nastaveni">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh open_with_nastaveni</execute>
-				</action>
-			</item>
-			<item label="open_with">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh open_with</execute>
-				</action>
-			</item>
-			<item label="github_home">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh github_home</execute>
-				</action>
-			</item>
-			<item label="github_windows">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh github_windows</execute>
-				</action>
-			</item>
-			<item label="github_manipulace">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh github_manipulace</execute>
-				</action>
-			</item>
-			<item label="minimalismus1">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh minimalismus1</execute>
-				</action>
-			</item>
-			<item label="minimalismus">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh minimalismus</execute>
-				</action>
-			</item>
-			<item label="zw3">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh zw3</execute>
-				</action>
-			</item>
-			<item label="zw2">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh zw2</execute>
-				</action>
-			</item>
-			<item label="zw1">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh zw1</execute>
-				</action>
-			</item>
-			<item label="zw">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh zw</execute>
-				</action>
-			</item>
-			<item label="statistiky">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh statistiky</execute>
-				</action>
-			</item>
-			<item label="epsychologie">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh epsychologie</execute>
-				</action>
-			</item>
-			<item label="psychologie">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh psychologie</execute>
-				</action>
-			</item>
-			<item label="github_akupresura">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh github_akupresura</execute>
-				</action>
-			</item>
-			<item label="pronaladu">
-				<action name="Execute">
-					<execute>psh ~/.config/openbox/all.sh ronaladu</execute>
-				</action>
-			</item>
-			<item label="mzp">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh mzp</execute>
-				</action>
-			</item>
-			<item label="enviweb">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh enviweb</execute>
-				</action>
-			</item>
-			<item label="github_linux">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh github_linux</execute>
-				</action>
-			</item>
-			<item label="linux">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh linux</execute>
-				</action>
-			</item>
-			<item label="programovani">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh programovani</execute>
-				</action>
-			</item>
-			<item label="github_poznamky">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh github_poznamky</execute>
-				</action>
-			</item>
-			<item label="tinyurl">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh tinyurl</execute>
-				</action>
-			</item>
-			<item label="githack">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh githack</execute>
-				</action>
-			</item>
-			<item label="dillinger">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh dillinger</execute>
-				</action>
-			</item>
-			<item label="protectedtext">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh protectedtext</execute>
-				</action>
-			</item>
-			<item label="jdem">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh jdem</execute>
-				</action>
-			</item>
-			<item label="bitly">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh  bitly</execute>
-				</action>
-			</item>
-			<item label="thinfi">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh thinfi</execute>
-				</action>
-			</item>
-		</menu>
+		<separator/>
+		<item label="RADIA">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh RADIA</execute>
+			</action>
+		</item>
+		<item label="TV">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh TV</execute>
+			</action>
+		</item>
+		<separator/>
 		<menu id="root-menu-905337" label="Radia">
 			<item label="Radiaonline">
 				<action name="Execute">
@@ -478,6 +122,18 @@
 			<item label="Radia">
 				<action name="Execute">
 					<execute>sh ~/.config/openbox/all.sh radia</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-551431" label="Download">
+			<item label="youtubedl_video">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh youtubedl_video</execute>
+				</action>
+			</item>
+			<item label="youtubedl_audio">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh youtubedl_audio</execute>
 				</action>
 			</item>
 		</menu>
@@ -849,6 +505,362 @@
 			<item label="Elbekanal d">
 				<action name="Execute">
 					<execute>vlc --loop http://62.113.210.250/medienasa-live/_definst_/mp4:elbe_high/playlist.m3u8</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-141918" label="Web ostatni">
+			<item label="github_zajmy">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh github_zajmy</execute>
+				</action>
+			</item>
+			<item label="open_with_nastaveni">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh open_with_nastaveni</execute>
+				</action>
+			</item>
+			<item label="open_with">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh open_with</execute>
+				</action>
+			</item>
+			<item label="github_home">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh github_home</execute>
+				</action>
+			</item>
+			<item label="github_windows">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh github_windows</execute>
+				</action>
+			</item>
+			<item label="github_manipulace">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh github_manipulace</execute>
+				</action>
+			</item>
+			<item label="minimalismus1">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh minimalismus1</execute>
+				</action>
+			</item>
+			<item label="minimalismus">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh minimalismus</execute>
+				</action>
+			</item>
+			<item label="zw3">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh zw3</execute>
+				</action>
+			</item>
+			<item label="zw2">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh zw2</execute>
+				</action>
+			</item>
+			<item label="zw1">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh zw1</execute>
+				</action>
+			</item>
+			<item label="zw">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh zw</execute>
+				</action>
+			</item>
+			<item label="statistiky">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh statistiky</execute>
+				</action>
+			</item>
+			<item label="epsychologie">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh epsychologie</execute>
+				</action>
+			</item>
+			<item label="psychologie">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh psychologie</execute>
+				</action>
+			</item>
+			<item label="github_akupresura">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh github_akupresura</execute>
+				</action>
+			</item>
+			<item label="pronaladu">
+				<action name="Execute">
+					<execute>psh ~/.config/openbox/all.sh ronaladu</execute>
+				</action>
+			</item>
+			<item label="mzp">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh mzp</execute>
+				</action>
+			</item>
+			<item label="enviweb">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh enviweb</execute>
+				</action>
+			</item>
+			<item label="github_linux">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh github_linux</execute>
+				</action>
+			</item>
+			<item label="linux">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh linux</execute>
+				</action>
+			</item>
+			<item label="programovani">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh programovani</execute>
+				</action>
+			</item>
+			<item label="github_poznamky">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh github_poznamky</execute>
+				</action>
+			</item>
+			<item label="tinyurl">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh tinyurl</execute>
+				</action>
+			</item>
+			<item label="githack">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh githack</execute>
+				</action>
+			</item>
+			<item label="dillinger">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh dillinger</execute>
+				</action>
+			</item>
+			<item label="protectedtext">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh protectedtext</execute>
+				</action>
+			</item>
+			<item label="jdem">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh jdem</execute>
+				</action>
+			</item>
+			<item label="bitly">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh  bitly</execute>
+				</action>
+			</item>
+			<item label="thinfi">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh thinfi</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-335925" label="Web">
+			<item label="gkeep">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh gkeep</execute>
+				</action>
+			</item>
+			<item label="gmail">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh gmail</execute>
+				</action>
+			</item>
+			<item label="gtranslate">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh gtranslate</execute>
+				</action>
+			</item>
+			<item label="yahoo_email">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh yahoo_email</execute>
+				</action>
+			</item>
+			<item label="seznam_email">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh seznam_email</execute>
+				</action>
+			</item>
+			<item label="gsites">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh gsites</execute>
+				</action>
+			</item>
+			<item label="gphotos">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh gphotos</execute>
+				</action>
+			</item>
+			<item label="gdocs">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh gdocs</execute>
+				</action>
+			</item>
+			<item label="gdisk">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh gdisk</execute>
+				</action>
+			</item>
+			<item label="difm">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh difm</execute>
+				</action>
+			</item>
+			<item label="soundcloud">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh soundcloud</execute>
+				</action>
+			</item>
+			<item label="vinted">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh vinted</execute>
+				</action>
+			</item>
+			<item label="ulozto">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh ulozto</execute>
+				</action>
+			</item>
+			<item label="seznam_ftp">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh seznam_ftp</execute>
+				</action>
+			</item>
+			<item label="seznam_sweb">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh seznam_sweb</execute>
+				</action>
+			</item>
+			<item label="tvprogram">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh tvprogram</execute>
+				</action>
+			</item>
+			<item label="dropbox">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh dropbox</execute>
+				</action>
+			</item>
+			<item label="kalendar">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh kalendar</execute>
+				</action>
+			</item>
+			<item label="cas">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh cas</execute>
+				</action>
+			</item>
+			<item label="linuxexpress">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh linuxexpress</execute>
+				</action>
+			</item>
+			<item label="nemcina_youtube">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh nemcina_youtube</execute>
+				</action>
+			</item>
+			<item label="tvonline">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh tvonline</execute>
+				</action>
+			</item>
+			<item label="csfd">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh csfd</execute>
+				</action>
+			</item>
+			<item label="ctzive">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh ctzive</execute>
+				</action>
+			</item>
+			<item label="ct">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh ct</execute>
+				</action>
+			</item>
+			<item label="bazos">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh bazos</execute>
+				</action>
+			</item>
+			<item label="youtube">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh youtube</execute>
+				</action>
+			</item>
+			<item label="Facebook">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh facebook</execute>
+				</action>
+			</item>
+			<item label="github_all">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh github_all</execute>
+				</action>
+			</item>
+			<item label="github">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh github</execute>
+				</action>
+			</item>
+			<item label="dropbox">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh dropbox</execute>
+				</action>
+			</item>
+			<item label="web">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh web</execute>
+				</action>
+			</item>
+			<item label="simplenote">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh simplenote</execute>
+				</action>
+			</item>
+			<item label="root">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh root</execute>
+				</action>
+			</item>
+			<item label="gtakeout">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh gtakeout</execute>
+				</action>
+			</item>
+			<item label="jobs">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh  jobs</execute>
+				</action>
+			</item>
+			<item label="seznam">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh seznam</execute>
+				</action>
+			</item>
+			<item label="zdrojak">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh zdrojak</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-983120" label="Banky">
+			<item label="CS george">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh cs</execute>
+				</action>
+			</item>
+			<item label="Sparkasse">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh sparkasse</execute>
 				</action>
 			</item>
 		</menu>
