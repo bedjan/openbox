@@ -261,8 +261,8 @@ fi;;
    "cas") firefox https://time.is/;;
    "zdrojak") firefox https://zdrojak.cz/;;
    "linuxexpress") firefox https://www.linuxexpres.cz/;;
-    "cs") chromium --incognito https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz ;echo "George - 7522952063/F1" | osd_cat -d 180 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';;
-    "sparkasse") chromium --incognito https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html;echo "Sparkasse - janbednar/1" | osd_cat -d 180 -s 1 -A left -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';;
+    "cs") echo "George - 7522952063/F1" | osd_cat -d 180 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' | firejail chromium --incognito https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz ;;
+    "sparkasse") echo "Sparkasse - janbednar/1" | osd_cat -d 180 -s 1 -A left -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' | firejail chromium --incognito https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html ;;
 
    "gkeep") firefox https://keep.google.com/#home;echo "Keep - bedjan/od" | $osd;;
    "gmail") firefox https://mail.google.com/mail/u/0/#inbox;echo "Gmail - bedjan/od" | osd_cat -d 10 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';;
