@@ -4,14 +4,17 @@ xset s 300 300 &
 ##panel
 #fbpanel & sudo modprobe snd-mixer-oss &
 #fspanel &
-tint2 &
+
+which tint2  || xterm -title Nainstaluj -hold -e "sudo apt install -y tint2" && sleep10;tint2 -c ~/.config/openbox/tint2rc  &
 
 
 #informace
-conky &
+
+which conky  || xterm -title Nainstaluj -hold -e "sudo apt install -y conky" && sleep10;conky --config=$HOME/.config/openbox/.conkyrc &
 
 ##numericka klavesnice
-numlockx &
+
+which numlockx  || xterm -title Nainstaluj -hold -e "sudo apt install -y numlockx" && sleep10;numlockx &
 
 ##systray
 #stalonetray -t --icon-size 16  &

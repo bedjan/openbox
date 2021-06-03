@@ -65,7 +65,7 @@ fi;;
   "youtubedl_video") xterm -hold -e 'cd /media/sda2;youtube-dl --ignore-errors  "$(xsel --clipboard)"';;
   "youtubedl_audio") xterm -hold -e 'cd /media/sda2;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
 
-  "mpv_youtube_mute") XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --mute=yes --ytdl-format='bestvideo[height<=?360]+bestaudio' --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====';mpv --mute=yes '${XSEL}'" ;;
+  "mpv_youtube_mute") XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --mute=yes --ytdl-format=worst  --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====';mpv --mute=yes '${XSEL}'" ;;
 
   "mpv_youtube")      XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --ytdl-format=worst --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv '${XSEL}'" ;;
 
@@ -113,8 +113,8 @@ fi;;
 
 "tvprogram") firefox https://www.tvprogram.cz/;;
 "tv_ceske") firefox https://www.tvonline.cz/;;
-"ct1") mpv --ytdl https://www.ceskatelevize.cz/ivysilani/zive/ct1;;
-"ct2") mpv --ytdl https://www.ceskatelevize.cz/ivysilani/zive/ct2;;
+"ct1") mpv --ytdl  --ytdl-format=worst https://www.ceskatelevize.cz/ivysilani/zive/ct1;;
+"ct2") mpv --ytdl  --ytdl-format=worst https://www.ceskatelevize.cz/ivysilani/zive/ct2;;
 "prima") firefox -new-window https://prima.iprima.cz/#main-wrapper;;
 "primamax") firefox -new-window https://max.iprima.cz/#main-wrapper;;
 "primacool") firefox -new-window https://cool.iprima.cz/#main-wrapper;;
@@ -128,22 +128,22 @@ fi;;
 
 "tv_nemecke") firefox https://www.2ix2.com/;;
 
-"ard") mpv --ytdl https://www.2ix2.com/ard/;;
-"rtl2") mpv --ytdl https://www.2ix2.com/rtl2-live/;;
-"ntv") mpv --ytdl https://www.2ix2.com/n-tv-live/;;
-"rtlnitro") mpv --ytdl https://www.2ix2.com/rtl-nitro-live/;;
-"superrtl") mpv --ytdl https://www.2ix2.com/super-rtl-live/;;
-"tlc") mpv --ytdl https://www.2ix2.com/tlc/;;
-"pro7") mpv --ytdl https://www.2ix2.com/pro7/;;
-"pro7maxx") mpv --ytdl https://www.2ix2.com/prosieben-maxx/;;
-"kabel1") mpv --ytdl https://www.2ix2.com/kabel-1/;;
-"sat1") mpv --ytdl https://www.2ix2.com/sat1/;;
-"sixx") mpv --ytdl https://www.2ix2.com/sixx/;;
-"dmax") mpv --ytdl https://www.2ix2.com/dmax/;;
-"kabel1doku") mpv --ytdl https://www.2ix2.com/kabel-1-doku/;;
-"disney") mpv --ytdl https://www.2ix2.com/disney-channel/;;
-"tele5") mpv --ytdl https://www.2ix2.com/tele-5/;;
-"zdf") mpv --ytdl https://www.2ix2.com/zdf/;;
+"ard") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/ard/;;
+"rtl2") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/rtl2-live/;;
+"ntv") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/n-tv-live/;;
+"rtlnitro") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/rtl-nitro-live/;;
+"superrtl") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/super-rtl-live/;;
+"tlc") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/tlc/;;
+"pro7") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/pro7/;;
+"pro7maxx") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/prosieben-maxx/;;
+"kabel1") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/kabel-1/;;
+"sat1") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/sat1/;;
+"sixx") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/sixx/;;
+"dmax") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/dmax/;;
+"kabel1doku") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/kabel-1-doku/;;
+"disney") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/disney-channel/;;
+"tele5") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/tele-5/;;
+"zdf") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/zdf/;;
 
 ##TV_VSE##
 
