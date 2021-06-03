@@ -16,4 +16,6 @@ which openbox || sudo apt install openbox
 which obconf || sudo apt install obconf
 which obmenu || sudo apt install obmenu
 
-sudo apt install --no-install-recommends git stalonetray fspanel gexec volumeicon-alsa tint2 pnmixer pulseaudio numlockx sakura firefox mpv firejail firejail-profiles firetools obsidian-icon-theme
+sudo apt install --no-install-recommends git stalonetray fspanel gexec volumeicon-alsa tint2 pnmixer pulseaudio numlockx sakura firefox mpv  obsidian-icon-theme gxmessage 
+
+#firejail firejail-profiles firetools

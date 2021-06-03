@@ -24,6 +24,21 @@ case $choose in
 
 ##OVLADANI##
 
+   "sluzby") gmessage "Vybirej opatrne" -center -title "Vyber sluzbu" -font "Sans bold 10" -default "Cancel" -buttons "_Cancel":1,"_Log out":2,"_PC_restart":3,"_PC_vypnuti":4 >/dev/null
+
+case $? in
+1)
+echo "Exit";;
+2)
+killall openbox;;
+3)
+sudo sudo reboot;;
+4)
+sudo sudo poweroff;;
+esac ;;
+
+
+
    "down") echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 -5%;;
    "up")  echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 +5%;;
    "toggle") echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-mute 0 toggle;;

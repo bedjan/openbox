@@ -11,19 +11,9 @@
 				<execute>sh ~/.config/openbox/all.sh terminal</execute>
 			</action>
 		</item>
-		<item label="youtube_audio">
+		<item label="files">
 			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh youtubedl_audio</execute>
-			</action>
-		</item>
-		<item label="youtube_video">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh youtubedl_video</execute>
-			</action>
-		</item>
-		<item label="Palemoon">
-			<action name="Execute">
-				<execute>palemoon --new-window</execute>
+				<execute>sh ~/.config/openbox/all.sh files</execute>
 			</action>
 		</item>
 		<item label="Youtube audio">
@@ -36,24 +26,24 @@
 				<execute>sh ~/.config/openbox/all.sh mpv_youtube_mute</execute>
 			</action>
 		</item>
-		<item label="monitor">
+		<item label="ytdl_download">
 			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh monitor</execute>
+				<execute>sh ~/.config/openbox/all.sh ytdl_download</execute>
 			</action>
 		</item>
-		<item label="dpms">
+		<item label="procesy">
 			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh  dpms</execute>
+				<execute>sh ~/.config/openbox/all.sh procesy</execute>
 			</action>
 		</item>
-		<item label="mixer">
+		<item label="streamtuner2">
 			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh mixer</execute>
+				<execute>streamtuner2 --gtk3</execute>
 			</action>
 		</item>
-		<item label="Netsurf">
+		<item label="Kalkulacka">
 			<action name="Execute">
-				<execute>netsurf www.google.cz #x-www-browser</execute>
+				<execute>calcoo</execute>
 			</action>
 		</item>
 		<menu id="root-menu-551431" label="Download">
@@ -424,88 +414,6 @@
 				</action>
 			</item>
 		</menu>
-		<menu id="root-menu-383343" label="Vypnout">
-			<item label="vypnout">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh vypnout</execute>
-				</action>
-			</item>
-			<item label="vypnout0">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh vypnout0</execute>
-				</action>
-			</item>
-			<item label="vypnout1">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh vypnout1</execute>
-				</action>
-			</item>
-			<item label="vypnout2">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh vypnout2</execute>
-				</action>
-			</item>
-			<item label="restart">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh restart</execute>
-				</action>
-			</item>
-		</menu>
-		<item label="ytdl_download">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh ytdl_download</execute>
-			</action>
-		</item>
-		<item label="files">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh files</execute>
-			</action>
-		</item>
-		<item label="Firefox">
-			<action name="Execute">
-				<execute>firefox</execute>
-			</action>
-		</item>
-		<item label="Abclinuxu">
-			<action name="Execute">
-				<execute>netsurf www.abclinuxu.cz  #links2 -g www.abclinuxu.cz</execute>
-			</action>
-		</item>
-		<item label="Chromium">
-			<action name="Execute">
-				<execute>chromium</execute>
-			</action>
-		</item>
-		<item label="procesy">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh procesy</execute>
-			</action>
-		</item>
-		<item label="Monitor">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh monitor</execute>
-			</action>
-		</item>
-		<item label="easystroke">
-			<action name="Execute">
-				<execute>easystroke</execute>
-			</action>
-		</item>
-		<item label="streamtuner2">
-			<action name="Execute">
-				<execute>streamtuner2 --gtk3</execute>
-			</action>
-		</item>
-		<item label="mpc-qt">
-			<action name="Execute">
-				<execute>mpc-qt</execute>
-			</action>
-		</item>
-		<item label="Kalkulacka">
-			<action name="Execute">
-				<execute>calcoo</execute>
-			</action>
-		</item>
 		<menu id="root-menu-905337" label="Radia">
 			<item label="Radiaonline">
 				<action name="Execute">
@@ -742,7 +650,7 @@
 				</action>
 			</item>
 		</menu>
-		<menu id="root-menu-26123" label="TV">
+		<menu id="root-menu-26123" label="TV_Ostatni">
 			<item label="ulice">
 				<action name="Execute">
 					<execute>sh ~/.config/openbox/all.sh ulice</execute>
@@ -944,7 +852,12 @@
 				</action>
 			</item>
 		</menu>
-		<menu id="root-menu-674522" label="Openbox">
+		<menu id="root-menu-674522" label="System">
+			<item label="Mixer">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh mixer</execute>
+				</action>
+			</item>
 			<item label="Ob start">
 				<action name="Execute">
 					<execute>mousepad /home/d/.config/openbox/autostart</execute>
@@ -996,6 +909,33 @@
 				</action>
 			</item>
 		</menu>
+		<menu id="root-menu-383343" label="Vypnout">
+			<item label="vypnout">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh vypnout</execute>
+				</action>
+			</item>
+			<item label="vypnout0">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh vypnout0</execute>
+				</action>
+			</item>
+			<item label="vypnout1">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh vypnout1</execute>
+				</action>
+			</item>
+			<item label="vypnout2">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh vypnout2</execute>
+				</action>
+			</item>
+			<item label="restart">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh restart</execute>
+				</action>
+			</item>
+		</menu>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
 		<menu id="/Debian"/>
@@ -1017,6 +957,7 @@
 		<item label="Restart">
 			<action name="Restart"/>
 		</item>
+		<separator/>
 		<item label="All edit">
 			<action name="Execute">
 				<execute>mousepad sh ~/.config/openbox/all.sh</execute>
@@ -1028,13 +969,13 @@
 			</action>
 		</item>
 		<separator/>
-		<item label="Exit">
+		<item label="Exit openbox">
 			<action name="Exit"/>
 		</item>
 		<separator/>
-		<item label="Vypnout">
+		<item label="Sluzby">
 			<action name="Execute">
-				<execute>sudo poweroff</execute>
+				<execute>sh ~/.config/openbox/all.sh sluzby</execute>
 			</action>
 		</item>
 	</menu>
