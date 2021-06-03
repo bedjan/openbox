@@ -65,11 +65,11 @@ fi;;
   "youtubedl_video") xterm -hold -e 'cd /media/sda2;youtube-dl --ignore-errors  "$(xsel --clipboard)"';;
   "youtubedl_audio") xterm -hold -e 'cd /media/sda2;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
 
-  "mpv_youtube_mute") XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_v_rozliseni_480p ...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --mute=yes --ytdl-format='bestvideo[height<=?360]+bestaudio' --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====';mpv --mute=yes '${XSEL}'" ;;
+  "mpv_youtube_mute") XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --mute=yes --ytdl-format='bestvideo[height<=?360]+bestaudio' --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====';mpv --mute=yes '${XSEL}'" ;;
 
-  "mpv_youtube")      XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_v_rozliseni_480p ...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --ytdl-format='bestvideo[height<=?360]+bestaudio' --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv '${XSEL}'" ;;
+  "mpv_youtube")      XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --ytdl-format=worst --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv '${XSEL}'" ;;
 
-  "mpv_youtube_audio")        XSEL=$(xsel --clipboard);stterm -t Audio_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_audio_v_kvalite_best ...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --no-video --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_audio_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv --no-video --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate=  '${XSEL}'" ;; 
+  "mpv_youtube_audio")        XSEL=$(xsel --clipboard);stterm -t Audio_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_audio_v_kvalite_best ...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv  --no-video --fs=no --player-operation-mode=pseudo-gui  --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_audio_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv --no-video --fs=no --player-operation-mode=pseudo-gui  --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate=  '${XSEL}'" ;; 
 
 
 ##VYPNOUT##
@@ -96,16 +96,16 @@ fi;;
   ## "history") xterm -hold -e "history";;
 
 ##RADIA##
-   "humor") xterm -geometry 80x20-60-60 -title Humor_radio -e bash -c "mpg123 -b 10240 -v http://mp3stream4.abradio.cz:8000/humor.mp3";;
-   "city90") xterm -geometry 80x20-60-60 -title 80_radio -e bash -c "mpg123 -b 10240 -v http://ice.abradio.cz/city80128.mp3";;
-   "city80") xterm -geometry 80x20-60-60 -title 90_radio -e bash -c "mpg123 -b 10240 -v http://ice.abradio.cz/city90128.mp3";;
-   "4u") xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  http://mpc.mediacp.eu:8302/stream";;
-   "e2") xterm -geometry 80x20-60-60 -title E2 -e bash -c "mpv https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu";;
-   "e2movin") xterm -geometry 80x20-60-60 -title E2_movin -e bash -c "mpv https://ice.actve.net/web-e2-movin";;
-   "e2flashback") xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mpv https://ice.actve.net/web-e2-flashback";;
-   "e2top40") xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mpv https://ice.actve.net/web-e2-top40";;
-   "freerave") xterm -geometry 80x20-60-60 -title Freerave -e bash -c "mpv http://164.68.122.137:8061/;";;
-   "tranceup") xterm -geometry 80x20-60-60 -title Tranceup -e bash -c "mpv http://5.39.71.159:8223/stream";;
+   "humor") xterm -geometry 80x20-60-60 -title Humor_radio -e bash -c "mpg123 -C --no-seekbuffer --preload http://mp3stream4.abradio.cz:8000/humor.mp3";;
+   "city90") xterm -geometry 80x20-60-60 -title 80_radio -e bash -c "mpg123 -C --no-seekbuffer --preload http://ice.abradio.cz/city80128.mp3";;
+   "city80") xterm -geometry 80x20-60-60 -title 90_radio -e bash -c "mpg123 -C --no-seekbuffer --preload http://ice.abradio.cz/city90128.mp3";;
+   "4u") xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  -volume 90 http://mpc.mediacp.eu:8302/stream";;
+   "e2") xterm -geometry 80x20-60-60 -title E2 -e bash -c "mplayer  -volume 90  https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu";;
+   "e2movin") xterm -geometry 80x20-60-60 -title E2_movin -e bash -c "mplayer  -volume 90  https://ice.actve.net/web-e2-movin";;
+   "e2flashback") xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mplayer  -volume 90  https://ice.actve.net/web-e2-flashback";;
+   "e2top40") xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mplayer  -volume 90  https://ice.actve.net/web-e2-top40";;
+   "freerave") xterm -geometry 80x20-60-60 -title Freerave -e bash -c "mplayer  -volume 90  http://164.68.122.137:8061/;";;
+   "tranceup") xterm -geometry 80x20-60-60 -title Tranceup -e bash -c "mplayer  -volume 90 http://5.39.71.159:8223/stream";;
    "radia") bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
    "radiaonline") firefox https://online-radio.eu/country/Czech%20Republic;;
 
