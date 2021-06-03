@@ -90,7 +90,7 @@ fi;;
    "orc") xterm -e 'mousepad ~/.config/openbox/rc.xml';;
 
 ##SYSTEM##
-   "github_all") firefox https://github.com/bedjan/debian/blob/master/skripty/all.sh;;
+   "github_all") firefox https://github.com/bedjan/openbox;;
    "bash") xterm -hold -e 'sudo mousepad .bashrc';;
    "bash_aliases") xterm -e 'sudo mousepad .bash_aliases';;
   ## "history") xterm -hold -e "history";;
@@ -100,12 +100,12 @@ fi;;
    "city90") xterm -geometry 80x20-60-60 -title 80_radio -e bash -c "mpg123 -C --no-seekbuffer --preload http://ice.abradio.cz/city80128.mp3";;
    "city80") xterm -geometry 80x20-60-60 -title 90_radio -e bash -c "mpg123 -C --no-seekbuffer --preload http://ice.abradio.cz/city90128.mp3";;
    "4u") xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  -volume 90 http://mpc.mediacp.eu:8302/stream";;
-   "e2") xterm -geometry 80x20-60-60 -title E2 -e bash -c "mplayer  -volume 90  https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu";;
-   "e2movin") xterm -geometry 80x20-60-60 -title E2_movin -e bash -c "mplayer  -volume 90  https://ice.actve.net/web-e2-movin";;
-   "e2flashback") xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mplayer  -volume 90  https://ice.actve.net/web-e2-flashback";;
-   "e2top40") xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mplayer  -volume 90  https://ice.actve.net/web-e2-top40";;
-   "freerave") xterm -geometry 80x20-60-60 -title Freerave -e bash -c "mplayer  -volume 90  http://164.68.122.137:8061/;";;
-   "tranceup") xterm -geometry 80x20-60-60 -title Tranceup -e bash -c "mplayer  -volume 90 http://5.39.71.159:8223/stream";;
+   "e2") xterm -geometry 80x20-60-60 -title E2 -e bash -c "mpv --ytdl   https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu";;
+   "e2movin") xterm -geometry 80x20-60-60 -title E2_movin -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-movin";;
+   "e2flashback") xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-flashback";;
+   "e2top40") xterm -geometry 80x20-60-60 -title E2_top40 -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-top40";;
+   "freerave") xterm -geometry 80x20-60-60 -title Freerave -e bash -c "mpv --ytdl  http://164.68.122.137:8061/;";;
+   "tranceup") xterm -geometry 80x20-60-60 -title Tranceup -e bash -c "mpv --ytdl  http://5.39.71.159:8223/stream";;
    "radia") bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
    "radiaonline") firefox https://online-radio.eu/country/Czech%20Republic;;
 
