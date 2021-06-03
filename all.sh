@@ -1,13 +1,6 @@
 #!/bin/bash
 
-#echo '~~OVLADANI~~ down ~ up ~ monitor ~ dpms ~ ytdl_update ~ ytdl_download ~ mixer \n'
-#echo '~~PROGRAMY~~ terminal ~ files ~ aup ~ chromium ~ netsurf ~ procesy ~ streamtuner ~ gesta ~ easystroke ~ mpc ~ kalkulacka ~ links ~ netsurf ~ default_web_browser \n' echo '~~VIDEO~~ youtubedl_video ~ youtubedl_audio ~ mpv_youtube_mute ~ mpv_youtube ~ mpv_youtube_audio \n'
-#echo '~~VYPNOUT~~ restart ~ vypnout ~ vypnout0 ~ vypnout1 ~ vypnout2 \n'
-#echo '~~OPENBOX~~ obconf ~ obmenu ~ orestart ~ oreconfigure ~ ostart ~ omenu ~ orc \n'
-#echo '~~SYSTEM~~  github_all ~ bash ~ bash_aliases \n '
-#echo '~~RADIA~~ humor ~ city90 ~ city80 ~ 4u \n'
-#echo '~~TV~~ Das_erste ~ Hr ~ Kulturmd ~ Ndr_hamburg ~ Nrwision \n Okessau ~ Ok_kassel ~ Ok_kiel ~ Ok_ludwigshafen ~ Ok_magdeburg ~ Ok_Merseburg ~ Ok_nahetv ~ Ok_rhein main ~ Ok_rheinlokal ~ Ok_salzwedel ~ Ok_stendal ~ Ok_suedwestpfalz ~ Ok_weinstrasse ~ Ok wernigerode ~ Ok54_trier \n Tagesschau24 ~ Tidetv ~ Tvhalle ~ Wdr ~ Wtv_ok_wettin ~ Punktum ~ Ran1 ~ Rockland ~ Rt ~ Studio47 ~ Dw_e ~ Dw ~ Dw+ ~ Elbekanal \n'
-#echo '~~WEBY~~ kalendar ~ cas ~ zdrojak ~ linuxexpress ~ cs ~ sparkasse ~ gkeep ~ gmail ~ yahoo_email ~ seznam_email ~ seznam_sweb ~ seznam_ftp ~ ulozto ~ vinted ~ soundcloud ~ difm ~ gdisk ~ gdocs ~ gphotos ~ gsites ~ gtranslate \n jobs ~ seznam ~ abclinuxu ~ tvprogram ~ root ~ simplenote ~ gtakeout ~ web ~ dropbox ~ github ~ github_all ~ Facebook ~ youtube ~ bazos ~ ct ~ ctzive ~ csfd ~ tvonline ~ nemcina_youtube \n thinfi ~ bitly ~ jdem ~ protectedtext ~ dillinger ~ githack ~ tinyurl ~ github_poznamky ~ programovani ~ linux ~ github_linux ~ enviweb ~ mzp ~ pronaladu ~ github_akupresura ~ psychologie ~ epsychologie ~ statistiky ~ zw ~ zw1 ~ zw2 ~ zw3 ~ minimalismus ~ minimalismus1 \n github_zajmy ~ github_manipulace ~ github_windows ~ github_home ~ open_with ~ open_with_nastaveni \n'
+#echo 'nastaveni systemu \n'
 
 
 if [ -z $1 ]
@@ -24,7 +17,7 @@ case $choose in
 
 ##OVLADANI##
 
-   "sluzby") gmessage "Vybirej opatrne" -center -title "Vyber sluzbu" -font "Sans bold 10" -default "Opustit" -buttons "_Cancel":1,"_Odhlaseni":2,"_! PC restart !":3,"_! PC vypnuti !":4 >/dev/null
+   "sluzby") xmessage "Vybirej opatrne" -center -title "Vyber sluzbu" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Odhlaseni":2,"! PC restart !":3,"! PC vypnuti !":4 >/dev/null
 
 case $? in
 1)
@@ -37,7 +30,7 @@ sudo sudo reboot;;
 sudo sudo poweroff;;
 esac ;;
 
-   "TV") gmessage "Vyber YOUTUBE, nebo TV" -center -title "Vyber TV" -font "Sans bold 10" -default "Opustit" -buttons "_Cancel":1,"_Youtube":2,"_TV program":3,"_CT1":4,"_CT2":5,"_Ard":6 >/dev/null
+   "TV") xmessage "Vyber YOUTUBE, nebo TV" -center -title "Vyber TV" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Youtube":2,"TV program":3,"CT1":4,"CT2":5,"Ard":6 >/dev/null
 
 case $? in
 1)
@@ -54,32 +47,34 @@ sh ~/.config/openbox/all.sh ct2;;
 sh ~/.config/openbox/all.sh ard;;
 esac ;;
 
-   "RADIA") gmessage "Vybirej opatrne" -center -title "Vyber RADIO" -font "Sans bold 10" -default "Opustit" -buttons "_Radia online":0,"_TV program":1,"_CT1":2,"_CT2":3,"_Ard":4 >/dev/null
+   "RADIA") xmessage "Vyber RADIO" -center -title "Vyber RADIO" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Radia online":2,"Humor":3,"4U":4,"Tranceup":5,"Evropa2":6,"Evropa2 Movin":7,"Evropa2 flashback":8,"Evropa2 Top40":9,"Freerave":10,"City 80":11,"City 90":12,"WEB Cesky rozhlas":13 >/dev/null
 
 case $? in
-0)
-sh ~/.config/openbox/all.sh radiaonline;;
 1)
-sh ~/.config/openbox/all.sh humor;;
+echo "Exit";;
 2)
-sh ~/.config/openbox/all.sh 4u;;
+sh ~/.config/openbox/all.sh radiaonline;;
 3)
-sh ~/.config/openbox/all.sh tranceup;;
+sh ~/.config/openbox/all.sh humor;;
 4)
-sh ~/.config/openbox/all.sh e2;;
+sh ~/.config/openbox/all.sh 4u;;
 5)
-sh ~/.config/openbox/all.sh e2movin;;
+sh ~/.config/openbox/all.sh tranceup;;
 6)
-sh ~/.config/openbox/all.sh e2flashback;;
+sh ~/.config/openbox/all.sh e2;;
 7)
-sh ~/.config/openbox/all.sh e2top40;;
+sh ~/.config/openbox/all.sh e2movin;;
 8)
-sh ~/.config/openbox/all.sh freerave;;
+sh ~/.config/openbox/all.sh e2flashback;;
 9)
-sh ~/.config/openbox/all.sh city80;;
+sh ~/.config/openbox/all.sh e2top40;;
 10)
-sh ~/.config/openbox/all.sh city90;;
+sh ~/.config/openbox/all.sh freerave;;
 11)
+sh ~/.config/openbox/all.sh city80;;
+12)
+sh ~/.config/openbox/all.sh city90;;
+13)
 sh ~/.config/openbox/all.sh cr_online;;
 esac ;;
 

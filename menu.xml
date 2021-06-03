@@ -11,7 +11,7 @@
 				<execute>sh ~/.config/openbox/all.sh terminal</execute>
 			</action>
 		</item>
-		<item label="files">
+		<item label="Files">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh files</execute>
 			</action>
@@ -26,24 +26,9 @@
 				<execute>sh ~/.config/openbox/all.sh mpv_youtube_mute</execute>
 			</action>
 		</item>
-		<item label="ytdl_download">
+		<item label="ytdl_upgrade">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh ytdl_download</execute>
-			</action>
-		</item>
-		<item label="procesy">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh procesy</execute>
-			</action>
-		</item>
-		<item label="streamtuner2">
-			<action name="Execute">
-				<execute>streamtuner2 --gtk3</execute>
-			</action>
-		</item>
-		<item label="Kalkulacka">
-			<action name="Execute">
-				<execute>calcoo</execute>
 			</action>
 		</item>
 		<separator/>
@@ -57,7 +42,31 @@
 				<execute>sh ~/.config/openbox/all.sh TV</execute>
 			</action>
 		</item>
+		<menu id="root-menu-551431" label="DOWNLOAD">
+			<item label="youtubedl_video">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh youtubedl_video</execute>
+				</action>
+			</item>
+			<item label="youtubedl_audio">
+				<action name="Execute">
+					<execute>sh ~/.config/openbox/all.sh youtubedl_audio</execute>
+				</action>
+			</item>
+		</menu>
 		<separator/>
+		<menu id="root-menu-181147" label="Ostatni">
+			<item label="Kalkulacka">
+				<action name="Execute">
+					<execute>calcoo</execute>
+				</action>
+			</item>
+			<item label="Streamtuner">
+				<action name="Execute">
+					<execute>streamtuner2 --gtk3</execute>
+				</action>
+			</item>
+		</menu>
 		<menu id="root-menu-905337" label="Radia">
 			<item label="Radiaonline">
 				<action name="Execute">
@@ -122,18 +131,6 @@
 			<item label="Radia">
 				<action name="Execute">
 					<execute>sh ~/.config/openbox/all.sh radia</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="root-menu-551431" label="Download">
-			<item label="youtubedl_video">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh youtubedl_video</execute>
-				</action>
-			</item>
-			<item label="youtubedl_audio">
-				<action name="Execute">
-					<execute>sh ~/.config/openbox/all.sh youtubedl_audio</execute>
 				</action>
 			</item>
 		</menu>
@@ -865,6 +862,16 @@
 			</item>
 		</menu>
 		<menu id="root-menu-674522" label="System">
+			<item label="Dropbox">
+				<action name="Execute">
+					<execute>dropbox start</execute>
+				</action>
+			</item>
+			<item label="Dropbox web">
+				<action name="Execute">
+					<execute>firefox https://www.dropbox.com/home</execute>
+				</action>
+			</item>
 			<item label="Mixer">
 				<action name="Execute">
 					<execute>sh ~/.config/openbox/all.sh mixer</execute>
@@ -921,7 +928,44 @@
 				</action>
 			</item>
 		</menu>
-		<menu id="root-menu-383343" label="Vypnout">
+		<menu id="root-menu-341318" label="OPENBOX">
+			<item label="Obmenu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="Obconf">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="Reconfigure ">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="Restart">
+				<action name="Restart"/>
+			</item>
+			<item label="Exit">
+				<action name="Exit"/>
+			</item>
+		</menu>
+		<separator/>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
+		<menu id="/Debian"/>
+		<!-- <menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications"/> -->
+		<separator/>
+		<item label="All edit">
+			<action name="Execute">
+				<execute>mousepad sh ~/.config/openbox/all.sh</execute>
+			</action>
+		</item>
+		<item label="Github_all">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh github_all</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="root-menu-383343" label="Vypnout PC">
 			<item label="vypnout">
 				<action name="Execute">
 					<execute>sh ~/.config/openbox/all.sh vypnout</execute>
@@ -948,42 +992,6 @@
 				</action>
 			</item>
 		</menu>
-		<!-- This requires the presence of the 'openbox-menu' package to work -->
-		<separator/>
-		<menu id="/Debian"/>
-		<!-- <menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications"/> -->
-		<separator/>
-		<item label="ObConf">
-			<action name="Execute">
-				<execute>obconf</execute>
-			</action>
-		</item>
-		<item label="Obmenu">
-			<action name="Execute">
-				<execute>obmenu</execute>
-			</action>
-		</item>
-		<item label="Reconfigure">
-			<action name="Reconfigure"/>
-		</item>
-		<item label="Restart">
-			<action name="Restart"/>
-		</item>
-		<separator/>
-		<item label="All edit">
-			<action name="Execute">
-				<execute>mousepad sh ~/.config/openbox/all.sh</execute>
-			</action>
-		</item>
-		<item label="Github_all">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh github_all</execute>
-			</action>
-		</item>
-		<separator/>
-		<item label="Exit openbox">
-			<action name="Exit"/>
-		</item>
 		<separator/>
 		<item label="Sluzby">
 			<action name="Execute">
