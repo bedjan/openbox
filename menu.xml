@@ -8,12 +8,12 @@
 		</item>
 		<item label="Terminal">
 			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh terminal</execute>
+				<execute>sakura</execute>
 			</action>
 		</item>
 		<item label="Files">
 			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh files</execute>
+				<execute>pcmanfm</execute>
 			</action>
 		</item>
 		<item label="Youtube audio">

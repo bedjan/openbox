@@ -59,7 +59,7 @@ xdotool behave_screen_edge --quiesce 750 --delay 999 top exec amixer sset Master
 10)
 xdotool behave_screen_edge --quiesce 750 --delay 999 bottom exec sh skripty/mpv_youtube.sh;;
 11)
-xterm -hold -e 'sudo apt update -y &&  sudo apt upgrade -y &&  sudo apt autoremove -y &&  sudo apt autoclean -y';;
+sakura -h -t UPGRADE_SYSTEMU -e bash -c "sudo apt-get update -y || sudo apt-get upgrade -y || sudo apt-get autoremove -y || sudo apt-get autoclean -y";;
 12)
 xterm -hold -e 'sudo mousepad .bashrc';;
 13)
@@ -224,7 +224,7 @@ echo "$choose volume";alsamixergui ;;
 esac ;;
 
 
-##VIDEO##
+##ZACHOVAT VIDEO##
 
 
 
@@ -233,6 +233,8 @@ esac ;;
   "mpv_youtube")      XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --ytdl-format=worst --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv '${XSEL}'" ;;
 
   "mpv_youtube_audio")        XSEL=$(xsel --clipboard);stterm -t Audio_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_audio_v_kvalite_best ...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv  --no-video --fs=no --player-operation-mode=pseudo-gui  --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_audio_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv --no-video --fs=no --player-operation-mode=pseudo-gui  --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate=  '${XSEL}'" ;; 
+
+"ytdl_download")      xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
 
 
 
