@@ -35,7 +35,7 @@ esac ;;
 
 
 
-"SYSTEM") xmessage "Vyber" -timeout 60 -center -title "SYSTEM" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"dropbox start":2,"Dropbox web":3,"sysv-rc-conf":4,"HP tiskarna instalace":5,"Xdotool kill":6,"Xdotool levy":7,"Xdotool pravy":8,"Xdotool nahore":9,"Xdotool dole":10,"DEBIAN UPGRADE":11,"BASH_RC":12,"BASH_ALIASES":13 >/dev/null
+"SYSTEM") xmessage "SYSTEM" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"Dropbox st":2,"Dropbox web":3,"sysv-rc-conf":4,"HP install":5,"Xd kill":6,"Xd l":7,"Xd p":8,"Xd h":9,"Xd d":10,"debian upgr":11,"bash rc":12,"bash alias":13,"tisk konf":14,"cups web":15  >/dev/null
 
 case $? in
 1)
@@ -51,19 +51,23 @@ xterm -hold -e sudo hp-setup -i;;
 6)
 Xdotool kill;;
 7)
-xdotool behave_screen_edge --quiesce 750 --delay 999  left  exec sh skripty/mpv_youtube.sh;;
+xdotool behave_screen_edge --quiesce 750 --delay 999  left  exec sakura;;
 8)
-xdotool behave_screen_edge --quiesce 750 --delay 999 right exec sh skripty/mpv_youtube.sh;;
+xdotool behave_screen_edge --quiesce 750 --delay 999 right exec sakura;;
 9)
 xdotool behave_screen_edge --quiesce 750 --delay 999 top exec amixer sset Master,0 toggle;;
 10)
-xdotool behave_screen_edge --quiesce 750 --delay 999 bottom exec sh skripty/mpv_youtube.sh;;
+xdotool behave_screen_edge --quiesce 750 --delay 999 bottom exec sakura;;
 11)
 sakura -h -t UPGRADE_SYSTEMU -e bash -c "sudo apt-get update -y || sudo apt-get upgrade -y || sudo apt-get autoremove -y || sudo apt-get autoclean -y";;
 12)
-xterm -hold -e 'sudo mousepad .bashrc';;
+xterm -hold -e sudo mousepad .bashrc;;
 13)
-xterm -hold -e 'sudo mousepad .bash_aliases';;
+xterm -hold -e sudo mousepad .bash_aliases;;
+14)
+xterm -hold -e system-config-printer;;
+15)
+firefox http://localhost:631/admin/ ;;
 esac ;;
 
 "OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10 >/dev/null
@@ -199,13 +203,13 @@ case $? in
 1)
 echo "Exit";;
 2)
-echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 -5%;;
+echo " + "  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 +5%;;
 3)
-echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 +5%;;
+echo " - "  | osd_cat -d 1 -s 1 -A left -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 -5%;;
 4) 
-echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-mute 0 toggle;;
+echo " mute "  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-mute 0 toggle;;
 5)
-echo "XXX___Vypinam monitor___XXX"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset dpms force off ;;
+echo "XXX___Vypinam monitor___XXX"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset dpms force off;;
 6)
 STATUS=`xset -q | grep -e 'DPMS is'| cut -c 10-17`
 if [ "$STATUS" = " Disable" ]] ;

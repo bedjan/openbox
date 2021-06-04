@@ -809,12 +809,12 @@
 			</action>
 		</item>
 		<separator/>
-		<separator/>
 		<item label="OPENBOX">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh OPENBOX</execute>
 			</action>
 		</item>
+		<separator/>
 		<item label="VYPNOUT PC">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh VYPNOUT_PC</execute>

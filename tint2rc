@@ -442,11 +442,11 @@ clock_padding = 0 0
 clock_background_id = 0
 clock_tooltip = 
 clock_tooltip_timezone = 
-clock_lclick_command = sh ~/.config/openbox/all.sh monitor
-clock_rclick_command = sh ~/.config/openbox/all.sh procesy
-clock_mclick_command = sh ~/.config/openbox/all.sh toggle
-clock_uwheel_command = sh ~/.config/openbox/all.sh up
-clock_dwheel_command = sh ~/.config/openbox/all.sh down
+clock_lclick_command = echo "XXX___Vypinam monitor___XXX"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset dpms force off
+clock_rclick_command = lxtask
+clock_mclick_command = echo " mute "  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-mute 0 toggle
+clock_uwheel_command = echo " + "  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 +5%
+clock_dwheel_command = echo " - "  | osd_cat -d 1 -s 1 -A left -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 -5%
 
 #-------------------------------------
 # Battery
