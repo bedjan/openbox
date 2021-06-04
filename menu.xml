@@ -47,9 +47,9 @@
 				<execute>sh ~/.config/openbox/all.sh DOWNLOAD</execute>
 			</action>
 		</item>
-		<item label="OSTATNI">
+		<item label="PROGRAMY">
 			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh OSTATNI</execute>
+				<execute>sh ~/.config/openbox/all.sh PROGRAMY</execute>
 			</action>
 		</item>
 		<item label="OVLADANI">

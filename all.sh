@@ -15,26 +15,27 @@ fi
 # use case statement to make decision volume
 case $choose in
 
-##OVLADANI##
 
-   "VYPNOUT_PC") xmessage "Vypnuti PC, Vypnuti PC v case, restart PC" -timeout 60 -center -title "VYPNOUT_PC" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Vypnout":2,"Vypnout v 00:00":3,"Vypnout v 01:00":4,"Vypnout v 02:00":5,"Restart":6 >/dev/null
+"VYPNOUT_PC") xmessage "!!! POZOR - Vypnuti PC, Vypnuti PC v case, restart PC !!!" -timeout 60 -center -title "VYPNOUT_PC" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Vypnout":2,"Vypnout v 00:00":3,"Vypnout v 01:00":4,"Vypnout v 02:00":5,"Restart":6 >/dev/null
 
 case $? in
 1)
 echo "Exit";;
 2)
-sh ~/.config/openbox/all.sh vypnout;;
+xterm  -title Vypnout -hold -e 'echo Vypnout;sudo poweroff';;
 3)
-sh ~/.config/openbox/all.sh vypnout0;;
+xterm  -title Vypnout_v_00:00 -hold -e 'echo Vypnout_v_00:00;sudo shutdown -h 00:00';;
 4)
-sh ~/.config/openbox/all.sh vypnout1;;
+xterm  -title Vypnout_v_01:00 -hold -e 'echo Vypnout_v_01:00;sudo shutdown -h 01:00';;
 5)
-sh ~/.config/openbox/all.sh vypnout2;;
+xterm  -title Vypnout_v_02:00 -hold -e 'echo Vypnout_v_02:00; sudo shutdown -h 02:00';;
 6)
-sh ~/.config/openbox/all.sh restart;;
+xterm  -title Reboot -hold -e 'echo Reboot;sudo reboot';;
 esac ;;
 
-   "SYSTEM") xmessage "Vyber" -timeout 60 -center -title "SYSTEM" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"dropbox start":2,"Dropbox web":3,"sysv-rc-conf":4,"HP tiskarna instalace":5,"Xdotool kill":6,"Xdotool levy":7,"Xdotool pravy":8,"Xdotool nahore":9,"Xdotool dole":10 >/dev/null
+
+
+"SYSTEM") xmessage "Vyber" -timeout 60 -center -title "SYSTEM" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"dropbox start":2,"Dropbox web":3,"sysv-rc-conf":4,"HP tiskarna instalace":5,"Xdotool kill":6,"Xdotool levy":7,"Xdotool pravy":8,"Xdotool nahore":9,"Xdotool dole":10,"DEBIAN UPGRADE":11,"BASH_RC":12,"BASH_ALIASES":13 >/dev/null
 
 case $? in
 1)
@@ -57,9 +58,15 @@ xdotool behave_screen_edge --quiesce 750 --delay 999 right exec sh skripty/mpv_y
 xdotool behave_screen_edge --quiesce 750 --delay 999 top exec amixer sset Master,0 toggle;;
 10)
 xdotool behave_screen_edge --quiesce 750 --delay 999 bottom exec sh skripty/mpv_youtube.sh;;
+11)
+xterm -hold -e 'sudo apt update -y &&  sudo apt upgrade -y &&  sudo apt autoremove -y &&  sudo apt autoclean -y';;
+12)
+xterm -hold -e 'sudo mousepad .bashrc';;
+13)
+xterm -hold -e 'sudo mousepad .bash_aliases';;
 esac ;;
 
-   "OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10 >/dev/null
+"OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10 >/dev/null
 
 case $? in
 1)
@@ -85,7 +92,7 @@ xterm -hold -e lxappearance;;
 esac ;;
 
 
-   "SLUZBY") xmessage "Vybirej opatrne" -timeout 60 -center -title "SLUZBY" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Odhlaseni":2,"! PC restart !":3,"! PC vypnuti !":4 >/dev/null
+"SLUZBY") xmessage "Vybirej opatrne" -timeout 60 -center -title "SLUZBY" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Odhlaseni":2,"! PC restart !":3,"! PC vypnuti !":4 >/dev/null
 
 case $? in
 1)
@@ -98,7 +105,7 @@ sudo sudo reboot;;
 sudo sudo poweroff;;
 esac ;;
 
-   "TV") xmessage "Vyber YOUTUBE, nebo TV" -timeout 60 -center -title "TV" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Youtube":2,"TV program":3,"CT1":4,"CT2":5,"Ard":6 >/dev/null
+"TV") xmessage "Vyber YOUTUBE, nebo TV" -timeout 60 -center -title "TV" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Youtube - smtube":2,"TV program":3,"CT1":4,"CT2":5,"Ard":6 >/dev/null
 
 case $? in
 1)
@@ -115,18 +122,20 @@ sh ~/.config/openbox/all.sh ct2;;
 sh ~/.config/openbox/all.sh ard;;
 esac ;;
 
-   "DOWNLOAD") xmessage "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO":2,"Stahni VIDEO":3 >/dev/null
+"DOWNLOAD") xmessage "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO":2,"Stahni VIDEO":3 >/dev/null
 
 case $? in
 1)
 echo "Exit";;
 2)
-sh ~/.config/openbox/all.sh youtubedl_audio;;
+xterm -hold -e 'cd /media/sda2;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
 3)
-sh ~/.config/openbox/all.sh youtubedl_video;;
+xterm -hold -e 'cd /media/sda2;youtube-dl --ignore-errors  "$(xsel --clipboard)"';;
 esac ;;
 
-   "OSTATNI") xmessage "Vyber" -timeout 60 -center -title "OSTATNI" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Kalkulacka":2,"Streamtuner":3 >/dev/null
+
+
+"PROGRAMY") xmessage "Vyber" -timeout 60 -center -title "OSTATNI" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Kalkulacka":2,"Streamtuner":3,"Gesta":4 >/dev/null
 
 case $? in
 1)
@@ -135,9 +144,11 @@ echo "Exit";;
 calcoo;;
 3)
 streamtuner2 --gtk3;;
+4)
+easystroke;;
 esac ;;
 
-   "BANKY") xmessage "Vyber" -timeout 60 -center -title "BANKY" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"CS george":2,"Sparkasse":3 >/dev/null
+"BANKY") xmessage "Vyber" -timeout 60 -center -title "BANKY" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"CS george":2,"Sparkasse":3 >/dev/null
 
 case $? in
 1)
@@ -148,7 +159,7 @@ sh ~/.config/openbox/all.sh cs;;
 sh ~/.config/openbox/all.sh sparkasse;;
 esac ;;
 
-   "RADIA") xmessage "Vyber RADIO" -timeout 60 -center -title "RADIA" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Radia online":2,"Humor":3,"4U":4,"Tranceup":5,"Evropa2":6,"Evropa2 Movin":7,"Evropa2 flashback":8,"Evropa2 Top40":9,"Freerave":10,"City 80":11,"City 90":12,"WEB Cesky rozhlas":13,"WEB VSECHNA RADIA":14 >/dev/null
+"RADIA") xmessage "Vyber RADIO" -timeout 60 -center -title "RADIA" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Radia online":2,"Humor":3,"4U":4,"Tranceup":5,"Evropa2":6,"Evropa2 Movin":7,"Evropa2 flashback":8,"Evropa2 Top40":9,"Freerave":10,"City 80":11,"City 90":12,"WEB Cesky rozhlas":13,"WEB VSECHNA RADIA":14 >/dev/null
 
 
 case $? in
@@ -182,7 +193,7 @@ sh ~/.config/openbox/all.sh cr_online;;
 bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
 esac ;;
 
-   "OVLADANI") xmessage "Vyber" -timeout 60 -center -title "OVLADANI" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9 >/dev/null
+"OVLADANI") xmessage "Vyber" -timeout 60 -center -title "OVLADANI" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9 >/dev/null
 
 case $? in
 1)
@@ -212,59 +223,16 @@ xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
 echo "$choose volume";alsamixergui ;;
 esac ;;
 
-##PROGRAMY##
-
-
-   "terminal") sakura;;
- 
-   "aup") xterm -hold -e 'sudo apt update -y &&  sudo apt upgrade -y &&  sudo apt autoremove -y &&  sudo apt autoclean -y';;
-   "chromium") chromium;;
-   "files") pcmanfm;;
-   "netsurf") netsurf www.google.cz;;
-   "procesy") lxtask;;
-   "streamtuner") streamtuner2 --gtk3;;
-   "gesta") easystroke;;
-   "easystroke") easystroke;;
-   "mpc") mpc-qt;;
-   "kalkulacka") calcoo;;
-   "links") links2 -g www.abclinuxu.cz;;
-   "netsurf") netsurf www.abclinuxu.cz;;
-   "default_web_browser") x-www-browser;;
 
 ##VIDEO##
 
-  "youtubedl_video") xterm -hold -e 'cd /media/sda2;youtube-dl --ignore-errors  "$(xsel --clipboard)"';;
-  "youtubedl_audio") xterm -hold -e 'cd /media/sda2;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
+
 
   "mpv_youtube_mute") XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --mute=yes --ytdl-format=worst  --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====';mpv --mute=yes '${XSEL}'" ;;
 
   "mpv_youtube")      XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --ytdl-format=worst --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv '${XSEL}'" ;;
 
   "mpv_youtube_audio")        XSEL=$(xsel --clipboard);stterm -t Audio_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_audio_v_kvalite_best ...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv  --no-video --fs=no --player-operation-mode=pseudo-gui  --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate= '${XSEL}'  && exit 1;echo '=====Spoustim_audio_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv --no-video --fs=no --player-operation-mode=pseudo-gui  --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate=  '${XSEL}'" ;; 
-
-
-##VYPNOUT##
-
-   "restart") xterm  -title Reboot -hold -e 'echo Reboot;sudo reboot';;
-   "vypnout") xterm  -title Vypnout -hold -e 'echo Vypnout;sudo poweroff';;
-   "vypnout0") xterm  -title Vypnout_v_00:00 -hold -e 'echo Vypnout_v_00:00;sudo shutdown -h 00:00';;
-   "vypnout1") xterm  -title Vypnout_v_01:00 -hold -e 'echo Vypnout_v_01:00;sudo shutdown -h 01:00';;
-   "vypnout2") xterm  -title Vypnout_v_02:00 -hold -e 'echo Vypnout_v_02:00; sudo shutdown -h 02:00';;
-
-##OPENBOX##
-   "obconf") obconf;;
-   "obmenu") obmenu;;
-   "orestart") xterm -hold -e 'openbox --restart';;
-   "oreconfigure") xterm -hold -e 'openbox --reconfigure';;
-   "ostart") xterm -e 'mousepad ~/.config/openbox/autostart';;
-   "omenu") xterm -e 'mousepad ~/.config/openbox/menu.xml';;
-   "orc") xterm -e 'mousepad ~/.config/openbox/rc.xml';;
-
-##SYSTEM##
-   "github_all") firefox https://github.com/bedjan/openbox;;
-   "bash") xterm -hold -e 'sudo mousepad .bashrc';;
-   "bash_aliases") xterm -e 'sudo mousepad .bash_aliases';;
-  ## "history") xterm -hold -e "history";;
 
 
 
