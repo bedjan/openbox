@@ -17,7 +17,75 @@ case $choose in
 
 ##OVLADANI##
 
-   "sluzby") xmessage "Vybirej opatrne" -center -title "Vyber sluzbu" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Odhlaseni":2,"! PC restart !":3,"! PC vypnuti !":4 >/dev/null
+   "VYPNOUT_PC") xmessage "Vypnuti PC, Vypnuti PC v case, restart PC" -timeout 60 -center -title "VYPNOUT_PC" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Vypnout":2,"Vypnout v 00:00":3,"Vypnout v 01:00":4,"Vypnout v 02:00":5,"Restart":6 >/dev/null
+
+case $? in
+1)
+echo "Exit";;
+2)
+sh ~/.config/openbox/all.sh vypnout;;
+3)
+sh ~/.config/openbox/all.sh vypnout0;;
+4)
+sh ~/.config/openbox/all.sh vypnout1;;
+5)
+sh ~/.config/openbox/all.sh vypnout2;;
+6)
+sh ~/.config/openbox/all.sh restart;;
+esac ;;
+
+   "SYSTEM") xmessage "Vyber" -timeout 60 -center -title "SYSTEM" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"dropbox start":2,"Dropbox web":3,"sysv-rc-conf":4,"HP tiskarna instalace":5,"Xdotool kill":6,"Xdotool levy":7,"Xdotool pravy":8,"Xdotool nahore":9,"Xdotool dole":10 >/dev/null
+
+case $? in
+1)
+echo "Exit";;
+2)
+dropbox start;;
+3)
+firefox https://www.dropbox.com/home;;
+4)
+xterm -hold -e sudo sysv-rc-conf;;
+5)
+xterm -hold -e sudo hp-setup -i;;
+6)
+Xdotool kill;;
+7)
+xdotool behave_screen_edge --quiesce 750 --delay 999  left  exec sh skripty/mpv_youtube.sh;;
+8)
+xdotool behave_screen_edge --quiesce 750 --delay 999 right exec sh skripty/mpv_youtube.sh;;
+9)
+xdotool behave_screen_edge --quiesce 750 --delay 999 top exec amixer sset Master,0 toggle;;
+10)
+xdotool behave_screen_edge --quiesce 750 --delay 999 bottom exec sh skripty/mpv_youtube.sh;;
+esac ;;
+
+   "OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10 >/dev/null
+
+case $? in
+1)
+echo "Exit";;
+2)
+obmenu;;
+3)
+obconf;;
+4)
+openbox --reconfigure;;
+5)
+openbox --restart;;
+6)
+openbox --exit && killall openbox;;
+7)
+xterm -e 'mousepad ~/.config/openbox/autostart';;
+8)
+xterm -e 'mousepad ~/.config/openbox/menu.xml';;
+9)
+xterm -e 'mousepad ~/.config/openbox/rc.xml';;
+10)
+xterm -hold -e lxappearance;;
+esac ;;
+
+
+   "SLUZBY") xmessage "Vybirej opatrne" -timeout 60 -center -title "SLUZBY" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Odhlaseni":2,"! PC restart !":3,"! PC vypnuti !":4 >/dev/null
 
 case $? in
 1)
@@ -30,7 +98,7 @@ sudo sudo reboot;;
 sudo sudo poweroff;;
 esac ;;
 
-   "TV") xmessage "Vyber YOUTUBE, nebo TV" -center -title "Vyber TV" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Youtube":2,"TV program":3,"CT1":4,"CT2":5,"Ard":6 >/dev/null
+   "TV") xmessage "Vyber YOUTUBE, nebo TV" -timeout 60 -center -title "TV" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Youtube":2,"TV program":3,"CT1":4,"CT2":5,"Ard":6 >/dev/null
 
 case $? in
 1)
@@ -47,43 +115,88 @@ sh ~/.config/openbox/all.sh ct2;;
 sh ~/.config/openbox/all.sh ard;;
 esac ;;
 
-   "RADIA") xmessage "Vyber RADIO" -center -title "Vyber RADIO" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Radia online":2,"Humor":3,"4U":4,"Tranceup":5,"Evropa2":6,"Evropa2 Movin":7,"Evropa2 flashback":8,"Evropa2 Top40":9,"Freerave":10,"City 80":11,"City 90":12,"WEB Cesky rozhlas":13 >/dev/null
+   "DOWNLOAD") xmessage "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO":2,"Stahni VIDEO":3 >/dev/null
 
 case $? in
 1)
 echo "Exit";;
 2)
-sh ~/.config/openbox/all.sh radiaonline;;
+sh ~/.config/openbox/all.sh youtubedl_audio;;
 3)
-sh ~/.config/openbox/all.sh humor;;
-4)
-sh ~/.config/openbox/all.sh 4u;;
-5)
-sh ~/.config/openbox/all.sh tranceup;;
-6)
-sh ~/.config/openbox/all.sh e2;;
-7)
-sh ~/.config/openbox/all.sh e2movin;;
-8)
-sh ~/.config/openbox/all.sh e2flashback;;
-9)
-sh ~/.config/openbox/all.sh e2top40;;
-10)
-sh ~/.config/openbox/all.sh freerave;;
-11)
-sh ~/.config/openbox/all.sh city80;;
-12)
-sh ~/.config/openbox/all.sh city90;;
-13)
-sh ~/.config/openbox/all.sh cr_online;;
+sh ~/.config/openbox/all.sh youtubedl_video;;
 esac ;;
 
+   "OSTATNI") xmessage "Vyber" -timeout 60 -center -title "OSTATNI" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Kalkulacka":2,"Streamtuner":3 >/dev/null
 
-   "down") echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 -5%;;
-   "up")  echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 +5%;;
-   "toggle") echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-mute 0 toggle;;
-   "monitor") echo "XXX___Vypinam monitor___XXX"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset dpms force off ;;
-   "dpms") STATUS=`xset -q | grep -e 'DPMS is'| cut -c 10-17`
+case $? in
+1)
+echo "Exit";;
+2)
+calcoo;;
+3)
+streamtuner2 --gtk3;;
+esac ;;
+
+   "BANKY") xmessage "Vyber" -timeout 60 -center -title "BANKY" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"CS george":2,"Sparkasse":3 >/dev/null
+
+case $? in
+1)
+echo "Exit";;
+2)
+sh ~/.config/openbox/all.sh cs;;
+3)
+sh ~/.config/openbox/all.sh sparkasse;;
+esac ;;
+
+   "RADIA") xmessage "Vyber RADIO" -timeout 60 -center -title "RADIA" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Radia online":2,"Humor":3,"4U":4,"Tranceup":5,"Evropa2":6,"Evropa2 Movin":7,"Evropa2 flashback":8,"Evropa2 Top40":9,"Freerave":10,"City 80":11,"City 90":12,"WEB Cesky rozhlas":13,"WEB VSECHNA RADIA":14 >/dev/null
+
+
+case $? in
+1)
+echo "Exit";;
+2)
+firefox https://online-radio.eu/country/Czech%20Republic;;
+3)
+xterm -geometry 80x20-60-60 -title Humor_radio -e "mpg123 -C -b 1024 --no-seekbuffer  http://mp3stream4.abradio.cz:8000/humor.mp3";;
+4)
+xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  -volume 90 http://mpc.mediacp.eu:8302/stream";;
+5)
+xterm -geometry 80x20-60-60 -title Tranceup -e bash -c "mpv --ytdl  http://5.39.71.159:8223/stream";;
+6)
+xterm -geometry 80x20-60-60 -title E2 -e bash -c "mpv --ytdl   https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu";;
+7)
+xterm -geometry 80x20-60-60 -title E2_movin -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-movin";;
+8)
+xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-flashback";;
+9)
+xterm -geometry 80x20-60-60 -title E2_top40 -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-top40";;
+10)
+xterm -geometry 80x20-60-60 -title Freerave -e bash -c "mpv --ytdl  http://164.68.122.137:8061/;";;
+11)
+xterm -geometry 80x20-60-60 -title 80_radio -e bash -c "mpg123 -C -b 1024  --no-seekbuffer http://ice.abradio.cz/city80128.mp3";;
+12)
+xterm -geometry 80x20-60-60 -title 90_radio -e bash -c "mpg123 -C -b 1024 --no-seekbuffer http://ice.abradio.cz/city90128.mp3";;
+13)
+sh ~/.config/openbox/all.sh cr_online;;
+14)
+bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
+esac ;;
+
+   "OVLADANI") xmessage "Vyber" -timeout 60 -center -title "OVLADANI" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9 >/dev/null
+
+case $? in
+1)
+echo "Exit";;
+2)
+echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 -5%;;
+3)
+echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 +5%;;
+4) 
+echo "$choose volume"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-mute 0 toggle;;
+5)
+echo "XXX___Vypinam monitor___XXX"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset dpms force off ;;
+6)
+STATUS=`xset -q | grep -e 'DPMS is'| cut -c 10-17`
 if [ "$STATUS" = " Disable" ]] ;
 then xset s on +dpms 
 echo "|||___Vypinam DPMS monitor___|||"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1'
@@ -91,10 +204,13 @@ elif [ "$STATUS" = " Enabled" ]] ;
 then xset s on -dpms 
 echo "XXX___Nevypinam DPMS monitor___XXX"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1'
 fi;;
-   "ytdl_update") xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
-   "ytdl_download") xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
-
-   "mixer") echo "$choose volume";alsamixergui ;;
+7)
+xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
+8)
+xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
+9)
+echo "$choose volume";alsamixergui ;;
+esac ;;
 
 ##PROGRAMY##
 
@@ -129,11 +245,11 @@ fi;;
 
 ##VYPNOUT##
 
-   "restart") xterm -hold -e 'echo Vypnout_v_00:00;sudo reboot';;
-   "vypnout") xterm -hold -e 'echo Vypnout_v_00:00;sudo poweroff';;
-   "vypnout0") xterm -hold -e 'echo Vypnout_v_00:00;sudo shutdown -h 00:00';;
-   "vypnout1") xterm -hold -e 'echo Vypnout_v_00:00;sudo shutdown -h 01:00';;
-   "vypnout2") xterm -hold -e 'echo Vypnout_v_02:00; sudo shutdown -h 02:00';;
+   "restart") xterm  -title Reboot -hold -e 'echo Reboot;sudo reboot';;
+   "vypnout") xterm  -title Vypnout -hold -e 'echo Vypnout;sudo poweroff';;
+   "vypnout0") xterm  -title Vypnout_v_00:00 -hold -e 'echo Vypnout_v_00:00;sudo shutdown -h 00:00';;
+   "vypnout1") xterm  -title Vypnout_v_01:00 -hold -e 'echo Vypnout_v_01:00;sudo shutdown -h 01:00';;
+   "vypnout2") xterm  -title Vypnout_v_02:00 -hold -e 'echo Vypnout_v_02:00; sudo shutdown -h 02:00';;
 
 ##OPENBOX##
    "obconf") obconf;;
@@ -150,19 +266,7 @@ fi;;
    "bash_aliases") xterm -e 'sudo mousepad .bash_aliases';;
   ## "history") xterm -hold -e "history";;
 
-##RADIA##
-   "humor") xterm -geometry 80x20-60-60 -title Humor_radio -e bash -c "mpg123 -C --no-seekbuffer --preload http://mp3stream4.abradio.cz:8000/humor.mp3";;
-   "city90") xterm -geometry 80x20-60-60 -title 80_radio -e bash -c "mpg123 -C --no-seekbuffer --preload http://ice.abradio.cz/city80128.mp3";;
-   "city80") xterm -geometry 80x20-60-60 -title 90_radio -e bash -c "mpg123 -C --no-seekbuffer --preload http://ice.abradio.cz/city90128.mp3";;
-   "4u") xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  -volume 90 http://mpc.mediacp.eu:8302/stream";;
-   "e2") xterm -geometry 80x20-60-60 -title E2 -e bash -c "mpv --ytdl   https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu";;
-   "e2movin") xterm -geometry 80x20-60-60 -title E2_movin -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-movin";;
-   "e2flashback") xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-flashback";;
-   "e2top40") xterm -geometry 80x20-60-60 -title E2_top40 -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-top40";;
-   "freerave") xterm -geometry 80x20-60-60 -title Freerave -e bash -c "mpv --ytdl  http://164.68.122.137:8061/;";;
-   "tranceup") xterm -geometry 80x20-60-60 -title Tranceup -e bash -c "mpv --ytdl  http://5.39.71.159:8223/stream";;
-   "radia") bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
-   "radiaonline") firefox https://online-radio.eu/country/Czech%20Republic;;
+
 
 ##TV_CESKO##
 
