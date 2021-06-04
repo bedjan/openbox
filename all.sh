@@ -139,7 +139,7 @@ esac ;;
 
 
 
-"PROGRAMY") xmessage "Vyber" -timeout 60 -center -title "OSTATNI" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Kalkulacka":2,"Streamtuner":3,"Gesta":4 >/dev/null
+"PROGRAMY") xmessage "Vyber" -timeout 60 -center -title "OSTATNI" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Kalkulacka":2,"Streamtuner":3,"Gesta":4,"Kalendar":5,"Misto na disku":6 >/dev/null
 
 case $? in
 1)
@@ -150,6 +150,10 @@ calcoo;;
 streamtuner2 --gtk3;;
 4)
 easystroke;;
+5)
+yad --calendar;;
+6)
+eval exec yad --title="Mista na disku" --image=drive-harddisk --text="Disk :" --buttons-layout=end --width=650 --multi-progress $(df -hT $1 | tail -n +2 | awk '{printf "--bar=\"<b>%s</b> (%s - %s) [%s/%s]\" %s ", $7, $1, $2, $4, $3, $6}') ;;
 esac ;;
 
 "BANKY") xmessage "Vyber" -timeout 60 -center -title "BANKY" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"CS george":2,"Sparkasse":3 >/dev/null
