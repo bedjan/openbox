@@ -12,7 +12,7 @@ Copyright (c) 2004, Hannu Saransaari and Lauri Hakkarainen
 Copyright (c) 2005-2012 Brenden Matthews, Philip Kovacs, et. al. (see AUTHORS)
 All rights reserved.
 
-This program is free software: you can redistribute it and/or modify
+This program is free software: you can yellowistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -26,7 +26,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ]]
 
 conky.config = {
-    alignment = 'top_left',
+    double_buffer = true,
+    alignment = 'top_middle',
     background = false,
     border_width = 0,
     cpu_avg_samples = 2,
@@ -42,17 +43,17 @@ conky.config = {
     gap_x = 0,
     gap_y = 0,
     minimum_height = 2,
-	minimum_width = 1366,
+--[[ minimum_width = 1366, ]]
     net_avg_samples = 2,
     no_buffers = true,
     out_to_console = false,
     out_to_stderr = false,
     extra_newline = false,
     own_window = true,
-    own_window_class = 'Conky',
-own_window_type = 'override',
-own_window_hints = 'undecorated,sticky,skip_taskbar,skip_pager',
-
+    own_window_transparent = false,
+    own_window_argb_visual = true,
+    own_window_argb_value = 90,
+    own_window_type = 'override',
     stippled_borders = 0,
     update_interval = 1.0,
     uppercase = false,
@@ -62,5 +63,5 @@ own_window_hints = 'undecorated,sticky,skip_taskbar,skip_pager',
 }
 
 conky.text = [[
-${alignc}${color grey}${execi 2 xset q |  grep "DPMS is" | cut -c 10-17}${color white} ${uptime_short} ${color grey} ${memeasyfree} ${membar 5,50}${color white} ${cpu cpu0} | ${cpu cpu1} ${color grey} ${fs_free /home} ${color white} ${fs_free /} ${color grey} ${wireless_essid wlan0}  ${color white}${wireless_link_bar  5,50 wlan0} ${color grey} ${downspeed wlan0} ${color white}${upspeed wlan0}${color grey} ${top name 1} ${color white}${top cpu 1} ${color grey}${top mem 1} ${color white} ${top_mem name 1}${color grey}${top_mem mem 1}
+${alignc}${color grey}MUTE ${color yellow}${execi 2 pacmd list-sinks | grep muted | cut -b 9-11}${color grey} VOL ${color yellow}${execi 2 pacmd list-sinks | grep "volume: front-left:" | cut -b 30-32} ${color grey}DPMS ${color yellow}${execi 2 xset q |  grep "DPMS is" | cut -c 10-17}${color white} ${uptime_short} ${color grey} ${memeasyfree} ${membar 5,50}${color yellow} ${cpu cpu0} | ${cpu cpu1}${color grey} HOME ${color yellow} ${fs_free /home} ${color grey} ROOT ${color yellow} ${fs_free /} ${color grey} ${wireless_essid wlan0}  ${color white}${wireless_link_bar  5,50 wlan0} ${color grey} ${downspeed wlan0} ${color white}${upspeed wlan0}${color grey} ${color yellow}${top name 1} ${color white}${top cpu 1} ${color grey}${top mem 1} ${color yellow} ${top_mem name 1}${color grey}${top_mem mem 1}
 ]]

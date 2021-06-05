@@ -25,7 +25,7 @@ which numlockx  || xterm -title Nainstaluj -hold -e "sudo apt install -y numlock
 
 
 ##klavesnice
-setxkbmap -layout cz,us -variant qwerty -option grp:alt_shift_toggle &
+setxkbmap -layout cz,us -variant qwertz -option grp:alt_shift_toggle &
 
 ##wallpaper cerny
 xsetroot -solid "black" &
