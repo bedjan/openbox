@@ -55,7 +55,7 @@ xdotool behave_screen_edge  --quiesce 750 left  key ctrl+alt+q;;
 8)
 xdotool behave_screen_edge --quiesce 750 --delay 999 right exec sakura;;
 9)
-xdotool behave_screen_edge --quiesce 750 --delay 999 top exec amixer sset Master,0 toggle;;
+xdotool behave_screen_edge --quiesce 750 top key ctrl+alt+q;;
 10)
 xdotool behave_screen_edge --quiesce 750 --delay 999 bottom exec sakura;;
 11)
@@ -397,6 +397,7 @@ esac ;;
 "Elbekanal") vlc --loop http://62.113.210.250/medienasa-live/_definst_/mp4:elbe_high/playlist.m3u8;;
 	
 ##WEB##
+   "openbox") firefox http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock;
 
    "kalendar") firefox https://time.is/calendar;;
    "cas") firefox https://time.is/;;
