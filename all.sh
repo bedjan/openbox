@@ -136,9 +136,9 @@ case $? in
 1)
 echo "Exit";;
 2)
-xterm -hold -e 'cd /media/sda2;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
+xterm -e 'cd /media/sda2;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
 3)
-xterm -hold -e 'cd /media/sda2;youtube-dl --ignore-errors  "$(xsel --clipboard)"';;
+xterm -e 'cd /media/sda2;youtube-dl --ignore-errors  "$(xsel --clipboard)"';;
 esac ;;
 
 
