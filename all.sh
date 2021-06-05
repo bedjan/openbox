@@ -51,7 +51,7 @@ xterm -hold -e sudo hp-setup -i;;
 6)
 Xdotool kill;;
 7)
-xdotool behave_screen_edge --quiesce 750 --delay 999  left  exec sakura;;
+xdotool behave_screen_edge  --quiesce 750 left  key ctrl+alt+q;;
 8)
 xdotool behave_screen_edge --quiesce 750 --delay 999 right exec sakura;;
 9)

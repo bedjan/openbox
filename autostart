@@ -23,6 +23,8 @@ which numlockx  || xterm -title Nainstaluj -hold -e "sudo apt install -y numlock
 #volumeicon  &
 #pnmixer &
 
+# menu na levem okraji obrazovky
+xdotool behave_screen_edge  --quiesce 750 left  key ctrl+alt+q &
 
 ##klavesnice
 setxkbmap -layout cz,us -variant qwertz -option grp:alt_shift_toggle &
