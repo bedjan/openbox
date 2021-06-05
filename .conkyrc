@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ]]
 
 conky.config = {
-    double_buffer = true,
+--[[     double_buffer = true, ]]
     alignment = 'top_middle',
     background = false,
     border_width = 0,
@@ -38,10 +38,12 @@ conky.config = {
     draw_graph_borders = false,
     draw_outline = false,
     draw_shades = false,
-    use_xft = true,
-    font = 'DejaVu Sans Mono:size=6',
-    gap_x = 0,
-    gap_y = 0,
+    use_xft = false,
+--[[ use_xft = true, ]]
+--[[ font = 'DejaVu Sans Mono:size=6', ]]
+--[[    font = 'Sans:size=8', ]]
+    gap_x = 0, 
+    gap_y = 0, 
     minimum_height = 2,
 --[[ minimum_width = 1366, ]]
     net_avg_samples = 2,

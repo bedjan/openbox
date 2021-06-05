@@ -70,7 +70,7 @@ xterm -hold -e system-config-printer;;
 firefox http://localhost:631/admin/ ;;
 esac ;;
 
-"OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10 >/dev/null
+"OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10,"Conky restart":11,"Tint2 restart":12  >/dev/null
 
 case $? in
 1)
@@ -93,6 +93,10 @@ xterm -e 'mousepad ~/.config/openbox/menu.xml';;
 xterm -e 'mousepad ~/.config/openbox/rc.xml';;
 10)
 xterm -hold -e lxappearance;;
+11)
+killall conky;sleep 2;conky --config=$HOME/.config/openbox/.conkyrc ;;
+12)
+killall tint2;sleep 2;tint2 -c $HOME/.config/openbox/tint2rc ;;
 esac ;;
 
 
