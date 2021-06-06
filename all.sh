@@ -223,14 +223,14 @@ echo " - "  | osd_cat -d 1 -s 1 -A left -l 1 -p middle -o 60 -c green -f '-adobe
 4) 
 echo " mute "  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-mute 0 toggle;;
 5)
-echo "XXX___Vypinam monitor___XXX"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset dpms force off;;
+echo "XXX___Vypinam monitor___XXX"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset -display $DISPLAY dpms force off;;
 6)
 STATUS=`xset -q | grep -e 'DPMS is'| cut -c 10-17`
 if [ "$STATUS" = " Disable" ]] ;
-then xset s on +dpms 
+then xset  -display $DISPLAY s on +dpms 
 echo "|||___Vypinam DPMS monitor___|||"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1'
 elif [ "$STATUS" = " Enabled" ]] ; 
-then xset s on -dpms 
+then xset  -display $DISPLAY s on -dpms  
 echo "XXX___Nevypinam DPMS monitor___XXX"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1'
 fi;;
 7)
@@ -404,7 +404,8 @@ esac ;;
 	
 ##WEB##
    "openbox") firefox http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock;;
-
+   "filmy stazeni") firefox https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==;;
+"filmy nfa") firefox https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/;;
    "kalendar") firefox https://time.is/calendar;;
    "cas") firefox https://time.is/;;
    "zdrojak") firefox https://zdrojak.cz/;;
