@@ -6,6 +6,16 @@
 				<execute>sh ~/.config/openbox/all.sh mpv_youtube</execute>
 			</action>
 		</item>
+		<item label="Youtube video mute">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh mpv_youtube_mute</execute>
+			</action>
+		</item>
+		<item label="Youtube audio">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh mpv_youtube_audio</execute>
+			</action>
+		</item>
 		<item label="Terminal">
 			<action name="Execute">
 				<execute>sakura</execute>
@@ -14,16 +24,6 @@
 		<item label="Files">
 			<action name="Execute">
 				<execute>pcmanfm</execute>
-			</action>
-		</item>
-		<item label="Youtube audio">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh mpv_youtube_audio</execute>
-			</action>
-		</item>
-		<item label="Youtube video mute">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh mpv_youtube_mute</execute>
 			</action>
 		</item>
 		<item label="ytdl upgrade">
