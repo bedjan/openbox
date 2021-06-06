@@ -1,5 +1,5 @@
-##setreni dpms 6 minut
-xset s 300 300 &
+##setreni dpms 120 sekund
+xset s 120 120 &
 
 ##panel
 #fbpanel & sudo modprobe snd-mixer-oss &
