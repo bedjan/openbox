@@ -21,10 +21,10 @@ which numlockx  || xterm -title Nainstaluj -hold -e "sudo apt install -y numlock
 
 ##hlasitost
 #volumeicon  &
-#pnmixer &
+#(sleep 3s && pnmixer) &
 
 # menu na levem okraji obrazovky
-xdotool behave_screen_edge  --quiesce 750 top  key ctrl+alt+q &
+xdotool behave_screen_edge  --quiesce 750 top-left key ctrl+alt+q &
 
 ##klavesnice
 setxkbmap -layout cz,us -variant qwertz -option grp:alt_shift_toggle &
@@ -36,5 +36,8 @@ xsetroot -solid "black" &
 #(sleep 3s && clipit) &
 
 #vypis systemu na plose
-sudo root-tail -font fixed /var/log/messages,white &
+#sudo root-tail -font fixed /var/log/messages,white &
+
+#ikony na plose
+#pcmanfm --desktop &
 

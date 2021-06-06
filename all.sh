@@ -35,7 +35,7 @@ esac ;;
 
 
 
-"SYSTEM") xmessage "SYSTEM" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"Dropbox st":2,"Dropbox web":3,"sysv-rc-conf":4,"HP install":5,"Xd kill":6,"Xd l":7,"Xd p":8,"Xd h":9,"Xd d":10,"debian upgr":11,"bash rc":12,"bash alias":13,"tisk konf":14,"cups web":15  >/dev/null
+"SYSTEM") xmessage "SYSTEM" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"Dropbox st":2,"Dropbox web":3,"sysv-rc-conf":4,"HP install":5,"Xd kill":6,"Xd l":7,"Xd p":8,"Xd h":9,"Xd d":10,"debian upgr":11,"bash rc":12,"bash alias":13,"tisk konf":14,"cups web":15,"Debian procisteni":16,"Autostart systemu":17,"hpsystray":18   >/dev/null
 
 case $? in
 1)
@@ -59,7 +59,7 @@ xdotool behave_screen_edge --quiesce 750 top key ctrl+alt+q;;
 10)
 xdotool behave_screen_edge --quiesce 750 --delay 999 bottom exec sakura;;
 11)
-sakura -h -t UPGRADE_SYSTEMU -e bash -c "sudo apt-get update -y || sudo apt-get upgrade -y || sudo apt-get autoremove -y || sudo apt-get autoclean -y";;
+xterm -hold -title UPGRADE_SYSTEMU -e sudo bash -c 'sudo apt-get update -y; apt -y dist-upgrade;exec bash';;
 12)
 xterm -hold -e sudo mousepad .bashrc;;
 13)
@@ -68,6 +68,12 @@ xterm -hold -e sudo mousepad .bash_aliases;;
 xterm -hold -e system-config-printer;;
 15)
 firefox http://localhost:631/admin/ ;;
+16)
+xterm -hold -title CISTENI_SYSTEMU -e sudo bash -c "apt purge -y $(dpkg -l | awk '/^rc/ { print $2 }')";;
+17)
+xterm -hold -title AUTOSTART_SYSTEMU -e sudo bash -c "ls /etc/xdg/autostart/" & ;;
+18)
+/usr/bin/python3 /usr/bin/hp-systray -x ;;
 esac ;;
 
 "OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10,"Conky restart":11,"Tint2 restart":12  >/dev/null
@@ -397,7 +403,7 @@ esac ;;
 "Elbekanal") vlc --loop http://62.113.210.250/medienasa-live/_definst_/mp4:elbe_high/playlist.m3u8;;
 	
 ##WEB##
-   "openbox") firefox http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock;
+   "openbox") firefox http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock;;
 
    "kalendar") firefox https://time.is/calendar;;
    "cas") firefox https://time.is/;;
