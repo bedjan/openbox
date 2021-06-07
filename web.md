@@ -13,6 +13,10 @@ a:hover {  color: #ffff1a;}
 a:active {  color: #33ff33;}
 </style>
 
+### Oblíbené
+
+[gmail](https://mail.google.com/mail/u/0/#inbox) [gkeep](https://keep.google.com/#home) [facebook](https://www.facebook.com/) [youtube](https://www.youtube.com/) [uloz.to](https://uloz.to) [cs](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz) [sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html) [csfd](https://www.csfd.cz/) [filmy nfa](https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/) [filmy stazeni](https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==)
+
 ### Obecné
 
 [facebook](https://www.facebook.com/)
