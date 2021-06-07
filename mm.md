@@ -74,7 +74,7 @@ a:active {  color: #33ff33;}
 
 ### TV_NEMECKO
 
-[Tv_nemecke](https://www.2ix2.com/)
+[Tv_nemecko](https://www.2ix2.com/)
 
 [Ard](https://www.2ix2.com/ard/)
 [Rtl](https://www.2ix2.com/rtl)
@@ -101,9 +101,7 @@ a:active {  color: #33ff33;}
 
 ### TV_NEMECKO_OSTATNI
 
-[TV_1](https://www.2ix2.com/sat1-gold/)
-[TV_2](https://nydus.org/stream/)
-
+[Tv_nemecko_ostatni](https://nydus.org/stream/)
 
 [Erste](https://live.daserste.de/)
 [Das_erste](https://mcdn.daserste.de/daserste/de/master.m3u8)
