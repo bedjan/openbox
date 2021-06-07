@@ -403,6 +403,7 @@ esac ;;
 "Elbekanal") vlc --loop http://62.113.210.250/medienasa-live/_definst_/mp4:elbe_high/playlist.m3u8;;
 	
 ##WEB##
+
    "openbox") firefox http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock;;
    "filmy stazeni") firefox https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==;;
 "filmy nfa") firefox https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/;;
@@ -413,7 +414,7 @@ esac ;;
     "cs") chromium --incognito https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz ;;
     "sparkasse") chromium --incognito https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html ;;
 
-   "gkeep") firefox https://keep.google.com/#home;echo "Keep - bedjan/od" | $osd;;
+   "gkeep") firefox https://keep.google.com/#home;;
    "gmail") firefox https://mail.google.com/mail/u/0/#inbox;;
    "yahoo_email") firefox https://login.yahoo.com;;
    "seznam_email") firefox https://login.szn.cz/;;
@@ -480,7 +481,7 @@ esac ;;
    "ruzovka") firefox https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2;;
 
 ##FIREFOX_ROZSIRENI##
-   "firefox_ucet") firefox https://accounts.firefox.com/signin?context=fx_desktop_v3&entrypoint=fxa_app_menu&action=email&service=sync
+   "firefox_ucet") firefox https://accounts.firefox.com/signin?context=fx_desktop_v3&entrypoint=fxa_app_menu&action=email&service=sync;;
    "open_with") firefox https://addons.mozilla.org/cs/firefox/addon/open-with/;;
    "open_with_nastaveni") wget https://github.com/darktrojan/openwith/raw/master/webextension/native/open_with_linux.py;chmod u+x open_with_linux.py;./open_with_linux.py install;;
 
