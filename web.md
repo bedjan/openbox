@@ -16,6 +16,7 @@ a:active {  color: #33ff33;}
 ### Oblíbené
 
 [Multimedia](http://janbednar.sweb.cz/mm.php)
+[Ftp](ftp://sweb.cz/)
 [Bitwarden](https://vault.bitwarden.com/#/vault)
 [Lastpass](https://lastpass.com/?ac=1)
 [Gmail](https://mail.google.com/mail/u/0/#inbox)
@@ -159,7 +160,8 @@ text=&act=url)
 [Yahoo_email](https://login.yahoo.com)
 [Seznam](https://www.seznam.cz/)
 [Seznam_email](https://login.szn.cz/)
-[Seznam_sweb](https://login.szn.cz/?serviceId=sweb&loggedURL=http://webadmin.sweb.cz/)[Seznam_ftp](ftp://sweb.cz/)
+[Seznam_sweb](https://login.szn.cz/?serviceId=sweb&loggedURL=http://webadmin.sweb.cz/)
+[Seznam_ftp](ftp://sweb.cz/)
 [Ulozto](https://uloz.to/login?key=logreg)
 [Vinted](https://www.vinted.cz/member/general/login?ref_url=%2F&__cf_chl_captcha_tk__=06e60c0838f1e7a7cfd5731145275268b2f8d333-1622574905-0-AWud745mERmzGs9xCMmTroN332YOMEB1XBdXrPdWOQb8DLHtVc_N12zsvulYXNXLllall03fFZTibqJOiwZAUE81L6fVqCpHHbu8-3razVqegPH9re-QEQZfqN_EzyWYJCjI2_q2ZBDKAAQnTeVwL2CdkgiuZvHgTuBg8Jd0sF0cqNidaj8mYoXU3bamvN5TBnyEWwS7CHFcmdRPpW1RfAfMRh40-evwGj-9EHUsXZrma23ik_BXVbhs2URb_mb-GVAXMaakFCT3XV5bppHKz3oSSQz9jTwc73S1Ym0l089x-QfVBsc4XUGYtDeykKIjTo1rm7h9RLIAkGRq8nPcFCcdZBznaFb779UgKQ-KLYomfrqAkRsCYDPIvNSiPs_R3WRyAR2Y-jpSJTaKdTb78nX5sCH8qsqJ9Q9ksbvWsFlMsUE15ua8lyGrnQsN8KmTWkanrIneuVfsDHqVyqzpRZNAvz5r-CDm1pA5x5M4FkYXcwPL_KOJ6fR96lPDrN1cWOAlMHY8oRnfqNJMqhEva-zZ-BC31NoXdbsXtNr6xJtd3qr331Bq237FcAWYvwHtAWUsXCwV_Dh95L4WR747luRvi9htOMEXK34CgQk1GWc52dUVjzxTaz52vX-YNdjiKSYxnYlWP1stZtGLkRBqNyWdj7uGW-kdlOaKtfBqkWEpvg1OgUdgB21cuPY-GsWc6Gyq2XGrc35xgFbVdouNQxg)
 [Jobs](https://www.jobs.cz/)
