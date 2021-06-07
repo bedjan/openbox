@@ -151,9 +151,9 @@ case $? in
 1)
 echo "Exit";;
 2)
-xterm -e 'cd /media/sda2;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
+xterm -T AUDIO -e  'cd /media/sda2;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
 3)
-xterm -e 'cd /media/sda2;youtube-dl --ignore-errors  "$(xsel --clipboard)"';;
+xterm -T VIDEO -e'cd /media/sda2;youtube-dl --ignore-errors  "$(xsel --clipboard)"';;
 esac ;;
 
 
