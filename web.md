@@ -187,3 +187,4 @@ mpv --fs=no  --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-ch
 [laspass cli](https://github.com/lastpass/lastpass-cli)
 
 
+[last.fm](https://www.last.fm/home)
