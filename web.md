@@ -1,5 +1,8 @@
 <html>
 <head>
+<title>Web osobní</title>
+</head>
+<body>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -10,7 +13,7 @@ a:hover {  color: #ffff1a;}
 a:active {  color: #33ff33;}
 </style>
 
-###Obecné
+### Obecné
 
 [facebook](https://www.facebook.com/)
 
@@ -22,7 +25,7 @@ a:active {  color: #33ff33;}
 
 [cas](https://time.is/)
 
-###Google
+### Google
 
 [gtranslate](https://translate.google.cz/)
 
@@ -42,7 +45,7 @@ a:active {  color: #33ff33;}
 
 [gtakeout](https://takeout.google.com/settings/takeout?pli=1)
 
-###Multimedia
+### Multimedia
 
 [soundcloud](https://soundcloud.com/signin)
 
@@ -60,14 +63,14 @@ a:active {  color: #33ff33;}
 
 [ruzovka](https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2)
 
-###Banky
+### Banky
 
 [cs](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz)
  
 
 [sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html)
 
-###Filmy
+### Filmy
 
 [csfd](https://www.csfd.cz/)
 
@@ -75,7 +78,7 @@ a:active {  color: #33ff33;}
 
 [filmy stazeni](https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==)
 
-###Linux
+### Linux
 
 [abclinuxu](https://www.abclinuxu.cz/)
 
@@ -104,11 +107,11 @@ a:active {  color: #33ff33;}
 
 [cli (příkazový řádek )](https://github.com/bedjan/debian/blob/master/poznamky/linux_cli.md)
 
-###Němčina
+### Němčina
 
 [nemcina_youtube](https://www.youtube.com/channel/UC4LQ7gUVS5w45ba1VubmJpg/videos)
 
-###Programování
+### Programování
 
 [github](https://github.com/bedjan/)
 
@@ -146,7 +149,7 @@ a:active {  color: #33ff33;}
 
 
 
-###Github
+### Github
 
 [github_akupresura](https://github.com/bedjan/akupresura/blob/master/akupresura_prvni_pomoc.md)
 
@@ -170,7 +173,7 @@ a:active {  color: #33ff33;}
 
 [hardware](https://github.com/bedjan/hw/tree/master)
 
-###Životní prostředí
+### Životní prostředí
 
 [enviweb](http://www.enviweb.cz/)
 
@@ -187,14 +190,14 @@ text=&act=url)
 
 [zero waste obchody v čr](https://www.greenglasses.cz/cs/business-category/zero-waste-obchody-jidlo-piti/)
 
-###Minimalismus
+### Minimalismus
 
 [co je minimalismus](http://zijememinimalismem.cz/minimalismus-co-to-je-prosim-te/)
 
 [minimalismus ve světě](https://translate.google.cz/translate?hl=cs?sl=en&tl=cs&u=www.becomingminimalist.com/most-popular-posts/)
 
 
-###Psychologie
+### Psychologie
 
 [psychologie](https://psychologie.cz/clanky/)
 
@@ -204,13 +207,13 @@ text=&act=url)
 
 [statistiky](https://www.czso.cz/csu/czso/statistiky)
 
-###Pedagogika
+### Pedagogika
 
 [psychologie](http://htmlpreview.github.io/?https://rawcdn.githack.com/bedjan/skola/master/psychologie.html) 
 
 [pedagogika](http://htmlpreview.github.io/?https://rawcdn.githack.com/bedjan/skola/master/pedagogika.html)
  
-###Ostatní
+### Ostatní
 
 [yahoo_email](https://login.yahoo.com)
 
