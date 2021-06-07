@@ -33,7 +33,16 @@ xterm  -title Vypnout_v_02:00 -hold -e 'echo Vypnout_v_02:00; sudo shutdown -h 0
 xterm  -title Reboot -hold -e 'echo Reboot;sudo reboot';;
 esac ;;
 
+"POZNAMKY") xmessage "POZNAMKY" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"WEB":2,"POZNAMKY":3    >/dev/null
 
+case $? in
+1)
+echo "Exit";;
+2)
+xterm -T WEB -hold -e bash -c 'echo nazev;read nazev;echo www;read www; echo "[$nazev]($www)" >> $HOME/.config/openbox/web.md ; xterm -T WEB -hold -e tail $HOME/.config/openbox/web.md' ;;
+3)
+xterm -T POZNAMKY -hold -e bash -c 'echo poznamka;read poznamka;echo "$poznamka" >> $HOME/.config/openbox/poznamky.md ; xterm -T WEB -hold -e tail $HOME/.config/openbox/poznamky.md';;
+esac ;;
 
 "SYSTEM") xmessage "SYSTEM" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"Dropbox st":2,"Dropbox web":3,"sysv-rc-conf":4,"HP install":5,"Xd kill":6,"Xd l":7,"Xd p":8,"Xd h":9,"Xd d":10,"debian upgr":11,"bash rc":12,"bash alias":13,"tisk konf":14,"cups web":15,"Debian procisteni":16,"Autostart systemu":17,"hpsystray":18   >/dev/null
 
@@ -92,11 +101,11 @@ openbox --restart;;
 6)
 openbox --exit && killall openbox;;
 7)
-xterm -e 'mousepad ~/.config/openbox/autostart';;
+xterm -e 'mousepad $HOME/.config/openbox/autostart';;
 8)
-xterm -e 'mousepad ~/.config/openbox/menu.xml';;
+xterm -e 'mousepad $HOME/.config/openbox/menu.xml';;
 9)
-xterm -e 'mousepad ~/.config/openbox/rc.xml';;
+xterm -e 'mousepad $HOME/.config/openbox/rc.xml';;
 10)
 xterm -hold -e lxappearance;;
 11)
