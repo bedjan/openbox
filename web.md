@@ -6,36 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-<style>
-html {
-  color: white;
-  background-color:black;
-  text-align: left;
-} 
-  
-  /* unvisited link */
-a:link {
-  color: yellow;
-}
 
-/* visited link */
-a:visited {
-  color: red;
-}
 
-/* mouse over link */
-a:hover {
-  color: orange;
-}
-
-/* selected link */
-a:active {
-  color: #bc5a45;
-}
-  
-</style>
-
-[openboxxx](http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock){:target="_blank" rel="noopener"}
 
 [openbox](http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock)
 
