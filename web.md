@@ -1,6 +1,49 @@
-<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>
+<html>
 
-#Web 
+<head>
+
+<script>
+var links = document.links;
+
+for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+   if (links[i].hostname != window.location.hostname) {
+       links[i].target = '_blank';
+   } 
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+<style>
+html {
+  color: white;
+  background-color:black;
+  text-align: left;
+} 
+  
+  /* unvisited link */
+a:link {
+  color: yellow;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: orange;
+}
+
+/* selected link */
+a:active {
+  color: #bc5a45;
+}
+  
+</style>
 
 [openbox](http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock)
 
