@@ -15,16 +15,31 @@ a:active {  color: #33ff33;}
 
 ### Oblíbené
 
-[Gmail](https://mail.google.com/mail/u/0/#inbox) [Gkeep](https://keep.google.com/#home) [Gtranslate](https://translate.google.cz/) [Facebook](https://www.facebook.com/) [youtube](https://www.youtube.com/) [uloz.to](https://uloz.to) [Česká spořitelna](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz) [Sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html) [Čsfd](https://www.csfd.cz/) [Filmy nfa](https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/) [Filmy stazeni](https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==) [Openbox](https://github.com/bedjan/openbox)
+[Gmail](https://mail.google.com/mail/u/0/#inbox)
+[Gkeep](https://keep.google.com/#home)
+[Gtranslate](https://translate.google.cz/)
+[Facebook](https://www.facebook.com/)
+[Youtube](https://www.youtube.com/)
+[Uloz.to](https://uloz.to)
+[Česká spořitelna](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz) [Sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html) [Čsfd](https://www.csfd.cz/)
+[Filmy nfa](https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/)
+[Filmy stazeni](https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==)
+[Openbox](https://github.com/bedjan/openbox)
 
 ### Obecné
 
-[Facebook](https://www.facebook.com/) [Simplenote](https://app.simplenote.com/login/) [Dropbox](https://www.dropbox.com/home) [Kalendar](https://time.is/calendar)
+[Facebook](https://www.facebook.com/)
+[Simplenote](https://app.simplenote.com/login/)
+[Dropbox](https://www.dropbox.com/home)
+[Kalendar](https://time.is/calendar)
 [Čas](https://time.is/)
 
 ### Google
 
-[Gtranslate](https://translate.google.cz/) [Youtube](https://www.youtube.com/) [Gkeep](https://keep.google.com/#home) [Gmail](https://mail.google.com/mail/u/0/#inbox)
+[Gtranslate](https://translate.google.cz/)
+[Youtube](https://www.youtube.com/)
+[Gkeep](https://keep.google.com/#home)
+[Gmail](https://mail.google.com/mail/u/0/#inbox)
 [Gdisk](https://drive.google.com/drive/)
 [Gdocs](https://docs.google.com/document/u/0/)
 [Gphotos](https://photos.google.com/?hl=cs&pli=1)
@@ -61,7 +76,8 @@ a:active {  color: #33ff33;}
 [Openbox](http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock)
 [Github_linux](https://github.com/bedjan/debian/blob/master/poznamky/linux_cli.md)
 [Linux.org](https://translate.google.cz/translate?hl=cs&sl=en&tl=cs&u=http%3A%2F%2Flinux.org)
-[Distrowatch](https://translate.google.cz/translate?hl=cs?sl=auto&sl=auto&tl=cs&u=https%3A%2F%2Fdistrowatch.com%2F&sandbox=1)[linux\_press](https://translate.google.cz/translate?sl=en&tl=cs&js=y&prev=_t&hl=cs&ie=UTF-8&u=linux.press&edit-text=&act=url)
+[Distrowatch](https://translate.google.cz/translate?hl=cs?sl=auto&sl=auto&tl=cs&u=https%3A%2F%2Fdistrowatch.com%2F&sandbox=1)
+[Linux\_press](https://translate.google.cz/translate?sl=en&tl=cs&js=y&prev=_t&hl=cs&ie=UTF-8&u=linux.press&edit-text=&act=url)
 [Debian](https://www.debian.org/index.cs.html)
 [Debian - skripty a config](https://github.com/bedjan/debian)
 [Moje poznámky k debianu](https://github.com/bedjan/debian/blob/master/poznamky/debian.md)[Obecně](https://github.com/bedjan/debian/blob/master/poznamky/linux.md)
@@ -74,7 +90,8 @@ a:active {  color: #33ff33;}
 ### Programování
 
 [Github](https://github.com/bedjan/)
-[Github_all](https://github.com/bedjan/debian/blob/master/skripty/all.sh)[zdrojak](https://zdrojak.cz/)
+[Github_all](https://github.com/bedjan/debian/blob/master/skripty/all.sh)
+[Zdrojak](https://zdrojak.cz/)
 [Jak začít programovat](https://www.itnetwork.cz/jak-zacit-programovat-tvorit-aplikace-programy)
 [Jak se naučit programovat](https://www.startitup.cz/11-stranek-ktere-te-nauci-programovat-z-pohodli-domova/)
 [Thinfi](https://thinfi.com/)
