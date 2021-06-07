@@ -180,6 +180,8 @@ mpv --player-operation-mode=pseudo-gui --fs=no --cache-secs=60 --demuxer-readahe
 
 [ublock origin](https://addons.mozilla.org/cs/firefox/addon/ublock-origin/)
 
+[Bitwarden](https://addons.mozilla.org/cs/firefox/addon/bitwarden-password-manager/)
+
 [lastpass](https://addons.mozilla.org/cs/firefox/addon/lastpass-password-manager/)
 
 [I don't care about cookies](https://addons.mozilla.org/cs/firefox/addon/i-dont-care-about-cookies/)
