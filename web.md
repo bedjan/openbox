@@ -172,7 +172,7 @@ text=&act=url)
 
 [open_with](https://addons.mozilla.org/cs/firefox/addon/open-with/)
 
-mpv --fs=no  --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=
+mpv --player-operation-mode=pseudo-gui --fs=no --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=
 
 [foxy gestures](https://addons.mozilla.org/cs/firefox/addon/foxy-gestures/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
