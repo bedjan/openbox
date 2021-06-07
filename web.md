@@ -35,6 +35,7 @@ a:active {
   
 </style>
 
+[openboxxx](http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock){:target="_blank" rel="noopener"}
 
 [openbox](http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock)
 
