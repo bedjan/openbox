@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
 <script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
+#Web 
 
 [openbox](http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock)
 
