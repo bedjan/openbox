@@ -15,84 +15,84 @@ a:active {  color: #33ff33;}
 
 ### Oblíbené
 
-[gmail](https://mail.google.com/mail/u/0/#inbox) [gkeep](https://keep.google.com/#home) [facebook](https://www.facebook.com/) [youtube](https://www.youtube.com/) [uloz.to](https://uloz.to) [cs](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz) [sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html) [csfd](https://www.csfd.cz/) [filmy nfa](https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/) [filmy stazeni](https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==)
+[Gmail](https://mail.google.com/mail/u/0/#inbox) [Gkeep](https://keep.google.com/#home) [Gtranslate](https://translate.google.cz/) [Facebook](https://www.facebook.com/) [youtube](https://www.youtube.com/) [uloz.to](https://uloz.to) [Česká spořitelna](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz) [Sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html) [Čsfd](https://www.csfd.cz/) [Filmy nfa](https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/) [Filmy stazeni](https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==)
 
 ### Obecné
 
-[facebook](https://www.facebook.com/)
+[Facebook](https://www.facebook.com/)
 
-[simplenote](https://app.simplenote.com/login/)
+[Simplenote](https://app.simplenote.com/login/)
 
-[dropbox](https://www.dropbox.com/home)
+[Dropbox](https://www.dropbox.com/home)
 
-[kalendar](https://time.is/calendar)
+[Kalendar](https://time.is/calendar)
 
-[cas](https://time.is/)
+[Čas](https://time.is/)
 
 ### Google
 
-[gtranslate](https://translate.google.cz/)
+[Gtranslate](https://translate.google.cz/)
 
-[youtube](https://www.youtube.com/)
+[Youtube](https://www.youtube.com/)
 
-[gkeep](https://keep.google.com/#home)
+[Gkeep](https://keep.google.com/#home)
 
-[gmail](https://mail.google.com/mail/u/0/#inbox)
+[Gmail](https://mail.google.com/mail/u/0/#inbox)
 
-[gdisk](https://drive.google.com/drive/)
+[Gdisk](https://drive.google.com/drive/)
 
-[gdocs](https://docs.google.com/document/u/0/)
+[Gdocs](https://docs.google.com/document/u/0/)
 
-[gphotos](https://photos.google.com/?hl=cs&pli=1)
+[Gphotos](https://photos.google.com/?hl=cs&pli=1)
 
-[gsites](https://sites.google.com/site/bedjansite/)
+[Gsites](https://sites.google.com/site/bedjansite/)
 
-[gtakeout](https://takeout.google.com/settings/takeout?pli=1)
+[Gtakeout](https://takeout.google.com/settings/takeout?pli=1)
 
 ### Multimedia
 
-[soundcloud](https://soundcloud.com/signin)
+[Soundcloud](https://soundcloud.com/signin)
 
-[difm](https://www.di.fm/)
+[Difm](https://www.di.fm/)
 
-[tvonline](https://www.spustit.cz/tv-ct1-online-zdarma/)
+[Tvonline](https://www.spustit.cz/tv-ct1-online-zdarma/)
 
-[cr_online](https://www.mujrozhlas.cz/zive)
+[Cr_online](https://www.mujrozhlas.cz/zive)
 
-[ct](https://www.ceskatelevize.cz/porady/a-z/)
+[Ct](https://www.ceskatelevize.cz/porady/a-z/)
 
-[ctzive](https://www.ceskatelevize.cz/ivysilani/serialy)
+[Ctzive](https://www.ceskatelevize.cz/ivysilani/serialy)
 
-[ulice](https://novaplus.nova.cz/porad/ulice/cele-dily)
+[uUlice](https://novaplus.nova.cz/porad/ulice/cele-dily)
 
-[ruzovka](https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2)
+[Ruzovka](https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2)
 
 ### Banky
 
-[cs](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz)
+[Česká spořitelna](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz)
  
 
-[sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html)
+[Sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html)
 
 ### Filmy
 
-[csfd](https://www.csfd.cz/)
+[Čsfd](https://www.csfd.cz/)
 
-[filmy nfa](https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/)
+[Filmy nfa](https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/)
 
-[filmy stazeni](https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==)
+[Filmy stazeni](https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==)
 
 ### Linux
 
-[abclinuxu](https://www.abclinuxu.cz/)
+[Abclinuxu](https://www.abclinuxu.cz/)
 
-[root](https://www.root.cz/)
+[rRoot](https://www.root.cz/)
 
-[linuxexpress](https://www.linuxexpres.cz/)
+[Linuxexpress](https://www.linuxexpres.cz/)
 
-[openbox](http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock)
+[Openbox](http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock)
 
-[github_linux](https://github.com/bedjan/debian/blob/master/poznamky/linux_cli.md)
+[Github_linux](https://github.com/bedjan/debian/blob/master/poznamky/linux_cli.md)
 
 [linux\_org](https://translate.google.cz/translate?hl=cs&sl=en&tl=cs&u=http%3A%2F%2Flinux.org) 
 
@@ -117,9 +117,9 @@ a:active {  color: #33ff33;}
 
 ### Programování
 
-[github](https://github.com/bedjan/)
+[Github](https://github.com/bedjan/)
 
-[github_all](https://github.com/bedjan/debian/blob/master/skripty/all.sh)
+[Github_all](https://github.com/bedjan/debian/blob/master/skripty/all.sh)
 
 [zdrojak](https://zdrojak.cz/)
 
@@ -155,17 +155,17 @@ a:active {  color: #33ff33;}
 
 ### Github
 
-[github_akupresura](https://github.com/bedjan/akupresura/blob/master/akupresura_prvni_pomoc.md)
+[Github_akupresura](https://github.com/bedjan/akupresura/blob/master/akupresura_prvni_pomoc.md)
 
-[github_zajmy](https://github.com/bedjan/zajmy)
+[Github_zajmy](https://github.com/bedjan/zajmy)
 
-[github_manipulace](https://github.com/bedjan/manipulace)
+[Github_manipulace](https://github.com/bedjan/manipulace)
 
-[github_windows](https://github.com/bedjan/windows)
+[Github_windows](https://github.com/bedjan/windows)
 
-[github_home](https://github.com/bedjan/home)
+[Github_home](https://github.com/bedjan/home)
 
-[github_poznamky](https://github.com/bedjan/github/blob/master/README.md)
+[Github_poznamky](https://github.com/bedjan/github/blob/master/README.md)
 
 [gist bedjan](https://gist.github.com/bedjan)
 
