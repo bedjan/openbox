@@ -1,6 +1,14 @@
 <html>
 <head>
 <title>Web osobní</title>
+<script>
+if (!e.target.hasAttribute("target")) {
+    e.preventDefault();     
+    e.target.setAttribute("target", "_blank");
+    e.target.click();
+    return;
+}
+</script>
 </head>
 <body>
 <meta charset="UTF-8">
@@ -190,6 +198,4 @@ mpv --player-operation-mode=pseudo-gui --fs=no --cache-secs=60 --demuxer-readahe
 ###Další
 
 [laspass cli](https://github.com/lastpass/lastpass-cli)
-
-
-[last.fm](https://www.last.fm/home)
+[biodopad](https://www.tsduchcov.cz/svoz-odpadu/svoz-brko/)
