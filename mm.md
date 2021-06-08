@@ -1,5 +1,6 @@
 <html>
 <head>
+<base target="_blank">
 <title>Multimedia</title>
 </head>
 <body>

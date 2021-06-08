@@ -1,14 +1,7 @@
 <html>
 <head>
+<base target="_blank">
 <title>Web osobní</title>
-<script>
-if (!e.target.hasAttribute("target")) {
-    e.preventDefault();     
-    e.target.setAttribute("target", "_blank");
-    e.target.click();
-    return;
-}
-</script>
 </head>
 <body>
 <meta charset="UTF-8">
