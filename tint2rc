@@ -432,7 +432,7 @@ launcher_item_app = /usr/share/applications/viber.desktop
 #-------------------------------------
 # Clock
 time1_format = %H:%M %A
-time2_format = %D
+time2_format = %d/%m/%y
 time1_font = Sans Bold 7
 time1_timezone = 
 time2_timezone = 
