@@ -140,3 +140,13 @@ a:active {  color: #33ff33;}
 [Dw](https://dwstream6-lh.akamaihd.net/i/dwstream6_live@123962/index_1_av-p.m3u8)
 [Dw+](http://dwstream52-lh.akamaihd.net/i/dwstream52_live@500528/index_1_av-p.m3u8)
 [Elbekanal](http://62.113.210.250/medienasa-live/_definst_/mp4:elbe_high/playlist.m3u8)
+
+### Linux mpv config
+
+mpv --ytdl-format=mp4 --ontop=yes --save-position-on-quit=yes --geometry=35%+0-50 --player-operation-mode=pseudo-gui  –fs=no –cache-secs=180 –demuxer-readahead-secs=0 –ytdl-raw-options=no-check-certificate=
+
+mpv --ytdl-format=worst --ontop=yes --save-position-on-quit=yes --geometry=35%+0-50 --player-operation-mode=pseudo-gui  –fs=no –cache-secs=180 –demuxer-readahead-secs=0 –ytdl-raw-options=no-check-certificate=
+
+### Linux install mpv a vlc
+
+sudo apt-get install mpv vlc python-pip python3-pip;pip install --upgrade pip;pip install --upgrade pip3 && xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl" && echo "vypis_instalaci_pres_pip";pip list

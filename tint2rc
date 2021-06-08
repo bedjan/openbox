@@ -432,7 +432,7 @@ launcher_item_app = /usr/share/applications/viber.desktop
 #-------------------------------------
 # Clock
 time1_format = %H:%M %A
-time2_format = %d %B
+time2_format = %D
 time1_font = Sans Bold 7
 time1_timezone = 
 time2_timezone = 
@@ -440,7 +440,7 @@ time2_font = Sans 7
 clock_font_color = #ffffff 100
 clock_padding = 0 0
 clock_background_id = 0
-clock_tooltip = 
+clock_tooltip = %d.%B | %W. týden
 clock_tooltip_timezone = 
 clock_lclick_command = echo "XXX___Vypinam monitor___XXX"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset dpms force off
 clock_rclick_command = lxtask

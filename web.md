@@ -16,7 +16,7 @@ a:active {  color: #33ff33;}
 
 ### Oblíbené
 
-[Multimedia](http://janbednar.sweb.cz/mm.php)
+[Radia a TV](http://janbednar.sweb.cz/mm.php)
 [Ftp](ftp://sweb.cz/)
 [Bitwarden](https://vault.bitwarden.com/#/vault)
 [Lastpass](https://lastpass.com/?ac=1)
@@ -55,6 +55,10 @@ a:active {  color: #33ff33;}
 
 ### Multimedia
 
+[Youtube](https://www.youtube.com/)
+[Metacafe](https://www.metacafe.com/)
+[Dailymotion](https://www.dailymotion.com/)
+[Vimeo](https://vimeo.com/watch)
 [Soundcloud](https://soundcloud.com/signin)
 [Difm](https://www.di.fm/)
 [Tvonline](https://www.spustit.cz/tv-ct1-online-zdarma/)
@@ -175,7 +179,9 @@ text=&act=url)
 
 [open_with](https://addons.mozilla.org/cs/firefox/addon/open-with/)
 
-mpv --player-operation-mode=pseudo-gui --fs=no --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=
+mpv --ytdl-format=mp4 --ontop=yes --save-position-on-quit=yes --geometry=35%+0-50 --player-operation-mode=pseudo-gui  –fs=no –cache-secs=180 –demuxer-readahead-secs=0 –ytdl-raw-options=no-check-certificate=
+
+mpv --ytdl-format=worst --ontop=yes --save-position-on-quit=yes --geometry=35%+0-50 --player-operation-mode=pseudo-gui  –fs=no –cache-secs=180 –demuxer-readahead-secs=0 –ytdl-raw-options=no-check-certificate=
 
 [foxy gestures](https://addons.mozilla.org/cs/firefox/addon/foxy-gestures/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
