@@ -53,31 +53,14 @@ a:active {  color: #33ff33;}
 [Gsites](https://sites.google.com/site/bedjansite/)
 [Gtakeout](https://takeout.google.com/settings/takeout?pli=1)
 
-### Multimedia
 
-[Youtube](https://www.youtube.com/)
-[Metacafe](https://www.metacafe.com/)
-[Dailymotion](https://www.dailymotion.com/)
-[Vimeo](https://vimeo.com/watch)
-[Soundcloud](https://soundcloud.com/signin)
-[Difm](https://www.di.fm/)
-[Tvonline](https://www.spustit.cz/tv-ct1-online-zdarma/)
-[Cr_online](https://www.mujrozhlas.cz/zive)
-[Ct](https://www.ceskatelevize.cz/porady/a-z/)
-[Ctzive](https://www.ceskatelevize.cz/ivysilani/serialy)
-[Ulice](https://novaplus.nova.cz/porad/ulice/cele-dily)
-[Ruzovka](https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2)
 
 ### Banky
 
 [Česká spořitelna](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz)
 [Sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html)
 
-### Filmy
 
-[Čsfd](https://www.csfd.cz/)
-[Filmy nfa](https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/)
-[Filmy stazeni](https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==)
 
 ### Linux
 
