@@ -15,6 +15,9 @@ a:active {  color: #33ff33;}
 </style>
 
 
+[TV_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
+[Radio_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u)
+
 ### Multimedia
 
 
