@@ -88,9 +88,13 @@ http://ice.abradio.cz/blanikcz128.mp3
 #EXTINF:0,Dechovka
 http://icecast5.play.cz:8000/dechovka128.mp3
 
+#EXTINF:0,Ohen_v_krbu 128
+http://ice6.abradio.cz/relax-fire128.mp3
 
-http://ice6.abradio.cz/relax-fire128.mp3#EXTINF:0,Ohen_v_krbu 128http://ice3.abradio.cz/pohadka128.mp3
+
 #EXTINF:0,Pohadka 128
+http://ice3.abradio.cz/pohadka128.mp3
+
 
 #EXTINF:0,Povidka 128
 http://ice3.abradio.cz/povidka128.mp3
