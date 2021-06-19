@@ -68,7 +68,7 @@ xdotool behave_screen_edge --quiesce 750 top key ctrl+alt+q;;
 10)
 xdotool behave_screen_edge --quiesce 750 --delay 999 bottom exec sakura;;
 11)
-xterm -hold -title UPGRADE_SYSTEMU -e sudo bash -c 'sudo apt-get update -y; apt -y dist-upgrade;exec bash';;
+xterm -hold -title UPGRADE_SYSTEMU -e sudo bash -c 'apt list --upgradable;sudo apt-get update -y; apt -y dist-upgrade;exec bash';;
 12)
 xterm -hold -e sudo mousepad .bashrc;;
 13)

@@ -72,6 +72,16 @@
 				<execute>sh ~/.config/openbox/all.sh BANKY</execute>
 			</action>
 		</item>
+		<item label="RADIA VSE">
+			<action name="Execute">
+				<execute>audacious https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u</execute>
+			</action>
+		</item>
+		<item label="TV VSE">
+			<action name="Execute">
+				<execute>mpv --playlist https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u</execute>
+			</action>
+		</item>
 		<separator/>
 		<menu id="root-menu-141918" label="Web ostatni">
 			<item label="github_zajmy">
@@ -806,6 +816,11 @@
 		<item label="ALL Github">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh github_all</execute>
+			</action>
+		</item>
+		<item label="OBMENU">
+			<action name="Execute">
+				<execute>obmenu</execute>
 			</action>
 		</item>
 		<separator/>
