@@ -348,6 +348,11 @@
         <command>scrot</command>
       </action>
     </keybind>
+    <keybind key="W-q">
+      <action name="Execute">
+        <command>killall openbox</command>
+      </action>
+    </keybind>
     <keybind key="A-F2">
       <action name="Execute">
         <command>gexec #grun</command>

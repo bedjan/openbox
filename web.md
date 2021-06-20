@@ -41,6 +41,8 @@ pagetitle: Web osobní
 [Filmy nfa](https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/)
 [Filmy stazeni](https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==)
 [Openbox](https://github.com/bedjan/openbox)
+[OCR](https://www.onlineocr.net/)
+[Zdrava vyziva](https://vyzivujicitradice.cz/)
 
 ### Obecné
 

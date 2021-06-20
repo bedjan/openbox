@@ -24,7 +24,7 @@ pagetitle: Multimedia
 ---
 
 
-[TV_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
+[TV_playlist_ceske](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
 [Radio_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u)
 
 ### Multimedia
@@ -98,9 +98,9 @@ pagetitle: Multimedia
 
 
 
-### TV_CESKO
+### TV_CESKE
 
-[Tvprogram](https://www.tvprogram.cz/)
+[Tv_program_ceske](https://www.tvprogram.cz/)
 [Tv_ceske](https://www.tvonline.cz/)
 
 [Ct1](https://www.ceskatelevize.cz/ivysilani/zive/ct1)
@@ -120,9 +120,10 @@ pagetitle: Multimedia
 [Tvnatura](https://www.tvnatura.cz)
 
 
-### TV_NEMECKO
+### TV_NEMECKE
 
-[Tv_nemecko](https://www.2ix2.com/)
+[Tv_program_nemecke](https://www.tvspielfilm.de/tv-programm/tv-sender/)
+[Tv_nemecke](https://www.2ix2.com/)
 
 [Ard](https://www.2ix2.com/ard/)
 [Rtl](https://www.2ix2.com/rtl)

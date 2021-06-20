@@ -29,7 +29,7 @@ which numlockx  || xterm -title Nainstaluj -hold -e "sudo apt install -y numlock
 
 # prikaz nahore v levem okraji obrazovky
 #xdotool behave_screen_edge  --quiesce 750 top-left key ctrl+alt+q &
-xdotool behave_screen_edge  --quiesce 750 top-left key exec bash -c "echo 'XXX___Vypinam monitor___XXX'  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset dpms force off"
+#xdotool behave_screen_edge  --quiesce 750 top-left key exec bash -c "echo 'XXX___Vypinam monitor___XXX'  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset dpms force off"
 
 # prikaz na levem okraji obrazovky
 #xdotool behave_screen_edge  --quiesce 750 left key exec sleep 10;xset dpms force off &

@@ -74,7 +74,7 @@
 		</item>
 		<item label="RADIA VSE">
 			<action name="Execute">
-				<execute>audacious https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u</execute>
+				<execute>qmplay2  https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u</execute>
 			</action>
 		</item>
 		<item label="TV VSE">
