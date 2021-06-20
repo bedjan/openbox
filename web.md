@@ -14,6 +14,14 @@ a:hover {  color: #ffff1a;}
 a:active {  color: #33ff33;}
 </style>
 
+---
+title: "Web osobní"
+output:
+  html_document:
+    toc: yes
+pagetitle: Web osobní
+---
+
 ### Oblíbené
 
 [Radia a TV](http://janbednar.sweb.cz/mm.php)
@@ -22,6 +30,7 @@ a:active {  color: #33ff33;}
 [Lastpass](https://lastpass.com/?ac=1)
 [Gmail](https://mail.google.com/mail/u/0/#inbox)
 [Gkeep](https://keep.google.com/#home)
+[Whatsapp](https://web.whatsapp.com/)
 [Gtranslate](https://translate.google.cz/)
 [Facebook](https://www.facebook.com/)
 [Youtube](https://www.youtube.com/)

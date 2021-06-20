@@ -16,7 +16,7 @@ fi
 case $choose in
 
 
-"VYPNOUT_PC") xmessage "!!! POZOR - Vypnuti PC, Vypnuti PC v case, restart PC !!!" -timeout 60 -center -title "VYPNOUT_PC" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Vypnout":2,"Vypnout v 00:00":3,"Vypnout v 01:00":4,"Vypnout v 02:00":5,"Restart":6 >/dev/null
+"VYPNOUT_PC") xmessage "!!! POZOR - Vypnuti PC, Vypnuti PC v case, restart PC !!!" -timeout 60 -center -title "VYPNOUT_PC" -default "Opustit" -buttons "Zrusit":1,"Vypnout":2,"Vypnout v 00:00":3,"Vypnout v 01:00":4,"Vypnout v 02:00":5,"Restart":6 >/dev/null
 
 case $? in
 1)
@@ -85,7 +85,7 @@ xterm -hold -title AUTOSTART_SYSTEMU -e sudo bash -c "ls /etc/xdg/autostart/" & 
 /usr/bin/python3 /usr/bin/hp-systray -x ;;
 esac ;;
 
-"OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10,"Conky restart":11,"Tint2 restart":12  >/dev/null
+"OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10,"Conky restart":11,"Tint2 restart":12  >/dev/null
 
 case $? in
 1)
@@ -115,7 +115,7 @@ killall tint2;sleep 2;tint2 -c $HOME/.config/openbox/tint2rc ;;
 esac ;;
 
 
-"SLUZBY") xmessage "Vybirej opatrne" -timeout 60 -center -title "SLUZBY" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Odhlaseni":2,"! PC restart !":3,"! PC vypnuti !":4 >/dev/null
+"SLUZBY") xmessage "Vybirej opatrne" -timeout 60 -center -title "SLUZBY" -default "Opustit" -buttons "Zrusit":1,"Odhlaseni":2,"! PC restart !":3,"! PC vypnuti !":4 >/dev/null
 
 case $? in
 1)
@@ -128,7 +128,7 @@ sudo sudo reboot;;
 sudo sudo poweroff;;
 esac ;;
 
-"TV") xmessage "Vyber YOUTUBE, nebo TV" -timeout 60 -center -title "TV" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Youtube - smtube":2,"TV program":3,"CT1":4,"CT2":5,"Ard":6 >/dev/null
+"TV") xmessage "Vyber YOUTUBE, nebo TV" -timeout 60 -center -title "TV" -default "Opustit" -buttons "Zrusit":1,"Youtube - smtube":2,"TV program":3,"CT1":4,"CT2":5,"Ard":6 >/dev/null
 
 case $? in
 1)
@@ -145,7 +145,7 @@ sh ~/.config/openbox/all.sh ct2;;
 sh ~/.config/openbox/all.sh ard;;
 esac ;;
 
-"DOWNLOAD") xmessage "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO":2,"Stahni VIDEO":3 >/dev/null
+"DOWNLOAD") xmessage "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO":2,"Stahni VIDEO":3 >/dev/null
 
 case $? in
 1)
@@ -158,7 +158,7 @@ esac ;;
 
 
 
-"PROGRAMY") xmessage "Vyber" -timeout 60 -center -title "OSTATNI" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Kalkulacka":2,"Streamtuner":3,"Gesta":4,"Kalendar":5,"Misto na disku":6 >/dev/null
+"PROGRAMY") xmessage "Vyber" -timeout 60 -center -title "OSTATNI" -default "Opustit" -buttons "Zrusit":1,"Kalkulacka":2,"Streamtuner":3,"Gesta":4,"Kalendar":5,"Misto na disku":6 >/dev/null
 
 case $? in
 1)
@@ -175,7 +175,7 @@ yad --calendar;;
 eval exec yad --title="Mista na disku" --image=drive-harddisk --text="Disk :" --buttons-layout=end --width=650 --multi-progress $(df -hT $1 | tail -n +2 | awk '{printf "--bar=\"<b>%s</b> (%s - %s) [%s/%s]\" %s ", $7, $1, $2, $4, $3, $6}') ;;
 esac ;;
 
-"BANKY") xmessage "Vyber" -timeout 60 -center -title "BANKY" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"CS george":2,"Sparkasse":3 >/dev/null
+"BANKY") xmessage "Vyber" -timeout 60 -center -title "BANKY" -default "Opustit" -buttons "Zrusit":1,"CS george":2,"Sparkasse":3 >/dev/null
 
 case $? in
 1)
@@ -186,7 +186,7 @@ sh ~/.config/openbox/all.sh cs;;
 sh ~/.config/openbox/all.sh sparkasse;;
 esac ;;
 
-"RADIA") xmessage "Vyber RADIO" -timeout 60 -center -title "RADIA" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"Radia online":2,"Humor":3,"4U":4,"Tranceup":5,"Evropa2":6,"Evropa2 Movin":7,"Evropa2 flashback":8,"Evropa2 Top40":9,"Freerave":10,"City 80":11,"City 90":12,"WEB Cesky rozhlas":13,"WEB VSECHNA RADIA":14 >/dev/null
+"RADIA") xmessage "Vyber RADIO" -timeout 60 -center -title "RADIA" -default "Opustit" -buttons "Zrusit":1,"Radia online":2,"Humor":3,"4U":4,"Tranceup":5,"Evropa2":6,"Evropa2 Movin":7,"Evropa2 flashback":8,"Evropa2 Top40":9,"Freerave":10,"City 80":11,"City 90":12,"WEB Cesky rozhlas":13,"WEB VSECHNA RADIA":14 >/dev/null
 
 
 case $? in
@@ -220,7 +220,7 @@ sh ~/.config/openbox/all.sh cr_online;;
 bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
 esac ;;
 
-"OVLADANI") xmessage "Vyber" -timeout 60 -center -title "OVLADANI" -font "Sans bold 10" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9 >/dev/null
+"OVLADANI") xmessage "Vyber" -timeout 60 -center -title "OVLADANI" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9 >/dev/null
 
 case $? in
 1)
