@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
+		<item label="Youtube video worst">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh mpv_youtube_worst</execute>
+			</action>
+		</item>
 		<item label="Youtube video">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh mpv_youtube</execute>
@@ -77,9 +82,14 @@
 				<execute>qmplay2  https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u</execute>
 			</action>
 		</item>
+		<item label="TV VSE LOW">
+			<action name="Execute">
+				<execute>bash -c &quot;mpv --playlist https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u –ytdl-format=worst –ontop=yes –save-position-on-quit=yes –geometry=35%+0-50 –fs=no –cache-secs=180 –demuxer-readahead-secs=0 –ytdl-raw-options=no-check-certificate= &quot;</execute>
+			</action>
+		</item>
 		<item label="TV VSE">
 			<action name="Execute">
-				<execute>mpv --playlist https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u</execute>
+				<execute>bash -c &quot;mpv --playlist https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u –ytdl-format=mp4 –ontop=yes –save-position-on-quit=yes –geometry=35%+0-50 –fs=no –cache-secs=180 –demuxer-readahead-secs=0 –ytdl-raw-options=no-check-certificate= &quot;</execute>
 			</action>
 		</item>
 		<separator/>
