@@ -118,6 +118,11 @@ pagetitle: Multimedia
 [Primalove](https://love.iprima.cz/#main-wrapper)
 [Primazoom](https://zoom.iprima.cz/#main-wrapper)
 [Tvnatura](https://www.tvnatura.cz)
+[Retro tv](http://stream.mediawork.cz/retrotv//retrotvHQ1/playlist.m3u8)
+[Ocko](https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/manifest.mpd)
+[Ocko gold](https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko_gold.stream.1.smil/manifest.mpd)
+[Ocko express](https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko_expres.stream.1.smil/manifest.mpd)
+[Elektrika tv](rtmp://rtmp.elektrika.cz/live/myStream.sdp)
 
 
 ### TV_NEMECKE

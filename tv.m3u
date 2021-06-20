@@ -15,4 +15,21 @@ https://nova-live.ssl.cdn.cra.cz/channels/nova_action_avod/playlist.m3u8
 #EXTINF:0,Nova Gold
 https://nova-live.ssl.cdn.cra.cz/channels/nova_gold_avod/playlist.m3u8
 
+#EXTINF:0,Retro TV
+http://stream.mediawork.cz/retrotv//retrotvHQ1/playlist.m3u8
+
+#EXTINF:0,Ocko
+https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/manifest.mpd
+
+#EXTINF:0,Ocko gold
+https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko_gold.stream.1.smil/manifest.mpd
+
+#EXTINF:0,Ocko expres
+https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko_expres.stream.1.smil/manifest.mpd
+
+#EXTINF:0,Elektrika TV
+rtmp://rtmp.elektrika.cz/live/myStream.sdp
+
+
+
 
