@@ -16,25 +16,25 @@ https://nova-live.ssl.cdn.cra.cz/channels/nova_action_avod/playlist.m3u8
 https://nova-live.ssl.cdn.cra.cz/channels/nova_gold_avod/playlist.m3u8
 
 #EXTINF:0,Prima
-https://prima-ott-live-sec.ssl.cdn.cra.cz/3JiQSodl6ocAykMd4n1U5A==,1624278943/channels/prima_family/playlist/cze/live_hq.m3u8?offsetSeconds=0&url=0
+#https://prima-ott-live-sec.ssl.cdn.cra.cz/3JiQSodl6ocAykMd4n1U5A==,1624278943/channels/prima_family/playlist/cze/live_hq.m3u8?offsetSeconds=0&url=0
 
 #EXTINF:0,Prima Cool
-https://prima-ott-live-sec.ssl.cdn.cra.cz/rKS9qwCwfsPrmHx9dFJpJw==,1624279420/channels/prima_cool/playlist/cze/live_hq.m3u8?offsetSeconds=0&url=0
+#https://prima-ott-live-sec.ssl.cdn.cra.cz/rKS9qwCwfsPrmHx9dFJpJw==,1624279420/channels/prima_cool/playlist/cze/live_hq.m3u8?offsetSeconds=0&url=0
 
 #EXTINF:0,Prima Max
-https://prima-ott-live-sec.ssl.cdn.cra.cz/LQrl5FNJvfs6owwinChh0w==,1624279126/channels/prima_max/playlist/cze/live_hq.m3u8?offsetSeconds=0&url=0
+#https://prima-ott-live-sec.ssl.cdn.cra.cz/LQrl5FNJvfs6owwinChh0w==,1624279126/channels/prima_max/playlist/cze/live_hq.m3u8?offsetSeconds=0&url=0
 
 #EXTINF:0,Prima Zoom
-https://prima-ott-live-sec.ssl.cdn.cra.cz/WqodtdmaP8qGvq-4RTzRQQ==,1624279661/channels/prima_zoom/playlist/cze/live_lq.m3u8?offsetSeconds=0&url=0
+#https://prima-ott-live-sec.ssl.cdn.cra.cz/WqodtdmaP8qGvq-4RTzRQQ==,1624279661/channels/prima_zoom/playlist/cze/live_lq.m3u8?offsetSeconds=0&url=0
 
 #EXTINF:0,Prima Love
-https://prima-ott-live-sec.ssl.cdn.cra.cz/8et7H43SyqlMvtbbnIplfw==,1624279592/channels/prima_love/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0
+#https://prima-ott-live-sec.ssl.cdn.cra.cz/8et7H43SyqlMvtbbnIplfw==,1624279592/channels/prima_love/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0
 
 #EXTINF:0,Prima Krimi
-https://prima-ott-live-sec.ssl.cdn.cra.cz/5L1aPPQLA8TlBQhsJBJTYw==,1624279516/channels/prima_krimi/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0
+#https://prima-ott-live-sec.ssl.cdn.cra.cz/5L1aPPQLA8TlBQhsJBJTYw==,1624279516/channels/prima_krimi/playlist/cze/live_mq.m3u8?offsetSeconds=0&url=0
 
 #EXTINF:0,Retro TV
-http://stream.mediawork.cz/retrotv//retrotvHQ1/playlist.m3u8
+#http://stream.mediawork.cz/retrotv//retrotvHQ1/playlist.m3u8
 
 #EXTINF:0,Ocko
 https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/manifest.mpd
