@@ -23,6 +23,17 @@ output:
 pagetitle: Multimedia
 ---
 
+<details open>
+<summary>Menu</summary>
+
+[Radia a TV](http://janbednar.sweb.cz/mm.php)
+
+[Tv_program_ceske](https://www.tvprogram.cz/)
+
+[TV_playlist_ceske](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
+
+[Radio_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u)
+</details> 
 
 [TV_playlist_ceske](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
 [Radio_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u)
