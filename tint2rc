@@ -444,7 +444,7 @@ clock_tooltip = %d.%B | %W. týden
 clock_tooltip_timezone = 
 clock_lclick_command = echo "XXX___Vypinam monitor___XXX"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1';sleep 10;xset dpms force off
 clock_rclick_command = lxtask
-clock_mclick_command = if pactl list | grep "Mute: yes";then echo " zvuk "  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &   pactl set-sink-mute 0 0  ;else  echo " bez zvuku "  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-mute 0 1;fi
+clock_mclick_command = if pactl list | grep "Mute:" | cut -c 8-10 | head -n1 | grep "yes";then echo " zvuk "  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &   pactl set-sink-mute 0 0  ;else  echo " bez zvuku "  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-mute 0 1;fi
 clock_uwheel_command = echo " + "  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 +5%
 clock_dwheel_command = echo " - "  | osd_cat -d 1 -s 1 -A left -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' &  pactl set-sink-volume 0 -5%
 
