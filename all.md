@@ -35,3 +35,4 @@ pagetitle: Web osobní
 ### Oblíbené
 
 [Radia a TV](http://janbednar.sweb.cz/mm.php)
+[Manipulace](https://rawcdn.githack.com/bedjan/openbox/1e18f370bde7d2c1d97d026a2b5ca2264d2f5fe3/manipulace.html)
