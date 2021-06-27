@@ -23,6 +23,41 @@ output:
 pagetitle: Manipulace
 ---
 
+[manipulative narcissist how to defend](https://www.google.com/search?q=manipulative+narcissist+how+to+defend&sxsrf=ALeKk02PZaWpO9amexs7Pha7W6xHyP5BOQ:1624820166067&ei=xsnYYPmlA4u3sAfeiK8g&start=0&sa=N&ved=2ahUKEwj5oMnmvrjxAhWLG-wKHV7ECwQ4ChDy0wN6BAgBEDo&biw=1366&bih=622)
+[Obrana proti narcismu 1](https://www.psychologytoday.com/us/blog/the-legacy-distorted-love/201610/8-tips-protect-yourself-narcissist)
+[Obrana proti narcismu 2](https://www.forbes.com/sites/nicolelipkin/2020/11/17/how-to-protect-yourself-when-working-with-a-narcissist/)
+[Obrana proti narcismu 3](https://www.betterhelp.com/advice/how-to/how-to-handle-a-narcissist-and-protect-yourself/)
+[Obrana proti narcismu 4](https://www.inc.com/wanda-thibodeaux/4-ways-to-protect-yourself-from-manipulative-people.html)
+[Obrana proti narcismu 5](https://www.businessinsider.com/how-to-stop-argument-with-narcissist-2018-2)
+
+8 tipů, jak se vyrovnat s kritickým narcisem:
+
+1. Ignorovat. Stejně jako jednání s tyranem , pokud ignorujete drsnost, nedává jim žádné uspokojení a najdou někoho jiného, ​​koho by si vybrali.
+
+2. Neberte návnadu a bojujte s nimi. Otočte druhou tvář a neospravedlňujte a nebraňte jim své činy, když to uděláte.
+
+3. Pochopte jejich kritiku za to, co to je: Nejde o vás. Jde o jejich poruchu. Nepřizpůsobujte si, co vám bylo řečeno.
+
+4. Když komunikujete, stanovte jasné hranice a používejte jasnou komunikaci. Řekněte přímo, co máte na mysli.
+
+5. Pokud se musíte rozhodnout zůstat stranou, učinte to jasně a směle a proveďte to.
+
+6. Věřte ve vlastní intuici a pocity. Naše těla nám říkají, když něco není v pořádku, a když se k nám lidé chovají špatně.
+
+7. Pamatujte, že vás ochráníte a můžete to udělat. Neočekávejte, že vás ostatní lidé zachrání před narcisem. Dává jim sílu postavit se jim a požadovat váš hlas.
+
+8. Pamatujte, že si všichni zasloužíme, aby s námi bylo zacházeno laskavě a soucitně. Je to smysluplný cíl pracovat na tom, abychom do světa přinesli více laskavosti pro ostatní. Buďte příkladem pro své děti, přátele a rodinu.
+
+
+Manipulátor usiluje o:
+
+1. Aby nedocházelo ke konfrontaci.
+2. Postavit vás do defenzívy
+3. Přimět vás pochybovat o sobě a vašich vnímáních
+4. Skrýt jejich agresivní záměr
+5. Vyhnout se odpovědnosti
+6. Nemuset se měnit
+
 
 ## "MÁTE VE SVÉM ŽIVOTĚ MANIPULÁTORA?"
 
