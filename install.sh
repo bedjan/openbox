@@ -16,7 +16,7 @@ which openbox || sudo apt install openbox
 which obconf || sudo apt install obconf
 which obmenu || sudo apt install obmenu
 
-sudo apt install --no-install-recommends git openbox obmenu obconf mousepad nano mc stalonetray fspanel gexec volumeicon-alsa tint2 pnmixer pulseaudio numlockx sakura stterm firefox-esr firefox-esr-l10n-cs mpv  obsidian-icon-theme gxmessage smtube smplayer smplayer-l10n mpv vlc vlc-l10n xfe xfe-i18n pcmanfm streamtuner2 calcoo dmenu mpg123 scrot screen fbreader pandoc retext python3-pip qmplay2 galternatives seamonkey stacer ttf-mscorefonts-installer xterm qmplay2 sysv-rc-conf yad xosd-bin waterfox-g3 waterfox-g3-i18n-cs netsurf-gtk audacious lxtask pavucontrol smtube lxappearance alsamixergui chromium chromium-l10n gdebi python-pip python3-pip xsel ffmpeg mpc-qt ttf-mscorefonts-installer libavcodec-extra mpg123 mplayer 
+sudo apt install --no-install-recommends git openbox obmenu obconf mousepad nano mc stalonetray fspanel gexec volumeicon-alsa tint2 pnmixer pulseaudio numlockx sakura stterm firefox-esr firefox-esr-l10n-cs mpv  obsidian-icon-theme gxmessage smtube smplayer smplayer-l10n mpv vlc vlc-l10n xfe xfe-i18n pcmanfm streamtuner2 calcoo dmenu mpg123 scrot screen fbreader pandoc retext python3-pip qmplay2 galternatives seamonkey stacer ttf-mscorefonts-installer xterm qmplay2 sysv-rc-conf yad xosd-bin waterfox-g3 waterfox-g3-i18n-cs netsurf-gtk audacious lxtask pavucontrol smtube lxappearance alsamixergui chromium chromium-l10n gdebi python-pip python3-pip xsel ffmpeg mpc-qt ttf-mscorefonts-installer libavcodec-extra mpg123 mplayer torbrowser-launcher
 
 echo "instalace youtube-dl" 
 
