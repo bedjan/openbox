@@ -149,7 +149,7 @@ sh ~/.config/openbox/all.sh ct2;;
 sh ~/.config/openbox/all.sh ard;;
 esac ;;
 
-"DOWNLOAD") xmessage "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni VIDEO YOUTUBE":3,"Stahni VIDEO ULOZTO":4 >/dev/null
+"DOWNLOAD") xmessage "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni VIDEO YOUTUBE":3,"Stahni VIDEO ULOZTO":4,"Pridej VIDEO ULOZTO":5,"VIDEO_ULOZTO_VSE":6  >/dev/null
 
 case $? in
 1)
@@ -160,6 +160,10 @@ xterm -T AUDIO_YOUTUBE -e 'cd $HOME/hudba;youtube-dl  --ignore-errors --extract-
 xterm -T VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f  135 "$(xsel --clipboard)"';;
 4)
 xterm -T VIDEO_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"';;
+5)
+xterm -T VIDEO_ULOZTO -e 'echo $(xsel --clipboard)>>url.txt && cat url.txt  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1'';;
+6)
+xterm -T VIDEO_ULOZTO_VSE -hold -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '1p' $HOME/url.txt)" && $HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '2p' $HOME/url.txt)" && $HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '3p' $HOME/url.txt)" && $HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '4p' $HOME/url.txt) && aplay  /usr/share/sounds/alsa/Front_Center.wav && rm url.txt"' ;;
 esac ;;
 
 
