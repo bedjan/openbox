@@ -85,7 +85,7 @@ xterm -hold -title AUTOSTART_SYSTEMU -e sudo bash -c "ls /etc/xdg/autostart/" & 
 /usr/bin/python3 /usr/bin/hp-systray -x ;;
 esac ;;
 
-"OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10,"Conky restart":11,"Tint2 restart":12  >/dev/null
+"OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10,"Conky restart":11,"Tint2 restart":12,"Vystup HDMI":13,"Vystup VGA":14  >/dev/null
 
 case $? in
 1)
@@ -112,6 +112,10 @@ xterm -hold -e lxappearance;;
 killall conky;sleep 2;conky --config=$HOME/.config/openbox/.conkyrc ;;
 12)
 killall tint2;sleep 2;tint2 -c $HOME/.config/openbox/tint2rc ;;
+13)
+xterm -T VYSTUP_HDMI -hold -e 'xrandr --output LVDS-1 --off --output HDMI-1 --auto';;
+14)
+xterm -T VYSTUP_VGA -hold -e 'xrandr --output LVDS-1 --off --output VGA-1 --auto';;
 esac ;;
 
 
@@ -145,15 +149,17 @@ sh ~/.config/openbox/all.sh ct2;;
 sh ~/.config/openbox/all.sh ard;;
 esac ;;
 
-"DOWNLOAD") xmessage "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO":2,"Stahni VIDEO":3 >/dev/null
+"DOWNLOAD") xmessage "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni VIDEO YOUTUBE":3,"Stahni VIDEO ULOZTO":4 >/dev/null
 
 case $? in
 1)
 echo "Exit";;
 2)
-xterm -T AUDIO -e 'cd /home/d/hudba;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
+xterm -T AUDIO_YOUTUBE -e 'cd $HOME/hudba;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
 3)
-xterm -T VIDEO -e 'cd /home/d/videa;youtube-dl --ignore-errors  "$(xsel --clipboard)"';;
+xterm -T VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f  135 "$(xsel --clipboard)"';;
+4)
+xterm -T VIDEO_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"';;
 esac ;;
 
 
@@ -220,7 +226,7 @@ sh ~/.config/openbox/all.sh cr_online;;
 bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
 esac ;;
 
-"OVLADANI") xmessage "Vyber" -timeout 60 -center -title "OVLADANI" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9 >/dev/null
+"OVLADANI") xmessage "Vyber" -timeout 60 -center -title "OVLADANI" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9,"ulozto_download":10 >/dev/null
 
 case $? in
 1)
@@ -248,6 +254,9 @@ xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
 xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
 9)
 echo "$choose volume";alsamixergui ;;
+10)
+xterm -title Ulozto-dl-update -hold -e "pip3 install --upgrade ulozto-downloader;sudo apt-get install python3-tk
+ tor";;
 esac ;;
 
 
