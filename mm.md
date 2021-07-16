@@ -24,7 +24,7 @@ pagetitle: Multimedia
 ---
 
 
-
+[Multimedai_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/multimedia.m3u)
 [TV_playlist_ceske](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
 [Radio_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u)
 
