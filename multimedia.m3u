@@ -1,0 +1,131 @@
+#EXTM3U
+
+#EXTINF:0,Nova
+https://nova-live.ssl.cdn.cra.cz/channels/nova_avod/playlist/cze/live_hq.m3u8
+
+#EXTINF:0,Nova Cinema
+https://nova-live.ssl.cdn.cra.cz/channels/nova_cinema_avod/playlist/cze/live_hq.m3u8
+
+#EXTINF:0,Nova2
+https://nova-live.ssl.cdn.cra.cz/channels/nova_2_avod/playlist.m3u8
+
+#EXTINF:0,Nova Action
+https://nova-live.ssl.cdn.cra.cz/channels/nova_action_avod/playlist.m3u8
+
+#EXTINF:0,Nova Gold
+https://nova-live.ssl.cdn.cra.cz/channels/nova_gold_avod/playlist.m3u8
+
+#EXTINF:0,Humor_radio
+http://mp3stream4.abradio.cz:8000/humor.mp3
+
+#EXTINF:0,4U_radio
+http://mpc.mediacp.eu:8302/stream
+
+#EXTINF:0,Tranceup
+http://5.39.71.159:8223/stream
+
+#EXTINF:0,E2
+https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu
+
+#EXTINF:0,E2_movin
+https://ice.actve.net/web-e2-movin
+
+#EXTINF:0,E2_flashback
+https://ice.actve.net/web-e2-flashback
+
+#EXTINF:0,E2_top40
+https://ice.actve.net/web-e2-top40
+
+
+#EXTINF:0,Freerave
+http://164.68.122.137:8061/
+
+#EXTINF:0,City 90
+http://ice.abradio.cz/city90128.mp3
+
+
+#EXTINF:0,City 80
+http://ice.abradio.cz/city80128.mp3
+
+
+#EXTINF:0,Radio Harmony FM DE 128 mp3
+http://mp3.harmonyfm.de/harmonyfm/hqlivestream.mp3
+
+
+#EXTINF:0,Sky Radio 80’s Hits
+http://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR04.mp3
+
+
+
+#EXTINF:0,Chillout
+http://mp3stream4.abradio.cz/chillout128.mp3
+
+
+#EXTINF:0,Shadowbox_DNB
+http://ice3.abradio.cz/shadowbox128.mp3
+
+
+
+#EXTINF:0,Chillout
+http://mp3stream4.abradio.cz/chillout128.mp3
+
+#EXTINF:0,Alternative times
+http://ice3.abradio.cz/alternative128.mp3
+
+
+#EXTINF:0,Applaus Rádio
+http://mp3stream3.abradio.cz:8000/applaus128.mp3
+
+#EXTINF:0,Oldies
+http://ice.abradio.cz/oldiesradio128.mp3
+
+
+
+#EXTINF:0,Oldies Rock
+http://mp3stream4.abradio.cz/oldiesrock128.mp3
+
+
+#EXTINF:0,Cro_Hradec_Kralove
+http://icecast2.play.cz/crohk128.mp3
+
+
+#EXTINF:0,Folk
+http://mp3stream2.abradio.cz:8000/folk.mp3
+
+
+#EXTINF:0,Country
+http://mp3stream4.abradio.cz/country128.mp3
+
+
+#EXTINF:0,Blanik
+http://ice.abradio.cz/blanikcz128.mp3
+
+#EXTINF:0,Dechovka
+http://icecast5.play.cz:8000/dechovka128.mp3
+
+#EXTINF:0,Ohen_v_krbu 128
+http://ice6.abradio.cz/relax-fire128.mp3
+
+
+#EXTINF:0,Pohadka 128
+http://ice3.abradio.cz/pohadka128.mp3
+
+
+#EXTINF:0,Povidka 128
+http://ice3.abradio.cz/povidka128.mp3
+
+#EXTINF:0,Pohadky_domino
+http://mp3stream4.abradio.cz/domino128.mp3
+
+#EXTINF:0,More
+http://ice6.abradio.cz/relax-sea128.mp3
+
+
+#EXTINF:0,Bourka
+http://ice6.abradio.cz/relax-thunder-rain128.mp3
+
+
+#EXTINF:0,Zpev_ptaku
+http://ice6.abradio.cz/relax-morning-birds128.mp3
+
+
