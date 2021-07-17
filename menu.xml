@@ -92,6 +92,11 @@
 				<execute>bash -c &quot;mpv --playlist https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u –ytdl-format=mp4 –ontop=yes –save-position-on-quit=yes –geometry=35%+0-50 –fs=no –cache-secs=180 –demuxer-readahead-secs=0 –ytdl-raw-options=no-check-certificate= &quot;</execute>
 			</action>
 		</item>
+		<item label="YOUTUBE_HUDBA">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh YOUTUBE_HUDBA</execute>
+			</action>
+		</item>
 		<separator/>
 		<menu id="root-menu-141918" label="Web ostatni">
 			<item label="github_zajmy">

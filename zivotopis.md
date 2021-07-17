@@ -2,7 +2,7 @@
 <html>
 <head>
 <base target="_blank">
-<title>Multimedia</title>
+<title>Curriculum vitae</title>
 </head>
 <body>
 <meta charset=(UTF-8(>

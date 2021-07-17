@@ -161,9 +161,9 @@ xterm -T VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f  135 "$(xsel --clipboar
 4)
 xterm -T VIDEO_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"';;
 5)
-echo $(xsel --clipboard)>>url.txt && xmessage -timeout 10 -file $HOME/url.txt;;
+echo "$(xsel --clipboard)" | grep "uloz.to">>url.txt && xmessage -timeout 10 -center -file $HOME/url.txt;;
 6)
-xterm -T VIDEO_ULOZTO_VSE -hold -e 'cd $HOME/videa;echo -1-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '1p' $HOME/url.txt)" && echo -2-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '2p' $HOME/url.txt)" && echo -3-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '3p' $HOME/url.txt)" && echo -4-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '4p' $HOME/url.txt)" &&  echo -5-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '5p' $HOME/url.txt)" &&   echo -6-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '6p' $HOME/url.txt)" && aplay  /usr/share/sounds/alsa/Front_Center.wav && rm $HOME/url.txt  || xmessage -timeout 10 -file $HOME/url.txt' ;;
+xterm -T VIDEO_ULOZTO_VSE -hold -e 'cd $HOME/videa;echo -1-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '1p' $HOME/url.txt)" && echo -2-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '2p' $HOME/url.txt)" && echo -3-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '3p' $HOME/url.txt)" && echo -4-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '4p' $HOME/url.txt)" &&  echo -5-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '5p' $HOME/url.txt)" &&   echo -6-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '6p' $HOME/url.txt)" && aplay  /usr/share/sounds/alsa/Front_Center.wav && cat $HOME/url.txt  || xmessage -timeout 10 -center -file $HOME/url.txt' ;;
 esac ;;
 
 
@@ -228,6 +228,16 @@ xterm -geometry 80x20-60-60 -title 90_radio -e bash -c "mpg123 -C -b 1024 --no-s
 sh ~/.config/openbox/all.sh cr_online;;
 14)
 bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
+esac ;;
+
+"YOUTUBE_HUDBA") xmessage "Vyber YOUTUBE HUDBU" -timeout 60 -center -title "RADIA" -default "Opustit" -buttons "Zrusit":1,"Trance_2009":2 >/dev/null
+
+
+case $? in
+1)
+echo "Exit";;
+2)
+mpv  --no-video https://www.youtube.com/watch?v=8rK7Qef0fCk;;
 esac ;;
 
 "OVLADANI") xmessage "Vyber" -timeout 60 -center -title "OVLADANI" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9,"ulozto_download":10 >/dev/null
