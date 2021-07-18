@@ -23,10 +23,19 @@ output:
 pagetitle: Web osobní
 ---
 
+<details open>
+<summary>- Menu -</summary>
+
+[Web](index.php)
+[Multimedia](mm.php)
+[Linux](linux.php)
+[Bitwarden](https://vault.bitwarden.com/#/vault)
+
+</details>
+
 
 ### Oblíbené
 
-[Radia a TV](http://janbednar.sweb.cz/mm.php)
 [Ftp](ftp://sweb.cz/)
 [Bitwarden](https://vault.bitwarden.com/#/vault)
 [Lastpass](https://lastpass.com/?ac=1)

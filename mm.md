@@ -23,10 +23,15 @@ output:
 pagetitle: Multimedia
 ---
 
+<details open>
+<summary>- Menu -</summary>
 
-[Multimedia_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/multimedia.m3u)
-[TV_playlist_ceske](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
-[Radio_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u)
+[Web](index.php)
+[Multimedia](mm.php)
+[Linux](linux.php)
+[Bitwarden](https://vault.bitwarden.com/#/vault)
+
+</details>
 
 ### Multimedia
 
@@ -209,14 +214,4 @@ mpv --ytdl-format=worst --ontop=yes --save-position-on-quit=yes --geometry=35%+0
 
 sudo apt-get install mpv vlc python-pip python3-pip;pip install --upgrade pip;pip install --upgrade pip3 && xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl" && echo "vypis_instalaci_pres_pip";pip list
 
-<details open>
-<summary>Menu</summary>
 
-[Radia a TV](http://janbednar.sweb.cz/mm.php)
-
-[Tv_program_ceske](https://www.tvprogram.cz/)
-
-[TV_playlist_ceske](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
-
-[Radio_playlist](https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u)
-</details> 
