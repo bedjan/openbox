@@ -32,7 +32,9 @@ Tel.: 00420 730610517
 
 email: [bedjan@gmail.com](bedjan@gmail.com)
 
-web:  [Osobni web](janbednar.sweb.cz)
+web:  [Osobní web](http://janbednar.sweb.cz)
+
+pdf: [Životopis_pdf](https://github.com/bedjan/openbox/raw/main/zivotopis.pdf)
 
 #### VZDĚLÁNÍ:
 
