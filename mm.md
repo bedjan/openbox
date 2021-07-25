@@ -33,6 +33,14 @@ pagetitle: Multimedia
 
 </details>
 
+### Playlisty
+
+
+[TV a Radia Cesko](https://raw.githubusercontent.com/bedjan/openbox/main/multimedia.m3u)
+[Radia Cesko](https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u)
+[TV Cesko](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
+[TV Nemecko](https://raw.githubusercontent.com/bedjan/openbox/main/tv_nemecko.m3u)
+
 ### Multimedia
 
 

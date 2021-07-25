@@ -16,7 +16,7 @@ fi
 case $choose in
 
 
-"VYPNOUT_PC") xmessage "!!! POZOR - Vypnuti PC, Vypnuti PC v case, restart PC !!!" -timeout 60 -center -title "VYPNOUT_PC" -default "Opustit" -buttons "Zrusit":1,"Vypnout":2,"Vypnout v 00:00":3,"Vypnout v 01:00":4,"Vypnout v 02:00":5,"Restart":6 >/dev/null
+"VYPNOUT_PC") xmessage -center  -geometry 1280x50 "!!! POZOR - Vypnuti PC, Vypnuti PC v case, restart PC !!!" -timeout 60 -center -title "VYPNOUT_PC" -default "Opustit" -buttons "Zrusit":1,"Vypnout":2,"Vypnout v 00:00":3,"Vypnout v 01:00":4,"Vypnout v 02:00":5,"Restart":6 >/dev/null
 
 case $? in
 1)
@@ -33,7 +33,7 @@ xterm  -title Vypnout_v_02:00 -hold -e 'echo Vypnout_v_02:00; sudo shutdown -h 0
 xterm  -title Reboot -hold -e 'echo Reboot;sudo reboot';;
 esac ;;
 
-"POZNAMKY") xmessage "POZNAMKY" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"WEB":2,"POZNAMKY":3    >/dev/null
+"POZNAMKY") xmessage -center  -geometry 1280x50 "POZNAMKY" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"WEB":2,"POZNAMKY":3    >/dev/null
 
 case $? in
 1)
@@ -44,7 +44,7 @@ xterm -T WEB -hold -e bash -c 'echo nazev;read nazev;echo www;read www; echo "[$
 xterm -T POZNAMKY -hold -e bash -c 'echo poznamka;read poznamka;echo "$poznamka" >> $HOME/.config/openbox/poznamky.md ; xterm -T WEB -hold -e tail $HOME/.config/openbox/poznamky.md';;
 esac ;;
 
-"SYSTEM") xmessage "SYSTEM" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"Dropbox st":2,"Dropbox web":3,"sysv-rc-conf":4,"HP install":5,"Xd kill":6,"Xd l":7,"Xd p":8,"Xd h":9,"Xd d":10,"debian upgr":11,"bash rc":12,"bash alias":13,"tisk konf":14,"cups web":15,"Debian procisteni":16,"Autostart systemu":17,"hpsystray":18   >/dev/null
+"SYSTEM") xmessage -center  -geometry 1280x50 "SYSTEM" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"Dropbox st":2,"Dropbox web":3,"sysv-rc-conf":4,"HP install":5,"Xd kill":6,"Xd l":7,"Xd p":8,"Xd h":9,"Xd d":10,"debian upgr":11,"bash rc":12,"bash alias":13,"tisk konf":14,"cups web":15,"Debian procisteni":16,"Autostart systemu":17,"hpsystray":18 >/dev/null
 
 case $? in
 1)
@@ -85,7 +85,7 @@ xterm -hold -title AUTOSTART_SYSTEMU -e sudo bash -c "ls /etc/xdg/autostart/" & 
 /usr/bin/python3 /usr/bin/hp-systray -x ;;
 esac ;;
 
-"OPENBOX") xmessage "Openbox" -timeout 60 -center -title "OPENBOX" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10,"Conky restart":11,"Tint2 restart":12,"Vystup HDMI":13,"Vystup VGA":14  >/dev/null
+"OPENBOX") xmessage -center  -geometry 1280x50 "Openbox" -timeout 60 -center -title "OPENBOX" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10,"Conky restart":11,"Tint2 restart":12,"Vystup HDMI":13,"Vystup VGA":14  >/dev/null
 
 case $? in
 1)
@@ -119,7 +119,7 @@ xterm -T VYSTUP_VGA -hold -e 'xrandr --output LVDS-1 --off --output VGA-1 --auto
 esac ;;
 
 
-"SLUZBY") xmessage "Vybirej opatrne" -timeout 60 -center -title "SLUZBY" -default "Opustit" -buttons "Zrusit":1,"Odhlaseni":2,"! PC restart !":3,"! PC vypnuti !":4 >/dev/null
+"SLUZBY") xmessage -center  -geometry 1280x50 "Vybirej opatrne" -timeout 60 -center -title "SLUZBY" -default "Opustit" -buttons "Zrusit":1,"Odhlaseni":2,"! PC restart !":3,"! PC vypnuti !":4 >/dev/null
 
 case $? in
 1)
@@ -132,7 +132,7 @@ sudo sudo reboot;;
 sudo sudo poweroff;;
 esac ;;
 
-"TV") xmessage "Vyber YOUTUBE, nebo TV" -timeout 60 -center -title "TV" -default "Opustit" -buttons "Zrusit":1,"Youtube - smtube":2,"TV program":3,"CT1":4,"CT2":5,"Ard":6 >/dev/null
+"TV") xmessage -center  -geometry 1280x50 "Vyber YOUTUBE, nebo TV" -timeout 60 -center -title "TV" -default "Opustit" -buttons "Zrusit":1,"Youtube - smtube":2,"TV program":3,"CT1":4,"CT2":5,"Ard":6 >/dev/null
 
 case $? in
 1)
@@ -149,7 +149,7 @@ sh ~/.config/openbox/all.sh ct2;;
 sh ~/.config/openbox/all.sh ard;;
 esac ;;
 
-"DOWNLOAD") xmessage "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni VIDEO YOUTUBE":3,"Stahni VIDEO ULOZTO":4,"Pridej VIDEO ULOZTO":5,"VIDEO_ULOZTO_VSE":6  >/dev/null
+"DOWNLOAD") xmessage -center  -geometry 1280x50 "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni VIDEO YOUTUBE":3,"Stahni VIDEO ULOZTO":4,"Pridej VIDEO ULOZTO":5,"VIDEO_ULOZTO_VSE":6  >/dev/null
 
 case $? in
 1)
@@ -161,14 +161,14 @@ xterm -T VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f  135 "$(xsel --clipboar
 4)
 xterm -T VIDEO_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"';;
 5)
-echo "$(xsel --clipboard)" | grep "uloz.to">>url.txt && xmessage -timeout 10 -center -file $HOME/url.txt;;
+echo "$(xsel --clipboard)" | grep "uloz.to">>url.txt && xmessage -center  -geometry 1280x50 -timeout 10 -center -file $HOME/url.txt;;
 6)
-xterm -T VIDEO_ULOZTO_VSE -hold -e 'cd $HOME/videa;echo -1-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '1p' $HOME/url.txt)" && echo -2-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '2p' $HOME/url.txt)" && echo -3-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '3p' $HOME/url.txt)" && echo -4-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '4p' $HOME/url.txt)" &&  echo -5-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '5p' $HOME/url.txt)" &&   echo -6-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '6p' $HOME/url.txt)" && aplay  /usr/share/sounds/alsa/Front_Center.wav && cat $HOME/url.txt  || xmessage -timeout 10 -center -file $HOME/url.txt' ;;
+xterm -T VIDEO_ULOZTO_VSE -hold -e 'cd $HOME/videa;echo -1-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '1p' $HOME/url.txt)" && echo -2-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '2p' $HOME/url.txt)" && echo -3-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '3p' $HOME/url.txt)" && echo -4-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '4p' $HOME/url.txt)" &&  echo -5-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '5p' $HOME/url.txt)" &&   echo -6-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '6p' $HOME/url.txt)" && aplay  /usr/share/sounds/alsa/Front_Center.wav && cat $HOME/url.txt  || xmessage -center  -geometry 1280x50 -timeout 10 -center -file $HOME/url.txt' ;;
 esac ;;
 
 
 
-"PROGRAMY") xmessage "Vyber" -timeout 60 -center -title "OSTATNI" -default "Opustit" -buttons "Zrusit":1,"Kalkulacka":2,"Streamtuner":3,"Gesta":4,"Kalendar":5,"Misto na disku":6 >/dev/null
+"PROGRAMY") xmessage -center  -geometry 1280x50 "Vyber" -timeout 60 -center -title "OSTATNI" -default "Opustit" -buttons "Zrusit":1,"Kalkulacka":2,"Streamtuner":3,"Gesta":4,"Kalendar":5,"Misto na disku":6 >/dev/null
 
 case $? in
 1)
@@ -185,7 +185,7 @@ yad --calendar;;
 eval exec yad --title="Mista na disku" --image=drive-harddisk --text="Disk :" --buttons-layout=end --width=650 --multi-progress $(df -hT $1 | tail -n +2 | awk '{printf "--bar=\"<b>%s</b> (%s - %s) [%s/%s]\" %s ", $7, $1, $2, $4, $3, $6}') ;;
 esac ;;
 
-"BANKY") xmessage "Vyber" -timeout 60 -center -title "BANKY" -default "Opustit" -buttons "Zrusit":1,"CS george":2,"Sparkasse":3 >/dev/null
+"BANKY") xmessage -center  -geometry 1280x50 "Vyber" -timeout 60 -center -title "BANKY" -default "Opustit" -buttons "Zrusit":1,"CS george":2,"Sparkasse":3 >/dev/null
 
 case $? in
 1)
@@ -196,7 +196,7 @@ sh ~/.config/openbox/all.sh cs;;
 sh ~/.config/openbox/all.sh sparkasse;;
 esac ;;
 
-"RADIA") xmessage "Vyber RADIO" -timeout 60 -center -title "RADIA" -default "Opustit" -buttons "Zrusit":1,"Radia online":2,"Humor":3,"4U":4,"Tranceup":5,"Evropa2":6,"Evropa2 Movin":7,"Evropa2 flashback":8,"Evropa2 Top40":9,"Freerave":10,"City 80":11,"City 90":12,"WEB Cesky rozhlas":13,"WEB VSECHNA RADIA":14 >/dev/null
+"RADIA") xmessage -center  -geometry 1280x50 "Vyber RADIO" -timeout 60 -center -title "RADIA" -default "Opustit" -buttons "Zrusit":1,"Radia online":2,"Humor":3,"4U":4,"Tranceup":5,"Evropa2":6,"Evropa2 Movin":7,"Evropa2 flashback":8,"Evropa2 Top40":9,"Freerave":10,"City 80":11,"City 90":12,"WEB Cesky rozhlas":13,"WEB VSECHNA RADIA":14 >/dev/null
 
 
 case $? in
@@ -230,7 +230,7 @@ sh ~/.config/openbox/all.sh cr_online;;
 bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
 esac ;;
 
-"YOUTUBE_HUDBA") xmessage "Vyber YOUTUBE HUDBU" -timeout 60 -center -title "RADIA" -default "Opustit" -buttons "Zrusit":1,"Trance_2009":2 >/dev/null
+"YOUTUBE_HUDBA") xmessage -center  -geometry 1280x50 "Vyber YOUTUBE HUDBU" -timeout 60 -center -title "RADIA" -default "Opustit" -buttons "Zrusit":1,"Trance_2009":2 >/dev/null
 
 
 case $? in
@@ -240,7 +240,7 @@ echo "Exit";;
 mpv  --no-video https://www.youtube.com/watch?v=8rK7Qef0fCk;;
 esac ;;
 
-"OVLADANI") xmessage "Vyber" -timeout 60 -center -title "OVLADANI" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9,"ulozto_download":10 >/dev/null
+"OVLADANI") xmessage -center  -geometry 1280x50 "Vyber" -timeout 60 -center -title "OVLADANI" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9,"ulozto_download":10 >/dev/null
 
 case $? in
 1)
