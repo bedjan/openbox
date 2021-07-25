@@ -43,7 +43,9 @@ pagetitle: Multimedia
 
 ### Online prehravac 
 
-[Online prehravac](https://www.reloltv.com/playlist.php?playlist=https%3A%2F%2Fraw.githubusercontent.com%2Fbedjan%2Fopenbox%2Fmain%2Fmultimedia.m3u&recaptcha_response=03AGdBq27a_oJp7BN-P6B-wNSZceyLat7eEOd1USop3ZGkJRqFHYVg3RRta4l_KngkGIIMkfa3uzVwAZkz8jPcUFaAjG-Ceu590Fzqezdk8Lg_3CKTLTgEHSPRU4Yvq3VrmnCKWisrXKONjlBZudqya30lTI-JSQE-6enOIsncrTqPbhmRX_M4oO3y8ya-y-UiIyDIg5xhM9FU7T7dfi2dO3H8PAxTTKfDWThAb2BafdpUhDPTXuqxiHNPfagYSfXGNrZjxD4D9D-CfmseoLWRebUun4q4StXV0E6kd36YwbvbIrwdhDOkH6uPQgvqYBoC1yulqsNPWmepkFsJMCGvUu5eLIMbOGgN6dMz1FZgtKsi9QayXl52OfvAbNCvunV2Q5Dkb3cZ_vCcgSlJMdh95JDU_MUTEBnRJoEwbPv_g0KmWIn3pTcr5R7kC8Lt7mIR6wUw570PBaTu)
+[TV a Radia Cesko](https://www.reloltv.com/playlist.php?playlist=https%3A%2F%2Fraw.githubusercontent.com%2Fbedjan%2Fopenbox%2Fmain%2Fmultimedia.m3u&recaptcha_response=03AGdBq27a_oJp7BN-P6B-wNSZceyLat7eEOd1USop3ZGkJRqFHYVg3RRta4l_KngkGIIMkfa3uzVwAZkz8jPcUFaAjG-Ceu590Fzqezdk8Lg_3CKTLTgEHSPRU4Yvq3VrmnCKWisrXKONjlBZudqya30lTI-JSQE-6enOIsncrTqPbhmRX_M4oO3y8ya-y-UiIyDIg5xhM9FU7T7dfi2dO3H8PAxTTKfDWThAb2BafdpUhDPTXuqxiHNPfagYSfXGNrZjxD4D9D-CfmseoLWRebUun4q4StXV0E6kd36YwbvbIrwdhDOkH6uPQgvqYBoC1yulqsNPWmepkFsJMCGvUu5eLIMbOGgN6dMz1FZgtKsi9QayXl52OfvAbNCvunV2Q5Dkb3cZ_vCcgSlJMdh95JDU_MUTEBnRJoEwbPv_g0KmWIn3pTcr5R7kC8Lt7mIR6wUw570PBaTu)
+[Radia Cesko](http://www.reloltv.com/playlist.php?playlist=https%3A%2F%2Fraw.githubusercontent.com%2Fbedjan%2Fopenbox%2Fmain%2Fradio.m3u)
+[TV Cesko](http://www.reloltv.com/playlist.php?playlist=https%3A%2F%2Fraw.githubusercontent.com%2Fbedjan%2Fopenbox%2Fmain%2Ftv.m3u)
 
 
 ### Multimedia
