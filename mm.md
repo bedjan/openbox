@@ -41,6 +41,12 @@ pagetitle: Multimedia
 [TV Cesko](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
 [TV Nemecko](https://raw.githubusercontent.com/bedjan/openbox/main/tv_nemecko.m3u)
 
+#### Online prehravac 
+
+<audio controls>
+    <source src="https://raw.githubusercontent.com/bedjan/openbox/main/multimedia.m3u" type="audio/mpegURL" />
+</audio>
+
 ### Multimedia
 
 
