@@ -159,11 +159,11 @@ xterm -T AUDIO_YOUTUBE -e 'cd $HOME/hudba;youtube-dl  --ignore-errors --extract-
 3)
 xterm -T VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f  135 "$(xsel --clipboard)"';;
 4)
-xterm -T VIDEO_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"';;
+xterm -T VIDEO_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"'  && aplay  /usr/share/sounds/alsa/Front_Center.wav || xmessage "HOTOVO_Uloz_to_video_stazeno" -center  ;;
 5)
-echo "$(xsel --clipboard)" | grep "uloz.to">>url.txt && xmessage -center  -geometry 1280x50 -timeout 10 -center -file $HOME/url.txt;;
+echo "$(xsel --clipboard)" | grep "uloz.to">>url.txt && xmessage -center  -geometry 1280x50 -timeout 10 -center -file '$HOME/url.txt;;
 6)
-xterm -T VIDEO_ULOZTO_VSE -hold -e 'cd $HOME/videa;echo -1-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '1p' $HOME/url.txt)" && echo -2-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '2p' $HOME/url.txt)" && echo -3-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '3p' $HOME/url.txt)" && echo -4-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '4p' $HOME/url.txt)" &&  echo -5-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '5p' $HOME/url.txt)" &&   echo -6-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '6p' $HOME/url.txt)" && aplay  /usr/share/sounds/alsa/Front_Center.wav && cat $HOME/url.txt  || xmessage -center  -geometry 1280x50 -timeout 10 -center -file $HOME/url.txt' ;;
+xterm -T VIDEO_ULOZTO_VSE -hold -e 'cd $HOME/videa;echo -1-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '1p' $HOME/url.txt)" && echo -2-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '2p' $HOME/url.txt)" && echo -3-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '3p' $HOME/url.txt)" && echo -4-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '4p' $HOME/url.txt)" &&  echo -5-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '5p' $HOME/url.txt)" &&   echo -6-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '6p' $HOME/url.txt)" && aplay  /usr/share/sounds/alsa/Front_Center.wav && cat $HOME/url.txt  || xmessage -center  -geometry 1280x50 -timeout 10 -center -file '$HOME/url.txt' ;;
 esac ;;
 
 
