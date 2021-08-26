@@ -1,0 +1,115 @@
+<Stations>
+  <Station><name>Humor_radio</name>
+<uri>http://mp3stream4.abradio.cz:8000/humor.mp3</uri></Station>
+
+  <Station><name>4U_radio</name>
+<uri>http://mpc.mediacp.eu:8302/stream</uri></Station>
+
+  <Station><name>Tranceup</name>
+<uri>http://5.39.71.159:8223/stream</uri></Station>
+
+  <Station><name>E2</name>
+<uri>https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu</uri></Station>
+
+  <Station><name>E2_movin</name>
+<uri>https://ice.actve.net/web-e2-movin</uri></Station>
+
+  <Station><name>E2_flashback</name>
+<uri>https://ice.actve.net/web-e2-flashback</uri></Station>
+
+  <Station><name>E2_top40</name>
+<uri>https://ice.actve.net/web-e2-top40</uri></Station>
+
+
+  <Station><name>Freerave</name>
+<uri>http://164.68.122.137:8061/</uri></Station>
+
+  <Station><name>City 90</name>
+<uri>http://ice.abradio.cz/city90128.mp3</uri></Station>
+
+
+  <Station><name>City 80</name>
+<uri>http://ice.abradio.cz/city80128.mp3</uri></Station>
+
+
+  <Station><name>Radio Harmony FM DE 128 mp3</name>
+<uri>http://mp3.harmonyfm.de/harmonyfm/hqlivestream.mp3</uri></Station>
+
+
+  <Station><name>Sky Radio 80’s Hits</name>
+<uri>http://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR04.mp3</uri></Station>
+
+
+
+  <Station><name>Chillout</name>
+<uri>http://mp3stream4.abradio.cz/chillout128.mp3</uri></Station>
+
+
+  <Station><name>Shadowbox_DNB</name>
+<uri>http://ice3.abradio.cz/shadowbox128.mp3</uri></Station>
+
+
+
+  <Station><name>Chillout</name>
+<uri>http://mp3stream4.abradio.cz/chillout128.mp3</uri></Station>
+
+  <Station><name>Alternative times</name>
+<uri>http://ice3.abradio.cz/alternative128.mp3</uri></Station>
+
+
+  <Station><name>Applaus Rádio</name>
+<uri>http://mp3stream3.abradio.cz:8000/applaus128.mp3</uri></Station>
+
+  <Station><name>Oldies</name>
+<uri>http://ice.abradio.cz/oldiesradio128.mp3</uri></Station>
+
+
+
+  <Station><name>Oldies Rock</name>
+<uri>http://mp3stream4.abradio.cz/oldiesrock128.mp3</uri></Station>
+
+
+  <Station><name>Cro_Hradec_Kralove</name>
+<uri>http://icecast2.play.cz/crohk128.mp3</uri></Station>
+
+
+  <Station><name>Folk</name>
+<uri>http://mp3stream2.abradio.cz:8000/folk.mp3</uri></Station>
+
+
+  <Station><name>Country</name>
+<uri>http://mp3stream4.abradio.cz/country128.mp3</uri></Station>
+
+
+  <Station><name>Blanik</name>
+<uri>http://ice.abradio.cz/blanikcz128.mp3</uri></Station>
+
+  <Station><name>Dechovka</name>
+<uri>http://icecast5.play.cz:8000/dechovka128.mp3</uri></Station>
+
+  <Station><name>Ohen_v_krbu 128</name>
+<uri>http://ice6.abradio.cz/relax-fire128.mp3</uri></Station>
+
+
+  <Station><name>Pohadka 128</name>
+<uri>http://ice3.abradio.cz/pohadka128.mp3</uri></Station>
+
+
+  <Station><name>Povidka 128</name>
+<uri>http://ice3.abradio.cz/povidka128.mp3</uri></Station>
+
+  <Station><name>Pohadky_domino</name>
+<uri>http://mp3stream4.abradio.cz/domino128.mp3</uri></Station>
+
+  <Station><name>More</name>
+<uri>http://ice6.abradio.cz/relax-sea128.mp3</uri></Station>
+
+
+  <Station><name>Bourka</name>
+<uri>http://ice6.abradio.cz/relax-thunder-rain128.mp3</uri></Station>
+
+
+  <Station><name>Zpev_ptaku</name>
+<uri>http://ice6.abradio.cz/relax-morning-birds128.mp3</uri></Station>
+
+
