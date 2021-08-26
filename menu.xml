@@ -37,6 +37,11 @@
 			</action>
 		</item>
 		<separator/>
+		<item label="Radia Goodvibes">
+			<action name="Execute">
+				<execute>goodvibes</execute>
+			</action>
+		</item>
 		<item label="RADIA">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh RADIA</execute>

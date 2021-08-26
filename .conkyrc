@@ -27,7 +27,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 conky.config = {
 --[[     double_buffer = true, ]]
-    alignment = 'top_middle',
+    alignment = 'top_left',
+--[[ alignment = 'top_middle', ]]
     background = false,
     border_width = 0,
     cpu_avg_samples = 2,
@@ -67,6 +68,8 @@ conky.config = {
     color2 = 'grey',
 }
 
-conky.text = [[
-${alignc}${color2}ZVUK ${color1} ${execi 2 pacmd list-sinks | grep muted | awk '{ print $2 }'  | sed -e "s/yes/Vypnuto/" | sed -e "s/no/Zapnuto/"}${color2} VOL ${color1}${execi 2 pacmd list-sinks | grep "volume: front-left:" | cut -b 30-32} ${color2}DPMS ${color1}${execi 2 xset q |  grep "DPMS is" | awk '{ print $3 }' | sed -e "s/Enabled/Zapnuto/" | sed -e "s/Disabled/Vypnuto/"}${color white} ${uptime_short} ${color2} ${memeasyfree} ${membar 5,50}${color1} ${cpu cpu0} ${color1}${cpu cpu1} ${color2} HOME ${color1} ${fs_free /home} ${color2} ROOT ${color1} ${fs_free /} ${color2} HOME ${color1} ${fs_free /home} ${color2} ${wireless_essid wlan0}  ${color white}${wireless_link_bar  5,50 wlan0} ${color2} ${downspeed wlan0} ${color white}${upspeed wlan0}${color2} TEMP ${color1}${acpitemp}${color2}  APP ${color2} ${color1}${top name 1} ${color white}${top cpu 1} ${color2}${top mem 1} ${color1} ${top_mem name 1}${color2}${top_mem mem 1} 
+conky.text = [[${color2}ZVUK${color1} ${execi 2 pacmd list-sinks | grep muted | awk '{ print $2 }'  | sed -e "s/yes/Vyp/" | sed -e "s/no/Zap/"}${color2} VOL${color1}${execi 2 pacmd list-sinks | grep "volume: front-left:" | cut -b 30-32} ${color2}DPMS ${color1}${execi 2 xset q |  grep "DPMS is" | awk '{ print $3 }' | sed -e "s/Enabled/Zap/" | sed -e "s/Disabled/Vyp/"}${color white} ${uptime_short} ${color2} ${memeasyfree} ${membar 5,30}${color1} ${cpu cpu0} ${color1}${cpu cpu1} ${color2} HOME ${color1} ${fs_free /home} ${color2} ROOT ${color1} ${fs_free /} ${color2} ${color2} ${wireless_essid wlan0}  ${color white}${wireless_link_bar  5,30 wlan0} ${color2} ${downspeed wlan0} ${color white}${upspeed wlan0} ${color1} ${if_match "${execi 10 qdbus org.mpris.MediaPlayer2.Goodvibes /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlaybackStatus}" == "Playing"} ${execpi 10 qdbus org.mpris.MediaPlayer2.Goodvibes /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Metadata | grep "^goodvibes:station:" | cut -d':' -f3-}/${execpi 10 qdbus org.mpris.MediaPlayer2.Goodvibes /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Metadata | grep "^xesam:title:" | cut -d':' -f3-}\
+${else}\
+No Radio\
+${endif}${color2} TEMP ${color1}${acpitemp}${color2}  APP ${color2} ${color1}${top name 1} ${color white}${top cpu 1} ${color2}${top mem 1} ${color1} ${top_mem name 1}${color2}${top_mem mem 1}
 ]]

@@ -149,7 +149,7 @@ sh ~/.config/openbox/all.sh ct2;;
 sh ~/.config/openbox/all.sh ard;;
 esac ;;
 
-"DOWNLOAD") xmessage -center  -geometry 1280x50 "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni VIDEO YOUTUBE":3,"Stahni VIDEO ULOZTO":4,"Pridej VIDEO ULOZTO":5,"VIDEO_ULOZTO_VSE":6  >/dev/null
+"DOWNLOAD") xmessage -center  -geometry 1280x50 "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni VIDEO YOUTUBE":3,"Stahni DATA Z ULOZTO":4,"Pridej DATA ULOZTO":5,"DATA_ULOZTO_VSE":6  >/dev/null
 
 case $? in
 1)
@@ -159,11 +159,11 @@ xterm -T AUDIO_YOUTUBE -e 'cd $HOME/hudba;youtube-dl  --ignore-errors --extract-
 3)
 xterm -T VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f  135 "$(xsel --clipboard)"';;
 4)
-xterm -T VIDEO_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"'  && aplay  /usr/share/sounds/alsa/Front_Center.wav || xmessage "HOTOVO_Uloz_to_video_stazeno" -center  ;;
+xterm -T VIDEO_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"'  && aplay  /usr/share/sounds/alsa/Front_Center.wav || xmessage "HOTOVO_Uloz_to_data_stazeno" -center  ;;
 5)
 echo "$(xsel --clipboard)" | grep "uloz.to">>url.txt && xmessage -center  -geometry 1280x50 -timeout 10 -center -file '$HOME/url.txt;;
 6)
-xterm -T VIDEO_ULOZTO_VSE -hold -e 'cd $HOME/videa;echo -1-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '1p' $HOME/url.txt)" && echo -2-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '2p' $HOME/url.txt)" && echo -3-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '3p' $HOME/url.txt)" && echo -4-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '4p' $HOME/url.txt)" &&  echo -5-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '5p' $HOME/url.txt)" &&   echo -6-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '6p' $HOME/url.txt)" && aplay  /usr/share/sounds/alsa/Front_Center.wav && cat $HOME/url.txt  || xmessage -center  -geometry 1280x50 -timeout 10 -center -file '$HOME/url.txt' ;;
+xterm -T DATA_ULOZTO_VSE -hold -e 'cd $HOME/videa;echo -1-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '1p' $HOME/url.txt)" && echo -2-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '2p' $HOME/url.txt)" && echo -3-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '3p' $HOME/url.txt)" && echo -4-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '4p' $HOME/url.txt)" &&  echo -5-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '5p' $HOME/url.txt)" &&   echo -6-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '6p' $HOME/url.txt)" && aplay  /usr/share/sounds/alsa/Front_Center.wav && cat $HOME/url.txt  || xmessage -center  -geometry 1280x50 -timeout 10 -center -file '$HOME/url.txt' ;;
 esac ;;
 
 
@@ -263,7 +263,7 @@ then xset  -display $DISPLAY s on -dpms
 echo "XXX___Nevypinam DPMS monitor___XXX"  | osd_cat -d 1 -s 1 -A LEFT -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1'
 fi;;
 7)
-xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
+xterm -title Youtube-dl-update -hold -e "/usr/bin/python3 -m pip install --upgrade pip --no-warn-script-location || pip install --upgrade youtube-dl";;
 8)
 xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
 9)
