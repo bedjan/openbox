@@ -751,12 +751,12 @@
       </mousebind>
             <mousebind button="Up" action="Click">
       <action name="Execute">
-        <command>sh /home/d/skripty/youtubew.sh</command>
+        <command>sh ~/.config/openbox/all.sh mpv_youtube_worst</command>
       </action>
       </mousebind>
       <mousebind button="Down" action="Click">
       <action name="Execute">
-        <command>sh /home/d/skripty/youtube.sh</command>
+        <command>sh ~/.config/openbox/all.sh mpv_youtube</command>
       </action>
       </mousebind>
     </context>
