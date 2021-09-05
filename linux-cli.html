@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Linux-cli</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header>
+<h1 class="title">Linux-cli</h1>
+</header>
+<html>
+<head>
+<base target="_blank">
+<title>
+Linux
+</title>
+</head>
+<body>
+<meta charset=(UTF-8(>
+<meta name=(viewport( content=(width=device-width, initial-scale=1">
+<style>
+html {color: white;background-color:black;text-align: left;} 
+a:link { color: #33adff;}
+a:visited {color: #ff9933;}
+a:hover {  color: #ffff1a;}
+a:active {  color: #33ff33;}
+</style>
+<details open>
+<p><summary>- Menu -</summary></p>
+<p><a href="index.php">Web</a> <a href="mm.php">Multimedia</a> <a href="linux.php">Linux</a> <a href="https://vault.bitwarden.com/#/vault">Bitwarden</a></p>
+</details>
+<h3 id="linux-prikazy">Linux prikazy</h3>
+<h4 id="navigace">Navigace:</h4>
+<p>pwd – výpis pracovního adresáře</p>
+<p>ls –la – zobrazení obsahu adresáře</p>
+<p>cd – změna adresáře</p>
+<p>cp –avr <cesta ke zdroji adresáře/souboru> <cesta k umístění adresáře/souboru> – kopírování složky / souboru</p>
+<p>mv <cesta ke zdroji adresáře/souboru> <cesta k umístění adresáře/souboru> – přesun adresáře / souboru</p>
+<p>mkdir <název adresáře> – vytvoření adresáře</p>
+<p>touch <název souboru> – vytvoření / aktualizace souboru</p>
+<p>rm –rf <název adresáře / souboru> – smazání adresáře / souboru</p>
+<h4 id="prohlížení">Prohlížení:</h4>
+<p>cat <cesta k souboru> – zobrazí obsah souboru</p>
+<p>more <cesta k souboru> – zobrazí obsah souboru (celý najednou)</p>
+<p>less <cesta k souboru> – zobrazí obsah souboru (celý najednou s možností scrolování)</p>
+<p>nano <cesta k souboru> – vytvoření a otevření / otevření souboru pro editaci v textovém editoru Nano</p>
+<p>vi <cesta k souboru> – vytvoření a otevření / otevření souboru pro editaci v textovém editoru Vi</p>
+<p>head <cesta k souboru> – zobrazí prvních 10 řádků vybraného souboru</p>
+<p>tail <cesta k souboru> – zobrazí posledních 10 řádků vybraného souboru</p>
+<p>tail –f <cesta k souboru> – zobrazí posledních 10 řádků souboru a současně změní soubor (obvykle soubor protokolu)</p>
+<p>watch <příkaz> – sleduje výstup příkazu (defaultně je nastaveno obnovení každé 2 vteřiny)</p>
+<h4 id="oprávnění-souborů">Oprávnění souborů:</h4>
+<p>r w x(vlastník) r w x(skupina) r w x(ostatní)</p>
+<p>r (čtení) – Umožňuje uživateli zobrazit soubor – číselná hodnota = 4</p>
+<p>w (zápis) – Umožňuje uživateli editovat soubor – číselná hodnota = 2</p>
+<p>x (spuštění) – Umožňuje uživateli spustit daný soubor – číselná hodnota = 1</p>
+<p>chmod 777 <cesta k souboru> – Vlastník, skupina i ostatní uživatelé mohou číst, zapisovat a spustit daný soubor.</p>
+<p>chmod 700 <cesta k souboru> – Vlastník může číst, zapisovat a spustit daný soubor. Skupina a ostatní uživatelé nemají žádná práva</p>
+<p>chmod 666 <cesta k souboru> – Všichni uživatelé mohou číst a zapisovat do daného souboru.</p>
+<p>chmod 644 <cesta k souboru> – Vlastník může číst a zapisovat do souboru. Skupina a ostatní mohou jen číst daný soubor.</p>
+<p>Oprávnění složek:</p>
+<p>r w x(vlastník) r w x(skupina) r w x(ostatní)</p>
+<p>r (čtení) – Umožňuje uživateli zobrazit složku – číselná hodnota = 4</p>
+<p>w (zápis) – Umožňuje uživateli editovat složku – číselná hodnota = 2</p>
+<p>x (spuštění) – Umožňuje uživateli spustit danou složku – číselná hodnota = 1</p>
+<p>chmod 777 <cesta ke složce> – Vlastník, skupina i ostatní uživatelé mohou číst, zapisovat a spouštět soubory ve složce, vytvářet soubory ve složce, mazat a měnit soubory ve složce.chmod 755 <cesta ke složce> – Vlastník může číst, zapisovat a spouštět soubory ve složce, vytvářet soubory ve složce, mazat a měnit soubory ve složce. Skupina a ostatní uživatelé mohou jen měnit adresář a seznam souborů.</p>
+<p>chmod 700 <cesta ke složce> – Vlastník může číst, zapisovat a spouštět soubory ve složce, vytvářet soubory ve složce, mazat a měnit soubory ve složce. Skupina a ostatní uživatelé nemají žádná oprávnění.</p>
+<h4 id="správa-uživatelů">Správa uživatelů:</h4>
+<p>adduser <jméno nového uživatele> – vytvoří nového uživatele</p>
+<p>deluser <jméno existujícího uživatele> – smaže uživatele, jeho domovský adresář zůstane</p>
+<p>deluser <jméno existujícího uživatele> -remove-home – smaže uživatele i s jeho domovským adresářem</p>
+<p>addgroup <nový název skupiny> – vytvoří novou skupinu</p>
+<p>delgroup <název existující skupiny> – smaže skupinu</p>
+<p>passwd – změní heslo</p>
+<p>who – zobrazí seznam přihlášených uživatelů</p>
+<p>useradd –g <název skupiny> <jméno uživatele> – přidá uživatele do skupiny, bude to primární skupina pro uživatele</p>
+<p>useradd –G <název skupiny> <jméno uživatele> – přidá uživatele do skupiny, bude to druhotná skupina pro uživatele</p>
+<p>usermod –g <název skupiny> <jméno uživatele> – změní uživatelovu primární skupinu</p>
+<p>usermod –a –G <název skupiny> <jméno uživatele> – změní uživatelovu druhotnou skupinu</p>
+<p>chown <název skupiny> <jméno uživatele> – změní vlastníka souborů</p>
+<p>chgrp <název skupiny> <jméno uživatele> – změní skupinu vlastníků souborů</p>
+<p>Systém:</p>
+<p>hostname – zobrazí název hostitele v systému Linux Mint</p>
+<p>uptime – zobrazí, jak dlouho systém běží</p>
+<p>echo $SHELL – zobrazí, jaký Shell je aktuálně používán v Linux Mintu (výchozí je bash)</p>
+<h4 id="systém">Systém:</h4>
+<p>man <příkaz> – zobrazí manuál o zadaném příkazu</p>
+<p>ps – seznam všech běžících procesů v systému</p>
+<p>top – aktuální informace o systému Linux, uptime, počet uživatelů, zatížení systému, počet běžících úkolů a využití systémových prostředků</p>
+<p>kill -9 <pid> -zabije proces s daným id</p>
+<p>killall proc – zabije všechny procesy s názvem proc*</p>
+<p>uname –a – zobrazí název, verzi jádra, typ stroje, síťový uzel, název hostitele, typ procesoru, verzi OS a další podrobnosti o architektuře systému</p>
+<p>lsb_release –a – LSB verze, ID distribuce, popis distribuce, číslo verze a codename distribuce</p>
+<p>df –h – zobrazení systému souborů a využití místa na disku</p>
+<p>free –m – zobrazit velikost volné a používané paměti systému</p>
+<p>lspci – seznam všech PCI sběrnic a zařízení k nim připojených</p>
+<p>lsusb – seznam všech USB sběrnic a zařízení k nim připojených</p>
+<p>lshal – seznam všech zařízeníl HAL(Hardware Abstraction Layer) a jím připojeného hardwaru</p>
+<p>lshw –seznam hardwaru v systému, včetně informací o výrobci, typu zařízení a způsobu jeho připojení</p>
+<h4 id="síť">Síť:</h4>
+<p>ping <webová stránka/ip adresa> – otestování konektivity nebo odpověď z konkrétní IP adresy nebo webové stránky</p>
+<p>traceroute <webová stránka/ip adresa> – sledování síťové cesty na webovou stránku nebo IP adresu</p>
+<p>ifconfig – zobrazí seznam všech síťových rozhraní</p>
+<p>ifconfig <rozhraní> up – zapne dané rozhraní</p>
+<p>ifconfig <rozhraní> down – vypne dané rozhraní</p>
+<p>iwconfig – zobrazí seznam všech bezdrátových síťových rozhraní</p>
+<p>ssh <uzivatelské jméno>@<host name> – přihlásit daného uživatele k síťovému hostiteli</p>
+<h4 id="instalace">Instalace:</h4>
+<p>apt-get install <název balíčku> – instalace konkrétní aplikace / balíčku</p>
+<p>apt-get remove <název balíčku> – odinstalace konkrétní aplikace / balíčku</p>
+<p>apt-get update – aktualizace databáze balíčků Linux Mintu</p>
+<p>apt-get upgrade – upgrade balíčků Linux Mintu</p>
+<h4 id="instalace-1">Instalace:</h4>
+<p>apt-get -f install – řešení potíží s rozbitými balíčky</p>
+<p>apt-get autoremove – automaticky odstraní zastaralé balíčky</p>
+<p>Instalace ze zdroje:</p>
+<p>./configure</p>
+<p>make</p>
+<p>make install</p>
+<h4 id="hledání">Hledání:</h4>
+<p>locate <název souboru> – vyhledá v systému soubor dle zadaného názvu</p>
+<p>grep <vzor> <název souboru> – vyhledá v systému soubor dle konkrétního vzoru</p>
+<p>Linux command | grep <vzor> – prohledá výstup příkazu dle zadaného vzoru</p>
+<p>whereis <příkaz> – zobrazí umístění příkazu pro spustitelný soubor</p>
+<p>which <příkaz> – zobrazí spustitelný soubor, který bude spuštěn jako výchozí pro provedení příkazu</p>
+<h4 id="archivace">Archivace:</h4>
+<p>tar –czvf <název archivu>.tar.gz &lt;soubor 1&gt; &lt;soubor 2&gt;…<soubor n> – vytvoří .tar.gz archiv kompresí daných souborů</p>
+<p>tar –xzvf <název archivu>.tar.gz – extrahuje soubory z archivu .tar.gz</p>
+<p>tar –cf <název archivu>.tar &lt;soubor 1&gt; &lt;soubor 2&gt;…<soubor n> – vytvořit .tar archív kompresí daných souborů</p>
+<p>tar –xf <název archivu>.tar – extrahuje soubory z archivu .tar</p>
+<p>gzip <název souboru> – komprimuje soubor a vytvoří archiv gzip názvem <název archivu>.gz</p>
+<p>gzip –d <název souboru>.gz – extrahuje soubory z archivu gzip</p>
+<h4 id="vypínání">Vypínání:</h4>
+<p>poweroff – vypnutí systému</p>
+<p>reboot – restart systému</p>
+<p>echo b &gt; /proc/sysrq-trigger – tvrdý restart systému</p>
+</body>
+</html>

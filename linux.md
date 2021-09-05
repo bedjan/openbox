@@ -20,7 +20,7 @@ title: "Linux"
 output:
   html_document:
     toc: yes
-pagetitle: Multimedia
+pagetitle: Linux
 ---
 
 
