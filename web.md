@@ -29,6 +29,8 @@ pagetitle: Web osobní
 [Web](index.php)
 [Multimedia](mm.php)
 [Linux](linux.php)
+[Linux-cli](linux-cli.php)
+[Němčina](nemcina.php)
 [Bitwarden](https://vault.bitwarden.com/#/vault)
 
 </details>
