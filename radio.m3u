@@ -3,6 +3,11 @@
 #EXTINF:0,Humor_radio
 http://mp3stream4.abradio.cz:8000/humor.mp3
 
+
+#EXTINF:0,Sky Radio 80’s Hits
+http://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR04.mp3
+
+
 #EXTINF:0,4U_radio
 http://mpc.mediacp.eu:8302/stream
 
@@ -37,9 +42,6 @@ http://ice.abradio.cz/city80128.mp3
 http://mp3.harmonyfm.de/harmonyfm/hqlivestream.mp3
 
 
-#EXTINF:0,Sky Radio 80’s Hits
-http://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR04.mp3
-
 #EXTINF:0,R.SA
 https://streams.rsa-sachsen.de/rsa-live/mp3-128/onlineradioeu/
 
@@ -54,6 +56,54 @@ http://ice3.abradio.cz/shadowbox128.mp3
 
 #EXTINF:0,Chillout
 http://mp3stream4.abradio.cz/chillout128.mp3
+
+#EXTINF:0,Spacesynth
+http://212.96.160.160:8074/
+
+#EXTINF:0,Radio 1
+https://icecast2.play.cz/radio1.mp3?type=.mp3/;stream.mp3
+
+
+#EXTINF:0,Cesky Rozhlas Dvojka
+https://icecast5.play.cz/cro2-32.mp3?type=.mp3/;stream.mp3
+
+#EXTINF:0,ClubRadiocz
+http://icecast2.play.cz:8000/Clubradio.mp3
+
+#EXTINF:0,Dance Club Radio
+https://ice4.abradio.cz/dance128.mp3
+
+#EXTINF:0,Dance Radio
+https://playerservices.streamtheworld.com/api/livestream-redirect/DANCEAAC.aac?dist=onlineradioeu
+
+
+#EXTINF:0,Punk4Punks
+http://184.154.43.106:8072/stream
+
+#EXTINF:0,Radio Nova
+https://stream.bauermedia.fi/radionova/radionova_64.aac
+
+#EXTINF:0,Sound Storm
+http://stream.soundstorm-radio.com:8000/radio.mp3
+
+#EXTINF:0,Music Lake
+http://104.251.118.50:8626/stream
+
+#EXTINF:0,Bass Junkees
+http://213.186.56.95:8128/
+
+#EXTINF:0,Sleep Radio
+http://149.56.234.138:8169/stream
+
+#EXTINF:0,80s Forever 
+http://51.75.147.168:8050/256.mp3
+
+#EXTINF:0,Intra Nature Radio
+http://104.251.118.50:8793/stream
+
+#EXTINF:0,Zero Beat Zone
+http://62.149.196.16:8800/stream
+
 
 #EXTINF:0,Alternative times
 http://ice3.abradio.cz/alternative128.mp3
@@ -111,52 +161,7 @@ http://ice6.abradio.cz/relax-sea128.mp3
 http://ice6.abradio.cz/relax-thunder-rain128.mp3
 
 
-#EXTINF:0,Spacesynth
-http://212.96.160.160:8074/
-
-#EXTINF:0,Radio 1
-https://icecast2.play.cz/radio1.mp3?type=.mp3/;stream.mp3
-
-
-#EXTINF:0,Cesky Rozhlas Dvojka
-https://icecast5.play.cz/cro2-32.mp3?type=.mp3/;stream.mp3
-
 #EXTINF:0,Zpev_ptaku
 http://ice6.abradio.cz/relax-morning-birds128.mp3
 
-#EXTINF:0,ClubRadiocz
-http://icecast2.play.cz:8000/Clubradio.mp3
 
-#EXTINF:0,Dance Club Radio
-https://ice4.abradio.cz/dance128.mp3
-
-#EXTINF:0,Dance Radio
-https://playerservices.streamtheworld.com/api/livestream-redirect/DANCEAAC.aac?dist=onlineradioeu
-
-
-#EXTINF:0,Punk4Punks
-http://184.154.43.106:8072/stream
-
-#EXTINF:0,Radio Nova
-https://stream.bauermedia.fi/radionova/radionova_64.aac
-
-#EXTINF:0,Sound Storm
-http://stream.soundstorm-radio.com:8000/radio.mp3
-
-#EXTINF:0,Music Lake
-http://104.251.118.50:8626/stream
-
-#EXTINF:0,Bass Junkees
-http://213.186.56.95:8128/
-
-#EXTINF:0,Sleep Radio
-http://149.56.234.138:8169/stream
-
-#EXTINF:0,80s Forever 
-http://51.75.147.168:8050/256.mp3
-
-#EXTINF:0,Intra Nature Radio
-http://104.251.118.50:8793/stream
-
-#EXTINF:0,Zero Beat Zone
-http://62.149.196.16:8800/stream
