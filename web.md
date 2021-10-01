@@ -49,6 +49,7 @@ pagetitle: Web osobní
 [Youtube](https://www.youtube.com/)
 [Uloz.to](https://uloz.to)
 [Česká spořitelna](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz) [Sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html) [Čsfd](https://www.csfd.cz/)
+[Equa](https://www.equabanking.cz/IBS/)
 [Cez online](https://cezonline.cez.cz/irj/portal/profil-uzivatele#/profil)
 [Generali](https://generaliceskacz.b2clogin.com/login.kz.generaliceska.cz/oauth2/v2.0/authorize?p=B2C_1_Prod_Flow&nonce=defaultNonce&redirect_uri=https://kz.generaliceska.cz/token&client_id=894f4eb9-5e98-4957-baa9-e1cc6350e9f5&prompt=login&scope=openid%20offline_access&response_type=code&login_hint=)
 [Filmy nfa](https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/)
@@ -83,6 +84,7 @@ pagetitle: Web osobní
 ### Banky
 
 [Česká spořitelna](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz)
+[Equa](https://www.equabanking.cz/IBS/)
 [Sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html)
 
 
