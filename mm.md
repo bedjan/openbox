@@ -33,12 +33,27 @@ pagetitle: Multimedia
 maxlength="255" value="" />
 <input type="submit" value="Googlem hledat" /></td></tr>
 <tr><td align="center" style="font-size:75%">
-<input type="radio"  name="sitesearch" value="" />Na webu
-<input type="radio"  name="sitesearch"
-value="http://www.janbednar.sweb.cz/" checked /> Na této stránce<br />
+
 </td></tr></table>
 </div>
 </form>
+
+<form method="get" action="https://duckduckgo.com/?q=%s">
+
+<div style="border:1px solid black;padding:4px;width:20em;">
+<table border="0" align="center" cellpadding="0">
+<tr><td>
+<input type="text"   name="q" size="25"
+maxlength="255" value="" />
+<input type="submit" value="Duckduckgo hledat" /></td></tr>
+<tr><td align="center" style="font-size:75%">
+
+</td></tr></table>
+</div>
+</form>
+
+
+
 
 <details open>
 <summary>- Menu -</summary>
