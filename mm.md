@@ -42,13 +42,6 @@ pagetitle: Multimedia
 [TV Cesko](https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u)
 [TV Nemecko](https://raw.githubusercontent.com/bedjan/openbox/main/tv_nemecko.m3u)
 
-### Online prehravac 
-
-[TV a Radia Cesko](https://www.reloltv.com/playlist.php?playlist=https%3A%2F%2Fraw.githubusercontent.com%2Fbedjan%2Fopenbox%2Fmain%2Fmultimedia.m3u&recaptcha_response=03AGdBq27a_oJp7BN-P6B-wNSZceyLat7eEOd1USop3ZGkJRqFHYVg3RRta4l_KngkGIIMkfa3uzVwAZkz8jPcUFaAjG-Ceu590Fzqezdk8Lg_3CKTLTgEHSPRU4Yvq3VrmnCKWisrXKONjlBZudqya30lTI-JSQE-6enOIsncrTqPbhmRX_M4oO3y8ya-y-UiIyDIg5xhM9FU7T7dfi2dO3H8PAxTTKfDWThAb2BafdpUhDPTXuqxiHNPfagYSfXGNrZjxD4D9D-CfmseoLWRebUun4q4StXV0E6kd36YwbvbIrwdhDOkH6uPQgvqYBoC1yulqsNPWmepkFsJMCGvUu5eLIMbOGgN6dMz1FZgtKsi9QayXl52OfvAbNCvunV2Q5Dkb3cZ_vCcgSlJMdh95JDU_MUTEBnRJoEwbPv_g0KmWIn3pTcr5R7kC8Lt7mIR6wUw570PBaTu)
-[Radia Cesko](http://www.reloltv.com/playlist.php?playlist=https%3A%2F%2Fraw.githubusercontent.com%2Fbedjan%2Fopenbox%2Fmain%2Fradio.m3u)
-[Radia Svet](http://www.reloltv.com/playlist.php?playlist=https%3A%2F%2Fraw.githubusercontent.com%2Fbedjan%2Fopenbox%2Fmain%2Fradia_all.m3u)
-
-
 
 ### Multimedia
 
@@ -58,7 +51,7 @@ pagetitle: Multimedia
 [Ct](https://www.ceskatelevize.cz/porady/a-z/)
 [Ctzive](https://www.ceskatelevize.cz/ivysilani/serialy)
 [Ulice](https://novaplus.nova.cz/porad/ulice/cele-dily)
-[Ruzovka](https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2)
+[Ruzovka](https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2/reprizy)
 
 ### Videa online
 
@@ -80,10 +73,11 @@ pagetitle: Multimedia
 
 ### Radia Oblibena
 
-[Radia ceska](https://online-radio.eu/country/Czech%20Republic)
+[Radia ceska prehled](https://online-radio.eu/country/Czech%20Republic)
 
 [Humor_radio](http://mp3stream4.abradio.cz:8000/humor.mp3)
 [4U_radio](http://mpc.mediacp.eu:8302/stream)
+[Sleep Radio](http://149.56.234.138:8169/stream)
 [Tranceup](http://5.39.71.159:8223/stream)
 [E2](https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu)
 [E2_movin](https://ice.actve.net/web-e2-movin)
@@ -94,6 +88,42 @@ pagetitle: Multimedia
 [City 80](http://ice.abradio.cz/city80128.mp3)
 [Radio Harmony FM DE 128 mp3](http://mp3.harmonyfm.de/harmonyfm/hqlivestream.mp3)
 [Sky Radio 80's Hits](http://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR04.mp3)
+[R.SA - DE](https://streams.rsa-sachsen.de/rsa-live/mp3-128/onlineradioeu/)
+[80s Forever ](http://51.75.147.168:8050/256.mp3)
+[Chillout](http://mp3stream4.abradio.cz/chillout128.mp3)
+[Shadowbox_DNB](http://ice3.abradio.cz/shadowbox128.mp3)
+[Pohadka 128](http://ice3.abradio.cz/pohadka128.mp3)
+[Povidka 128](http://ice3.abradio.cz/povidka128.mp3)
+[Pohadky_domino](http://mp3stream4.abradio.cz/domino128.mp3)
+[Sound Storm](http://stream.soundstorm-radio.com:8000/radio.mp3)
+[Music Lake](http://104.251.118.50:8626/stream)
+[Bass Junkees](http://213.186.56.95:8128/)
+[Intra Nature Radio](http://104.251.118.50:8793/stream)
+[Zero Beat Zone](http://62.149.196.16:8800/stream)
+[Chillout](http://mp3stream4.abradio.cz/chillout128.mp3)
+[Spacesynth](http://212.96.160.160:8074/)
+[Radio 1](https://icecast2.play.cz/radio1.mp3?type=.mp3/;stream.mp3)
+[Cesky Rozhlas Dvojka](https://icecast5.play.cz/cro2-32.mp3?type=.mp3/;stream.mp3)
+[ClubRadiocz](http://icecast2.play.cz:8000/Clubradio.mp3)
+[Dance Club Radio](https://ice4.abradio.cz/dance128.mp3)
+[Dance Radio](https://playerservices.streamtheworld.com/api/livestream-redirect/DANCEAAC.aac?dist=onlineradioeu)
+[Punk4Punks](http://184.154.43.106:8072/stream)
+[Radio Nova](https://stream.bauermedia.fi/radionova/radionova_64.aac)
+[Alternative times](http://ice3.abradio.cz/alternative128.mp3)
+[Applaus Rádio](http://mp3stream3.abradio.cz:8000/applaus128.mp3)
+[Oldies](http://ice.abradio.cz/oldiesradio128.mp3)
+[Oldies Rock](http://mp3stream4.abradio.cz/oldiesrock128.mp3)
+[Cro_Hradec_Kralove](http://icecast2.play.cz/crohk128.mp3)
+[Folk](http://mp3stream2.abradio.cz:8000/folk.mp3)
+[Country](http://mp3stream4.abradio.cz/country128.mp3)
+[Blanik](http://ice.abradio.cz/blanikcz128.mp3)
+[Dechovka](http://icecast5.play.cz:8000/dechovka128.mp3)
+[Zpev_ptaku](http://ice6.abradio.cz/relax-morning-birds128.mp3)
+[Ohen_v_krbu 128](http://ice6.abradio.cz/relax-fire128.mp3)
+[More](http://ice6.abradio.cz/relax-sea128.mp3)
+[Bourka](http://ice6.abradio.cz/relax-thunder-rain128.mp3)
+
+
 
 ### RADIA_OSTATNI
 

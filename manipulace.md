@@ -37,6 +37,9 @@ pagetitle: Manipulace
 
 [Obrana proti narcismu 5](https://www.businessinsider.com/how-to-stop-argument-with-narcissist-2018-2)
 
+co, proc, zdroj
+
+negac - a co s tim budes delat?
 
 ### 8 tipů, jak se vyrovnat s kritickým narcisem:
 
