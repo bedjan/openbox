@@ -37,13 +37,27 @@ a:active {  color: #33ff33;}
 <p><summary>- Menu -</summary></p>
 <p><a href="index.php">Web</a> <a href="mm.php">Multimedia</a> <a href="linux.php">Linux</a> <a href="https://vault.bitwarden.com/#/vault">Bitwarden</a></p>
 </details>
-<!-- Put the following javascript before the closing </head> tag
-and replace 123:456 with your own Programmable Search Engine ID. -->
-<script async src="https://cse.google.com/cse.js?cx=123:456"></script>
-<!-- Place this tag where you want both of the search box and the search results to render -->
-<div class="gcse-search">
+<pre><code>&lt;form role=&quot;search&quot; id=&quot;form&quot;&gt;
+  &lt;input type=&quot;search&quot; id=&quot;query&quot; name=&quot;q&quot; placeholder=&quot;Search...&quot; aria-label=&quot;Search through site content&quot;&gt;
+  &lt;button&gt;
+    &lt;svg viewBox=&quot;0 0 1024 1024&quot;&gt;&lt;path class=&quot;path1&quot; d=&quot;M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/form&gt;
+&lt;script&gt;
+  const f = document.getElementById(&#39;form&#39;);
+  const q = document.getElementById(&#39;query&#39;);
+  const google = &#39;https://www.google.com/search?q=site%3A+&#39;;
+  const site = &#39;pagedart.com&#39;;
 
-</div>
+  function submitted(event) {
+    event.preventDefault();
+    const url = google + site + &#39;+&#39; + q.value;
+    const win = window.open(url, &#39;_blank&#39;);
+    win.focus();
+  }
+
+  f.addEventListener(&#39;submit&#39;, submitted);
+&lt;/script&gt;</code></pre>
 <h3 id="playlisty">Playlisty</h3>
 <p><a href="https://raw.githubusercontent.com/bedjan/openbox/main/multimedia.m3u">TV a Radia Cesko</a> <a href="https://raw.githubusercontent.com/bedjan/openbox/main/radio.m3u">Radia Cesko</a> <a href="https://raw.githubusercontent.com/bedjan/openbox/main/radia_all.m3u">Radia Svet</a> <a href="https://raw.githubusercontent.com/bedjan/openbox/main/tv.m3u">TV Cesko</a> <a href="https://raw.githubusercontent.com/bedjan/openbox/main/tv_nemecko.m3u">TV Nemecko</a></p>
 <h3 id="multimedia">Multimedia</h3>
