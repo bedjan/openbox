@@ -49,6 +49,7 @@ pagetitle: Multimedia
 [Tvonline](https://www.spustit.cz/tv-ct1-online-zdarma/)
 [Cr_online](https://www.mujrozhlas.cz/zive)
 [Ct](https://www.ceskatelevize.cz/porady/a-z/)
+[CT serialy](https://www.ceskatelevize.cz/porady/tema/serialy/)
 [Ctzive](https://www.ceskatelevize.cz/ivysilani/serialy)
 [Ulice](https://novaplus.nova.cz/porad/ulice/cele-dily)
 [Ruzovka](https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2/reprizy)
@@ -64,6 +65,13 @@ pagetitle: Multimedia
 [Vimeo](https://vimeo.com/watch)
 [Soundcloud](https://soundcloud.com/signin)
 [Difm](https://www.di.fm/)
+[Serialy sleduj](https://sledujserialy.io/)
+[Filmtoro serialy](https://filmtoro.cz/filmy/serialy-online)
+[Serialy online](https://serialy.onlineczserialy.cz/)
+[Filmplanet](https://www1.filmplanet.to/)
+[Nej serialy](https://najserialy.to/)
+[Svet serialu](https://svetserialu.to/)
+[Na hnoji](http://nahnoji.cz/)
 
 ### Filmy
 
@@ -75,7 +83,8 @@ pagetitle: Multimedia
 
 [Radia ceska prehled](https://online-radio.eu/country/Czech%20Republic)
 
-[Humor_radio](http://mp3stream4.abradio.cz:8000/humor.mp3)
+[Humor 64](http://mp3stream4.abradio.cz:8000/humor.mp3)
+[Humor 128](http://mp3stream4.abradio.cz:8000/humor128.mp3)
 [4U_radio](http://mpc.mediacp.eu:8302/stream)
 [Sleep Radio](http://149.56.234.138:8169/stream)
 [Tranceup](http://5.39.71.159:8223/stream)
@@ -100,7 +109,14 @@ pagetitle: Multimedia
 [Bass Junkees](http://213.186.56.95:8128/)
 [Intra Nature Radio](http://104.251.118.50:8793/stream)
 [Zero Beat Zone](http://62.149.196.16:8800/stream)
-[Chillout](http://mp3stream4.abradio.cz/chillout128.mp3)
+
+
+
+
+
+### RADIA_OSTATNI
+
+
 [Spacesynth](http://212.96.160.160:8074/)
 [Radio 1](https://icecast2.play.cz/radio1.mp3?type=.mp3/;stream.mp3)
 [Cesky Rozhlas Dvojka](https://icecast5.play.cz/cro2-32.mp3?type=.mp3/;stream.mp3)
@@ -122,32 +138,6 @@ pagetitle: Multimedia
 [Ohen_v_krbu 128](http://ice6.abradio.cz/relax-fire128.mp3)
 [More](http://ice6.abradio.cz/relax-sea128.mp3)
 [Bourka](http://ice6.abradio.cz/relax-thunder-rain128.mp3)
-
-
-
-### RADIA_OSTATNI
-
-[Humor 64](http://mp3stream4.abradio.cz:8000/humor.mp3)
-[Humor 128](http://mp3stream4.abradio.cz:8000/humor128.mp3)
-[Chillout](http://mp3stream4.abradio.cz/chillout128.mp3) 
-[Shadowbox_DNB](http://ice3.abradio.cz/shadowbox128.mp3)
-[Chillout](http://mp3stream4.abradio.cz/chillout128.mp3)
-[Alternative times](http://ice3.abradio.cz/alternative128.mp3)
-[Applaus Rádio](http://mp3stream3.abradio.cz:8000/applaus128.mp3) 
-[Oldies](http://ice.abradio.cz/oldiesradio128.mp3)
-[Oldies Rock](http://mp3stream4.abradio.cz/oldiesrock128.mp3)
-[Cro_Hradec_Kralove](http://icecast2.play.cz/crohk128.mp3)
-[Folk](http://mp3stream2.abradio.cz:8000/folk.mp3)
-[Country](http://mp3stream4.abradio.cz/country128.mp3)
-[Blanik](http://ice.abradio.cz/blanikcz128.mp3)
-[Dechovka](http://icecast5.play.cz:8000/dechovka128.mp3) 
-[Ohen_v_krbu 128](http://ice6.abradio.cz/relax-fire128.mp3)
-[Pohadka 128](http://ice3.abradio.cz/pohadka128.mp3)
-[Povidka 128](http://ice3.abradio.cz/povidka128.mp3)
-[Pohadky_domino](http://mp3stream4.abradio.cz/domino128.mp3)
-[More](http://ice6.abradio.cz/relax-sea128.mp3)
-[Bourka](http://ice6.abradio.cz/relax-thunder-rain128.mp3)
-[Zpev_ptaku](http://ice6.abradio.cz/relax-morning-birds128.mp3)
 
 
 
@@ -247,9 +237,34 @@ pagetitle: Multimedia
 [Dw+](http://dwstream52-lh.akamaihd.net/i/dwstream52_live@500528/index_1_av-p.m3u8)
 [Elbekanal](http://62.113.210.250/medienasa-live/_definst_/mp4:elbe_high/playlist.m3u8)
 
-### SERIALY
+### FILMY ONLINE
 
+[Filmy 1](https://www.bombuj.si/)
+[Filmy 2](https://kezhlednuti.online/)
+[Filmy 3](https://filmy.najserialy.to/)
+[Filmy 4](https://www.sledujfilmy.online/)
+[Filmy 5](https://filmhouse.cz/)
+[Filmy 6](https://tipnafilm.cz/)
+[Filmy stazeni](https://filmy-zdarma-online.eu/
+
+### SERIALY ONLINE
+
+[Serialy 1](https://serialzdarma.online/)
+[Serialy 2](https://serialovamasina.cz/vsechnyserialy.php)
 [Mash](http://mash.alyss.cz/index.php?stranka=serie&cislo=1)
+[Halo halo](http://halohalo.sifee.biz/index.php?stranka=epizody)
+[dva a pul chlapa 1](http://dvaapulchlapa.sifee.biz/index.php?stranka=epizody)
+[dva a pul chlapa 2](https://serialy.onlineczserialy.cz/serial/Dva%20a%20p%C5%AFl%20chlapa/)
+[brickleberry](http://brickleberry.sifee.biz/index.php?stranka=epizody)
+[hra o truny](http://hraotruny.sifee.biz/index.php?stranka=epizody)
+[dr house](http://house.sifee.biz/index.php?stranka=epizody)
+[rozcarovani](http://rozcarovani.sifee.biz/index.php?stranka=epizody)
+[perníkovy tata](http://bb.sifee.biz/index.php?stranka=epizody)
+[rickamorty](http://rickamorty.sifee.biz/index.php?stranka=epizody)
+[cernazmije](http://cernazmije.sifee.biz/index.php?stranka=epizody)
+[hospoda](http://hospoda.sifee.biz/index.php?stranka=epizody)
+[kutiltim](http://kutiltim.sifee.biz/index.php?stranka=epizody)
+
 
 ### Linux mpv config
 
