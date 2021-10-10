@@ -24,33 +24,7 @@ pagetitle: Multimedia
 ---
 
 
-<form method="get" action="http://www.google.com/search">
 
-<div style="border:1px solid black;padding:4px;width:20em;">
-<table border="0" align="center" cellpadding="0">
-<tr><td>
-<input type="text"   name="q" size="25"
-maxlength="255" value="" />
-<input type="submit" value="Googlem hledat" /></td></tr>
-<tr><td align="center" style="font-size:75%">
-
-</td></tr></table>
-</div>
-</form>
-
-<form method="get" action="https://duckduckgo.com/?q=%s">
-
-<div style="border:1px solid black;padding:4px;width:20em;">
-<table border="0" align="center" cellpadding="0">
-<tr><td>
-<input type="text"   name="q" size="25"
-maxlength="255" value="" />
-<input type="submit" value="Duckduckgo hledat" /></td></tr>
-<tr><td align="center" style="font-size:75%">
-
-</td></tr></table>
-</div>
-</form>
 
 
 
@@ -65,7 +39,33 @@ maxlength="255" value="" />
 
 </details>
 
+<form method="get" action="http://www.google.com/search">
 
+<div style="border:1px solid black;padding:4px;width:20px;">
+<table border="0" align="center" cellpadding="0">
+<tr><td>
+<input type="text"   name="q" size="25"
+maxlength="255" value="" />
+<input type="submit" value="Google" /></td></tr>
+<tr><td align="center" style="font-size:75%">
+
+</td></tr></table>
+</div>
+</form>
+
+<form method="get" action="https://duckduckgo.com/?q=%s">
+
+<div style="border:1px solid black;padding:4px;width:20px;">
+<table border="0" align="center" cellpadding="0">
+<tr><td>
+<input type="text"   name="q" size="25"
+maxlength="255" value="" />
+<input type="submit" value="Duckduckgo" /></td></tr>
+<tr><td align="center" style="font-size:75%">
+
+</td></tr></table>
+</div>
+</form>
  
 ### Playlisty
 
