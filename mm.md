@@ -33,6 +33,8 @@ pagetitle: Multimedia
 
 </details>
 
+<iframe id="if1" width="100%" height="254" style="visibility:visible" src="http://www.google.com/custom?q=&btnG=Search"></iframe>
+ 
 ### Playlisty
 
 
