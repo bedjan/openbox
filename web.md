@@ -113,7 +113,13 @@ maxlength="255" value="" />
 [Equa](https://www.equabanking.cz/IBS/)
 [Sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html)
 
+### Úprava textu
 
+[Psani textu online 1](https://write-box.appspot.com/)
+[Psani textu online 22](https://www.editpad.org/)
+[markdown editor online](https://dillinger.io/)
+[Odstranění diakritiky češtiny](http://petrfaltus.net/petr-faltus-konverze-textu-odstraneni-cestiny-z-textu.php)
+[Přidání diakritiky češtiny](https://nlp.fi.muni.cz/cz_accent/)
 
 ### Linux
 
