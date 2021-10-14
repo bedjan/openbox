@@ -240,7 +240,7 @@ echo "Exit";;
 mpv  --no-video https://www.youtube.com/watch?v=8rK7Qef0fCk;;
 esac ;;
 
-"OVLADANI") xmessage -center  -geometry 1280x50 "Vyber" -timeout 60 -center -title "OVLADANI" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9,"ulozto_download":10 >/dev/null
+"OVLADANI") xmessage -center  -geometry 1280x50 "Vyber" -timeout 60 -center -title "OVLADANI" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9,"ulozto_download":10,"pip_all_upgrade":11 >/dev/null
 
 case $? in
 1)
@@ -271,6 +271,8 @@ echo "$choose volume";alsamixergui ;;
 10)
 xterm -title Ulozto-dl-update -hold -e "pip3 install --upgrade ulozto-downloader;sudo apt-get install python3-tk
  tor";;
+11)
+xterm -title pip_all_upgrade -hold -e "pip freeze > requirements.txt & sed -i 's/==/>=/g' requirements.txt & pip install -r requirements.txt --upgrade";;
 esac ;;
 
 
@@ -278,15 +280,15 @@ esac ;;
 
 
 
-  "mpv_youtube_mute") XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --mute=yes --ytdl-format=worst --fs=no  --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=  --slang=cs,en  '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====';mpv --mute=yes  --slang=cs,en  '${XSEL}'" ;;
+##  "mpv_youtube_mute") XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --mute=yes --ytdl-format=worst --fs=no  --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=  --slang=cs,en  '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====';mpv --mute=yes  --slang=cs,en  '${XSEL}'" ;;
 
-  "mpv_youtube")      XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_mp4_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --ytdl-format=mp4 --fs=no  --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=  --slang=cs,en  '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv  --slang=cs,en  '${XSEL}'" ;;
+##  "mpv_youtube")      XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_mp4_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --ytdl-format=mp4 --fs=no  --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=  --slang=cs,en  '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv  --slang=cs,en  '${XSEL}'" ;;
 
-  "mpv_youtube_worst")      XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --ytdl-format=worst --fs=no  --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=  --slang=cs,en '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv  --slang=cs,en '${XSEL}'" ;;
+##  "mpv_youtube_worst")      XSEL=$(xsel --clipboard);stterm -t Video_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_video_ve_worst_rozliseni...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv --ytdl-format=worst --fs=no  --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=  --slang=cs,en '${XSEL}'  && exit 1;echo '=====Spoustim_video_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv  --slang=cs,en '${XSEL}'" ;;
 
-  "mpv_youtube_audio")        XSEL=$(xsel --clipboard);stterm -t Audio_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_audio_v_kvalite_best ...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv  --no-video --fs=no --player-operation-mode=pseudo-gui  --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate=  --slang=cs,en  '${XSEL}'  && exit 1;echo '=====Spoustim_audio_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv --no-video --fs=no --player-operation-mode=pseudo-gui  --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate=  --slang=cs,en  '${XSEL}'" ;; 
+##  "mpv_youtube_audio")        XSEL=$(xsel --clipboard);stterm -t Audio_youtube -g 80x20-40-40 -e bash -c "echo '=====Spoustim_audio_v_kvalite_best ...=====';echo '=====URL="${XSEL}"=====';echo '===========================';mpv  --no-video --fs=no --player-operation-mode=pseudo-gui  --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate=  --slang=cs,en  '${XSEL}'  && exit 1;echo '=====Spoustim_audio_v_plnem_rozliseni ...=====' || echo 'Spoustene video neslo spustit ... spoustim bez parametru ...'  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-2';mpv --no-video --fs=no --player-operation-mode=pseudo-gui  --cache-secs='60' --no-stop-screensaver --ytdl-raw-options=no-check-certificate=  --slang=cs,en  '${XSEL}'" ;; 
 
-"ytdl_download")      xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
+##"ytdl_download")      xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
 
 
 

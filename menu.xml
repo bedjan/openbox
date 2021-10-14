@@ -36,6 +36,11 @@
 				<execute>sh ~/.config/openbox/all.sh ytdl_download</execute>
 			</action>
 		</item>
+		<item label="pip_all_upgrade">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh pip_all_upgrade</execute>
+			</action>
+		</item>
 		<separator/>
 		<item label="Radia Goodvibes">
 			<action name="Execute">
