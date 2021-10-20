@@ -74,6 +74,7 @@ maxlength="255" value="" />
 [Facebook](https://www.facebook.com/)
 [Youtube](https://www.youtube.com/)
 [Uloz.to](https://uloz.to)
+[Prehraj.to](https://prehraj.to/)
 [Česká spořitelna](https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz) [Sparkasse](https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html) [Čsfd](https://www.csfd.cz/)
 [Equa](https://www.equabanking.cz/IBS/)
 [Cez online](https://cezonline.cez.cz/irj/portal/profil-uzivatele#/profil)
@@ -91,6 +92,7 @@ maxlength="255" value="" />
 [Dropbox](https://www.dropbox.com/home)
 [Kalendar](https://time.is/calendar)
 [Čas](https://time.is/)
+[Muj vodafone](https://www.vodafone.cz/muj/prihlaseni)
 [Oskarta](https://moje.oskarta.cz/)
 
 ### Google
