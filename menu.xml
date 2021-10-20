@@ -866,5 +866,16 @@
 				<execute>sh ~/.config/openbox/all.sh VYPNOUT_PC</execute>
 			</action>
 		</item>
+		<separator/>
+		<item label="Vypnuti klavesnice">
+			<action name="Execute">
+				<execute>xinput disable &quot;AT Translated Set 2 keyboard&quot;</execute>
+			</action>
+		</item>
+		<item label="Zapnuti klavesnice">
+			<action name="Execute">
+				<execute>xinput enable &quot;AT Translated Set 2 keyboard&quot;</execute>
+			</action>
+		</item>
 	</menu>
 </openbox_menu>
