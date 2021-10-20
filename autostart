@@ -5,11 +5,17 @@ xsetroot -solid "#000000" &
 ##setreni dpms 120 sekund
 xset s 120 120 &
 
+##klavesnice vypnuta/zapnuta
+
+xinput disable "AT Translated Set 2 keyboard" &
+#xinput enable "AT Translated Set 2 keyboard" &
+
 ##panel
 #fbpanel & sudo modprobe snd-mixer-oss &
 #fspanel &
 
-which tint2  || xterm -title Nainstaluj -hold -e "sudo apt install -y tint2" && sleep10;tint2 -c ~/.config/openbox/tint2rc  &
+lxpanel &
+#which tint2  || xterm -title Nainstaluj -hold -e "sudo apt install -y tint2" && sleep10;tint2 -c ~/.config/openbox/tint2rc  &
 
 
 #informace

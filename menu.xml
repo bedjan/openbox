@@ -867,15 +867,17 @@
 			</action>
 		</item>
 		<separator/>
-		<item label="Vypnuti klavesnice">
-			<action name="Execute">
-				<execute>xinput disable &quot;AT Translated Set 2 keyboard&quot;</execute>
-			</action>
-		</item>
-		<item label="Zapnuti klavesnice">
-			<action name="Execute">
-				<execute>xinput enable &quot;AT Translated Set 2 keyboard&quot;</execute>
-			</action>
-		</item>
+		<menu id="root-menu-384631" label="Klavesnice zap/vyp">
+			<item label="Zapnuti klavesnice">
+				<action name="Execute">
+					<execute>xinput enable &quot;AT Translated Set 2 keyboard&quot;</execute>
+				</action>
+			</item>
+			<item label="Vypnuti klavesnice">
+				<action name="Execute">
+					<execute>xinput disable &quot;AT Translated Set 2 keyboard&quot;</execute>
+				</action>
+			</item>
+		</menu>
 	</menu>
 </openbox_menu>
