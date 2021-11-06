@@ -11,16 +11,6 @@
 				<execute>pcmanfm</execute>
 			</action>
 		</item>
-		<item label="ytdl upgrade">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh ytdl_download</execute>
-			</action>
-		</item>
-		<item label="pip_all_upgrade">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh pip_all_upgrade</execute>
-			</action>
-		</item>
 		<item label="monitor">
 			<action name="Execute">
 				<execute>sh /home/d/skripty/monitor.sh</execute>
@@ -833,11 +823,6 @@
 				<execute>sh ~/.config/openbox/all.sh github_all</execute>
 			</action>
 		</item>
-		<item label="OBMENU">
-			<action name="Execute">
-				<execute>obmenu</execute>
-			</action>
-		</item>
 		<separator/>
 		<item label="POZNAMKY">
 			<action name="Execute">
@@ -862,18 +847,5 @@
 				<execute>sh ~/.config/openbox/all.sh VYPNOUT_PC</execute>
 			</action>
 		</item>
-		<separator/>
-		<menu id="root-menu-384631" label="Klavesnice zap/vyp">
-			<item label="Zapnuti klavesnice">
-				<action name="Execute">
-					<execute>xinput enable &quot;AT Translated Set 2 keyboard&quot;</execute>
-				</action>
-			</item>
-			<item label="Vypnuti klavesnice">
-				<action name="Execute">
-					<execute>xinput disable &quot;AT Translated Set 2 keyboard&quot;</execute>
-				</action>
-			</item>
-		</menu>
 	</menu>
 </openbox_menu>
