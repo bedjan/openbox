@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
-		<item label="Youtube video worst">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh mpv_youtube_worst</execute>
-			</action>
-		</item>
-		<item label="Youtube video">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh mpv_youtube</execute>
-			</action>
-		</item>
-		<item label="Youtube video mute">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh mpv_youtube_mute</execute>
-			</action>
-		</item>
-		<item label="Youtube audio">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh mpv_youtube_audio</execute>
-			</action>
-		</item>
 		<item label="Terminal">
 			<action name="Execute">
 				<execute>sakura</execute>
@@ -41,10 +21,25 @@
 				<execute>sh ~/.config/openbox/all.sh pip_all_upgrade</execute>
 			</action>
 		</item>
+		<item label="monitor">
+			<action name="Execute">
+				<execute>sh /home/d/skripty/monitor.sh</execute>
+			</action>
+		</item>
 		<separator/>
 		<item label="Radia Goodvibes">
 			<action name="Execute">
 				<execute>goodvibes</execute>
+			</action>
+		</item>
+		<item label="VIDEO">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh VIDEO</execute>
+			</action>
+		</item>
+		<item label="DOWNLOAD">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh DOWNLOAD</execute>
 			</action>
 		</item>
 		<item label="RADIA">
@@ -55,11 +50,6 @@
 		<item label="TV">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh TV</execute>
-			</action>
-		</item>
-		<item label="DOWNLOAD">
-			<action name="Execute">
-				<execute>sh ~/.config/openbox/all.sh DOWNLOAD</execute>
 			</action>
 		</item>
 		<item label="PROGRAMY">
@@ -852,6 +842,12 @@
 		<item label="POZNAMKY">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh POZNAMKY</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="KLAVESNICE">
+			<action name="Execute">
+				<execute>sh ~/.config/openbox/all.sh KLAVESNICE</execute>
 			</action>
 		</item>
 		<separator/>
