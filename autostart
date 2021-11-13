@@ -11,7 +11,8 @@ xinput disable "AT Translated Set 2 keyboard" &
 #xinput enable "AT Translated Set 2 keyboard" &
 
 ##klavesnice virtualni
-florence &
+onboard &
+#florence &
 
 ##panel
 #fbpanel & sudo modprobe snd-mixer-oss &
