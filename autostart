@@ -10,12 +10,15 @@ xset s 120 120 &
 xinput disable "AT Translated Set 2 keyboard" &
 #xinput enable "AT Translated Set 2 keyboard" &
 
+##klavesnice virtualni
+florence &
+
 ##panel
 #fbpanel & sudo modprobe snd-mixer-oss &
 #fspanel &
 
-lxpanel &
-#which tint2  || xterm -title Nainstaluj -hold -e "sudo apt install -y tint2" && sleep10;tint2 -c ~/.config/openbox/tint2rc  &
+#lxpanel &
+which tint2  || xterm -title Nainstaluj -hold -e "sudo apt install -y tint2" && sleep10;tint2 -c ~/.config/openbox/tint2rc  &
 
 
 #informace
@@ -30,7 +33,7 @@ which numlockx  || xterm -title Nainstaluj -hold -e "sudo apt install -y numlock
 #stalonetray -t --icon-size 16  &
 
 ##hlasitost
-#volumeicon  &
+volumeicon  &
 #(sleep 3s && pnmixer) &
 
 # prikaz nahore v levem okraji obrazovky
