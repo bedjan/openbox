@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>Syscrash</name>
-    <titleLayout>LDSNIMC</titleLayout>
+    <titleLayout>DLSNIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -749,19 +749,18 @@
           <menu>root-menu</menu>
         </action>
       </mousebind>
-            <mousebind button="Up" action="Click">
-      <action name="Execute">
-        <command>sh ~/.config/openbox/all.sh mpv_youtube_worst</command>
-      </action>
+      <mousebind button="Up" action="Click">
+        <action name="Execute">
+          <command>sh ~/.config/openbox/all.sh mpv_youtube_worst</command>
+        </action>
       </mousebind>
       <mousebind button="Down" action="Click">
-      <action name="Execute">
-        <command>sh ~/.config/openbox/all.sh mpv_youtube</command>
-      </action>
+        <action name="Execute">
+          <command>sh ~/.config/openbox/all.sh mpv_youtube</command>
+        </action>
       </mousebind>
     </context>
     <context name="MoveResize">
-
       <mousebind button="A-Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
