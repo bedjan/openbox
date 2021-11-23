@@ -85,6 +85,13 @@ maxlength="255" value="" />
 [OCR](https://www.onlineocr.net/)
 [Zdrava vyziva](https://vyzivujicitradice.cz/)
 
+
+### Download
+
+[Facebook download](https://fdown.net/download.php)
+[Youtube download](https://ytop1.com/en9)
+
+
 ### Obecné
 
 [Facebook](https://www.facebook.com/)
