@@ -87,6 +87,7 @@ maxlength="255" value="" />
 [Ctzive](https://www.ceskatelevize.cz/ivysilani/serialy)
 [Ulice](https://novaplus.nova.cz/porad/ulice/cele-dily)
 [Ruzovka](https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2/reprizy)
+[świat według kiepskich wszystkie odcinki](https://raw.githubusercontent.com/bedjan/openbox/main/swk.html)
 
 ### Videa online
 
