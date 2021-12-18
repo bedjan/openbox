@@ -72,6 +72,7 @@ maxlength="255" value="" />
 [Whatsapp](https://web.whatsapp.com/)
 [Gtranslate](https://translate.google.cz/)
 [Facebook](https://www.facebook.com/)
+[Instagram](https://www.instagram.com/)
 [Youtube](https://www.youtube.com/)
 [Uloz.to](https://uloz.to)
 [Prehraj.to](https://prehraj.to/)
@@ -88,13 +89,16 @@ maxlength="255" value="" />
 
 ### Download
 
-[Facebook download](https://fdown.net/download.php)
+[Facebook download](https://fdown.net/)
 [Youtube download](https://ytop1.com/en9)
+[Instagram download](https://igram.io/)
 
 
 ### Obecné
 
 [Facebook](https://www.facebook.com/)
+[Instagram](https://www.instagram.com/)
+[Gkeep](https://keep.google.com/#home)
 [Simplenote](https://app.simplenote.com/login/)
 [Dropbox](https://www.dropbox.com/home)
 [Kalendar](https://time.is/calendar)

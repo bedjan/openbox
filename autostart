@@ -11,8 +11,8 @@ xinput disable "AT Translated Set 2 keyboard" &
 #xinput enable "AT Translated Set 2 keyboard" &
 
 ##klavesnice virtualni
-xvkbd &
-#onboard &
+#xvkbd &
+onboard &
 #florence &
 
 ##panel
