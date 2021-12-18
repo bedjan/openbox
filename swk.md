@@ -1,7 +1,7 @@
 <html>
 <head>
 <base target="_blank">
-<title>SWK</title>
+<title>Swiat według kiepskich wszystkie odcinki</title>
 </head>
 <body>
 <meta charset=(UTF-8(>
@@ -16,11 +16,11 @@ a:active {  color: #33ff33;}
 
 
 ---
-title: "SWK"
+title: "Swiat według kiepskich wszystkie odcinki"
 output:
   html_document:
     toc: yes
-pagetitle: SWK
+pagetitle: Swiat według kiepskich wszystkie odcinki
 ---
 
 
