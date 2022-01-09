@@ -836,6 +836,17 @@
 			</action>
 		</item>
 		<separator/>
+		<item label="Youtube-dl upgrade">
+			<action name="Execute">
+				<execute>xterm -hold -e &quot;pip3 install --upgrade youtube-dl&quot;</execute>
+			</action>
+		</item>
+		<item label="Ulozto upgrade">
+			<action name="Execute">
+				<execute>xterm -hold -e &quot;pip3 install --upgrade --force-reinstall --ignore-installed ulozto-downloader&quot;</execute>
+			</action>
+		</item>
+		<separator/>
 		<item label="OPENBOX">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh OPENBOX</execute>
