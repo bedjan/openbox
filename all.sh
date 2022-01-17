@@ -237,9 +237,9 @@ case $? in
 1)
 echo "Exit";;
 2)
-echo "AUDIO - Mpv drag copy url"  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv  --no-video --fs=no --ytdl-raw-options=no-check-certificate=  --cache-secs=180 --demuxer-readahead-secs=0 ;;
+echo "AUDIO - Mpv drag copy url"  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv  --no-video --fs=no --ytdl-raw-options=no-check-certificate=  --cache-secs=180 --demuxer-readahead-secs=0  --ontop=yes --save-position-on-quit=yes --geometry=35%+0-50 --config=yes;;
 3)
-echo "VIDEO - Mpv drag copy url"  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv  --ytdl-format=worst --fs=no --ytdl-raw-options=no-check-certificate= --cache-secs=180 --demuxer-readahead-secs=0 ;;
+echo "VIDEO - Mpv drag copy url"  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv  --ytdl-format=worst --fs=no --ytdl-raw-options=no-check-certificate= --cache-secs=180 --demuxer-readahead-secs=0  --ontop=yes --save-position-on-quit=yes --geometry=35%+0-50 --config=yes;;
 4)
 mpv  --no-video https://www.youtube.com/watch?v=8rK7Qef0fCk;;
 5)
