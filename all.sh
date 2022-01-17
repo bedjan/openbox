@@ -230,14 +230,20 @@ sh ~/.config/openbox/all.sh cr_online;;
 bash -c "wget --timestamping  --tries=100 --wait=1 https://raw.githubusercontent.com/bedjan/mm/master/radia_online.m3u & vlc radia_online.m3u";;
 esac ;;
 
-"YOUTUBE_HUDBA") xmessage -center  -geometry 1280x50 "Vyber YOUTUBE HUDBU" -timeout 60 -center -title "RADIA" -default "Opustit" -buttons "Zrusit":1,"Trance_2009":2 >/dev/null
+"YOUTUBE_HUDBA") xmessage -center  -geometry 1280x50 "Vyber YOUTUBE HUDBU" -timeout 60 -center -title "YOUTUBE HUDBA" -default "Opustit" -buttons "Zrusit":1,"AUDIO url":2,"VIDEO url":3,"Trance_2009":4,"Space ambient":5 >/dev/null
 
 
 case $? in
 1)
 echo "Exit";;
 2)
+echo "AUDIO - Mpv drag copy url"  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv  --no-video  --ytdl-format=worst --fs=no  --ytdl-raw-options=no-check-certificate= ;;
+3)
+echo "VIDEO - Mpv drag copy url"  | osd_cat -d 1 -s 1 -A right -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv   --ytdl-format=worst --fs=no  --ytdl-raw-options=no-check-certificate= ;;
+4)
 mpv  --no-video https://www.youtube.com/watch?v=8rK7Qef0fCk;;
+5)
+mpv  --no-video https://www.youtube.com/watch?v=tNkZsRW7h2c;;
 esac ;;
 
 "OVLADANI") xmessage -center  -geometry 1280x50 "Vyber" -timeout 60 -center -title "OVLADANI" -default "Opustit" -buttons "Zrusit":1,"up":2,"down":3,"mute":4,"monitor":5,"dpms":6,"ytdl_update":7,"ytdl_download":8,"mixer":9,"ulozto_download":10,"pip_all_upgrade":11 >/dev/null
@@ -269,8 +275,7 @@ xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
 9)
 echo "$choose volume";alsamixergui ;;
 10)
-xterm -title Ulozto-dl-update -hold -e "pip3 install --upgrade ulozto-downloader;sudo apt-get install python3-tk
- tor";;
+xterm -title Ulozto-dl-update -hold -e "pip3 install --upgrade ulozto-downloader;sudo apt-get install python3-tk tor";;
 11)
 xterm -title pip_all_upgrade -hold -e "pip freeze > requirements.txt & sed -i 's/==/>=/g' requirements.txt & pip install -r requirements.txt --upgrade";;
 esac ;;
