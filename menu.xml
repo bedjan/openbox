@@ -87,6 +87,16 @@
 				<execute>sh ~/.config/openbox/all.sh YOUTUBE_HUDBA</execute>
 			</action>
 		</item>
+		<item label="Stopky 15 min">
+			<action name="Execute">
+				<execute>xterm -hold -T STOPKY_15_minut  -e &quot;cat /dev/zero | pv -B 1 -L 1 -tpe -s 900 -S &gt; /dev/null   &amp;&amp; aplay  /usr/share/sounds/alsa/Rear_Right.wav &amp;&amp; xmessage &quot;HOTOVO_Odpocitavani_vterin&quot; -center &quot;</execute>
+			</action>
+		</item>
+		<item label="Odpocitavani">
+			<action name="Execute">
+				<execute>xterm -hold -T ODPOCITAVANI_VTERINY  -e 'echo &quot;Zadej pocet vterin a Enter&quot;;read N;echo &quot;Odpocitavam $N vterin&quot;; while [[ $((--N)) &gt; 0 ]]; do echo $N &amp;&amp; sleep 1 ; done  &amp;&amp; aplay  /usr/share/sounds/alsa/Rear_Right.wav &amp;&amp; xmessage &quot;HOTOVO_Odpocitavani_vterin&quot; -center '</execute>
+			</action>
+		</item>
 		<separator/>
 		<menu id="root-menu-141918" label="Web ostatni">
 			<item label="github_zajmy">
@@ -844,6 +854,12 @@
 		<item label="Ulozto upgrade">
 			<action name="Execute">
 				<execute>xterm -hold -e &quot;pip3 install --upgrade --force-reinstall --ignore-installed ulozto-downloader&quot;</execute>
+			</action>
+		</item>
+		<item label="Screen">
+			<action name="Execute">
+				<execute>scrot -d 5
+</execute>
 			</action>
 		</item>
 		<separator/>
