@@ -10,6 +10,10 @@ https://raw.githack.com/bedjan/openbox/main/web.html
 
 wget https://github.com/luffah/obkey/raw/master/obkey.deb; sudo dpkg -i obkey.deb;obkey
 
+## Obmenu-generator
+
+https://software.opensuse.org/download.html?project=home%3AHead_on_a_Stick%3Aobmenu-generator&package=obmenu-generator
+
 # Openbox themes
 
 cd $HOME/;git clone https://github.com/addy-dclxvi/openbox-theme-collections.git; mkdir $HOME/.themes; cp -rf $HOME/openbox-theme-collections/*.* $HOME/.themes;;echo Final;obconf
