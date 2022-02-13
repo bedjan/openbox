@@ -10,6 +10,9 @@ https://raw.githack.com/bedjan/openbox/main/web.html
 
 cd $HOME/;git clone https://github.com/addy-dclxvi/openbox-theme-collections.git; mkdir $HOME/.themes; cp -rf $HOME/openbox-theme-collections/*.* $HOME/.themes;;echo Final;obconf
 
+# Markdown to html
+
+perl Markdown.pl index.md > index.html
 
 # Mpv player
 
