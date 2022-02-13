@@ -14,6 +14,8 @@ cd $HOME/;git clone https://github.com/addy-dclxvi/openbox-theme-collections.git
 
 perl Markdown.pl index.md > index.html
 
+pandoc -s index.md | lynx -stdin
+
 # Mpv player
 
 mpv  --player-operation-mode=pseudo-gui   --fs=no  --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=
