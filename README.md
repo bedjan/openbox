@@ -6,7 +6,7 @@ https://raw.githack.com/bedjan/openbox/main/web.html
 
 # Openbox themes
 
-cd;git clone https://github.com/addy-dclxvi/openbox-theme-collections.git;cd openbox-theme-collections;mkdir .themes;cp openbox-theme-collections .themes; obconf
+mkdir $HOME/.themes;cd $HOME/.themes;git clone https://github.com/addy-dclxvi/openbox-theme-collections.git;cd openbox-theme-collections; obconf
 
 
 # Mpv player
