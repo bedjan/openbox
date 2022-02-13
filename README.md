@@ -6,6 +6,10 @@ cd $HOME/;git clone https://github.com/bedjan/openbox.git; mkdir $HOME/.config/o
 
 https://raw.githack.com/bedjan/openbox/main/web.html
 
+## Obkey
+
+wget https://github.com/luffah/obkey/raw/master/obkey.deb; sudo dpkg -i obkey.deb;obkey
+
 # Openbox themes
 
 cd $HOME/;git clone https://github.com/addy-dclxvi/openbox-theme-collections.git; mkdir $HOME/.themes; cp -rf $HOME/openbox-theme-collections/*.* $HOME/.themes;;echo Final;obconf
