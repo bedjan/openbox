@@ -348,9 +348,9 @@
         <command>scrot</command>
       </action>
     </keybind>
-    <keybind key="A-Del">
+    <keybind key="C-Escape">
       <action name="Execute">
-        <command>openbox --restart</command>
+        <command>openbox --exit</command>
       </action>
     </keybind>
     <keybind key="A-F2">
