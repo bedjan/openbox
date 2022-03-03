@@ -149,7 +149,7 @@ sh ~/.config/openbox/all.sh ct2;;
 sh ~/.config/openbox/all.sh ard;;
 esac ;;
 
-"DOWNLOAD") xmessage -center  -geometry 1280x50 "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni VIDEO YOUTUBE":3,"Stahni DATA Z ULOZTO":4,"Pridej DATA ULOZTO":5,"DATA_ULOZTO_VSE":6  >/dev/null
+"DOWNLOAD") xmessage -center  -geometry 1280x50 "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni VIDEO YOUTUBE":3,"Stahni DATA Z ULOZTO":4  >/dev/null
 
 case $? in
 1)
@@ -160,10 +160,6 @@ xterm -T AUDIO_YOUTUBE -e 'cd $HOME/hudba;youtube-dl  --ignore-errors --extract-
 xterm -T VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f  135 "$(xsel --clipboard)"';;
 4)
 xterm -T VIDEO_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"'  && aplay  /usr/share/sounds/alsa/Front_Center.wav || xmessage "HOTOVO_Uloz_to_data_stazeno" -center  ;;
-5)
-echo "$(xsel --clipboard)" | grep "uloz.to">>url.txt && xmessage -center  -geometry 1280x50 -timeout 10 -center -file '$HOME/url.txt;;
-6)
-xterm -T DATA_ULOZTO_VSE -hold -e 'cd $HOME/videa;echo -1-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '1p' $HOME/url.txt)" && echo -2-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '2p' $HOME/url.txt)" && echo -3-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '3p' $HOME/url.txt)" && echo -4-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '4p' $HOME/url.txt)" &&  echo -5-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '5p' $HOME/url.txt)" &&   echo -6-;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15  "$(sed -n '6p' $HOME/url.txt)" && aplay  /usr/share/sounds/alsa/Front_Center.wav && cat $HOME/url.txt  || xmessage -center  -geometry 1280x50 -timeout 10 -center -file '$HOME/url.txt' ;;
 esac ;;
 
 

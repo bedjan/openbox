@@ -863,6 +863,12 @@
 			</action>
 		</item>
 		<separator/>
+		<item label="NOTES">
+			<action name="Execute">
+				<execute>mousepad ~/poznamky.md</execute>
+			</action>
+		</item>
+		<separator/>
 		<item label="OPENBOX">
 			<action name="Execute">
 				<execute>sh ~/.config/openbox/all.sh OPENBOX</execute>
