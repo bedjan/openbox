@@ -203,7 +203,7 @@ firefox https://online-radio.eu/country/Czech%20Republic;;
 3)
 xterm -geometry 80x20-60-60 -title Humor_radio -e "mpg123 -C -b 1024 --no-seekbuffer  http://mp3stream4.abradio.cz:8000/humor.mp3";;
 4)
-xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  -volume 90 http://mpc.mediacp.eu:8302/stream";;
+xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  -volume 90 http://mpc1.mediacp.eu:8342/stream";;
 5)
 xterm -geometry 80x20-60-60 -title Tranceup -e bash -c "mpv --ytdl  http://5.39.71.159:8223/stream";;
 6)
