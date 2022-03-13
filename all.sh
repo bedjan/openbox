@@ -149,7 +149,7 @@ sh ~/.config/openbox/all.sh ct2;;
 sh ~/.config/openbox/all.sh ard;;
 esac ;;
 
-"DOWNLOAD") xmessage -center  -geometry 1280x50 "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni VIDEO YOUTUBE":3,"Stahni DATA Z ULOZTO":4  >/dev/null
+"DOWNLOAD") xmessage -center  -geometry 1280x50 "Vyber AUDIO, VIDEO" -timeout 60 -center -title "DOWNLOAD" -default "Opustit" -buttons "Zrusit":1,"Stahni AUDIO YOUTUBE":2,"Stahni WORST AUDIO YOUTUBE":3,"Stahni WORST VIDEO YOUTUBE":4,"Stahni DATA Z ULOZTO":5  >/dev/null
 
 case $? in
 1)
@@ -157,9 +157,11 @@ echo "Exit";;
 2)
 xterm -T AUDIO_YOUTUBE -e 'cd $HOME/hudba;youtube-dl  --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$(xsel --clipboard)"';;
 3)
-xterm -T VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f  135 "$(xsel --clipboard)"';;
+xterm -T WORST_AUDIO_YOUTUBE -e 'cd $HOME/hudba;youtube-dl  -f worstaudio[ext=m4a] "$(xsel --clipboard)"';;
 4)
-xterm -T VIDEO_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"'  && aplay  /usr/share/sounds/alsa/Front_Center.wav || xmessage "HOTOVO_Uloz_to_data_stazeno" -center  ;;
+xterm -T WORST_VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f worstvideo  "$(xsel --clipboard)"';;
+5)
+xterm -T DATA_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"'  && aplay  /usr/share/sounds/alsa/Front_Center.wav || xmessage "HOTOVO_Uloz_to_data_stazeno" -center  ;;
 esac ;;
 
 
