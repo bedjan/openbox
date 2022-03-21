@@ -159,7 +159,7 @@ xterm -T AUDIO_YOUTUBE -e 'cd $HOME/hudba;youtube-dl  --ignore-errors --extract-
 3)
 xterm -T WORST_AUDIO_YOUTUBE -e 'cd $HOME/hudba;youtube-dl  -f worstaudio[ext=m4a] "$(xsel --clipboard)"';;
 4)
-xterm -T WORST_VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f worstvideo  "$(xsel --clipboard)"';;
+xterm -T WORST_VIDEO_YOUTUBE -e 'cd $HOME/videa;youtube-dl  -f 18 "$(xsel --clipboard)"';;
 5)
 xterm -T DATA_ULOZTO -e 'cd $HOME/videa;$HOME/.local/bin/ulozto-downloader --auto-captcha --parts 15 "$(xsel --clipboard)"'  && aplay  /usr/share/sounds/alsa/Front_Center.wav || xmessage "HOTOVO_Uloz_to_data_stazeno" -center  ;;
 esac ;;
@@ -203,25 +203,25 @@ echo "Exit";;
 2)
 firefox https://online-radio.eu/country/Czech%20Republic;;
 3)
-xterm -geometry 80x20-60-60 -title Humor_radio -e "mpg123 -C -b 1024 --no-seekbuffer  http://mp3stream4.abradio.cz:8000/humor.mp3";;
+mpv http://mp3stream4.abradio.cz:8000/humor.mp3;;
 4)
-xterm -geometry 80x20-60-60 -title 4U_radio -e bash -c "mplayer  -volume 90 http://mpc1.mediacp.eu:8342/stream";;
+mpv http://mpc1.mediacp.eu:8342/stream;;
 5)
-xterm -geometry 80x20-60-60 -title Tranceup -e bash -c "mpv --ytdl  http://5.39.71.159:8223/stream";;
+mpv http://5.39.71.159:8223/stream;;
 6)
-xterm -geometry 80x20-60-60 -title E2 -e bash -c "mpv --ytdl   https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu";;
+mpv https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu;;
 7)
-xterm -geometry 80x20-60-60 -title E2_movin -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-movin";;
+mpv https://ice.actve.net/web-e2-movin;;
 8)
-xterm -geometry 80x20-60-60 -title E2_flashback -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-flashback";;
+mpv https://ice.actve.net/web-e2-flashback;;
 9)
-xterm -geometry 80x20-60-60 -title E2_top40 -e bash -c "mpv --ytdl  https://ice.actve.net/web-e2-top40";;
+mpv https://ice.actve.net/web-e2-top40;;
 10)
-xterm -geometry 80x20-60-60 -title Freerave -e bash -c "mpv --ytdl  http://164.68.122.137:8061/;";;
+mpv http://164.68.122.137:8061/;;
 11)
-xterm -geometry 80x20-60-60 -title 80_radio -e bash -c "mpg123 -C -b 1024  --no-seekbuffer http://ice.abradio.cz/city80128.mp3";;
+mpv http://ice.abradio.cz/city80128.mp3;;
 12)
-xterm -geometry 80x20-60-60 -title 90_radio -e bash -c "mpg123 -C -b 1024 --no-seekbuffer http://ice.abradio.cz/city90128.mp3";;
+mpv http://ice.abradio.cz/city90128.mp3;;
 13)
 sh ~/.config/openbox/all.sh cr_online;;
 14)
