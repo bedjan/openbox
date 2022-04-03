@@ -44,7 +44,7 @@ xterm -T WEB -hold -e bash -c 'echo nazev;read nazev;echo www;read www; echo "[$
 xterm -T POZNAMKY -hold -e bash -c 'echo poznamka;read poznamka;echo "$poznamka" >> $HOME/.config/openbox/poznamky.md ; xterm -T WEB -hold -e tail $HOME/.config/openbox/poznamky.md';;
 esac ;;
 
-"SYSTEM") xmessage -center  -geometry 1280x50 "SYSTEM" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"Dropbox st":2,"Dropbox web":3,"sysv-rc-conf":4,"HP install":5,"Xd kill":6,"Xd l":7,"Xd p":8,"Xd h":9,"Xd d":10,"debian upgr":11,"bash rc":12,"bash alias":13,"tisk konf":14,"cups web":15,"Debian procisteni":16,"Autostart systemu":17,"hpsystray":18 >/dev/null
+"SYSTEM") xmessage -center  -geometry 1280x50 "SYSTEM" -timeout 60 -center -title "Vyber" -default "Opustit" -buttons "Zrusit":1,"Dropbox st":2,"Dropbox web":3,"sysv-rc-conf":4,"HP install":5,"Xd kill":6,"Xd l":7,"Xd p":8,"Xd h":9,"Xd d":10,"debian upgr":11,"bash rc":12,"bash alias":13,"tisk konf":14,"cups web":15,"Debian procisteni":16,"Autostart systemu":17,"hpsystray":18,"trash":19 >/dev/null
 
 case $? in
 1)
@@ -83,6 +83,8 @@ xterm -hold -title CISTENI_SYSTEMU -e sudo bash -c "apt purge -y $(dpkg -l | awk
 xterm -hold -title AUTOSTART_SYSTEMU -e sudo bash -c "ls /etc/xdg/autostart/" & ;;
 18)
 /usr/bin/python3 /usr/bin/hp-systray -x ;;
+19)
+thunar /home/$USER/.local/share/Trash/files ;;
 esac ;;
 
 "OPENBOX") xmessage -center  -geometry 1280x50 "Openbox" -timeout 60 -center -title "OPENBOX" -default "Opustit" -buttons "Zrusit":1,"Obmenu":2,"Obconf":3,"Reconfigure":4,"Restart":5,"Exit":6,"AUTOSTART":7,"MENU":8,"RC":9,"vzhled":10,"Conky restart":11,"Tint2 restart":12,"Vystup HDMI":13,"Vystup VGA":14  >/dev/null
@@ -203,25 +205,25 @@ echo "Exit";;
 2)
 firefox https://online-radio.eu/country/Czech%20Republic;;
 3)
-echo "Humor"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --stop-screensaver=no http://mp3stream4.abradio.cz:8000/humor.mp3;;
+echo "Humor"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no http://mp3stream4.abradio.cz:8000/humor.mp3;;
 4)
-echo "4U"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --stop-screensaver=no http://mpc1.mediacp.eu:8342/stream;;
+echo "4U"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no http://mpc1.mediacp.eu:8342/stream;;
 5)
-echo "Tranceup"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --stop-screensaver=no http://5.39.71.159:8223/stream;;
+echo "Tranceup"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no http://5.39.71.159:8223/stream;;
 6)
-echo "E2"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --stop-screensaver=no https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu;;
+echo "E2"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no https://playerservices.streamtheworld.com/api/livestream-redirect/EVROPA2AAC.aac?dist=onlineradioeu;;
 7)
-echo "E2 movin"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --stop-screensaver=no https://ice.actve.net/web-e2-movin;;
+echo "E2 movin"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no https://ice.actve.net/web-e2-movin;;
 8)
-echo "E2 flashback"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --stop-screensaver=no https://ice.actve.net/web-e2-flashback;;
+echo "E2 flashback"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no https://ice.actve.net/web-e2-flashback;;
 9)
-echo "E2 top40"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --stop-screensaver=no https://ice.actve.net/web-e2-top40;;
+echo "E2 top40"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no https://ice.actve.net/web-e2-top40;;
 10)
-echo "Freerave"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --stop-screensaver=no http://164.68.122.137:8061/;;
+echo "Freerave"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no http://164.68.122.137:8061/;;
 11)
-echo "City 80"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --stop-screensaver=no http://ice.abradio.cz/city80128.mp3;;
+echo "City 80"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no http://ice.abradio.cz/city80128.mp3;;
 12)
-echo "City 90"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --stop-screensaver=no http://ice.abradio.cz/city90128.mp3;;
+echo "City 90"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no http://ice.abradio.cz/city90128.mp3;;
 13)
 sh ~/.config/openbox/all.sh cr_online;;
 14)
