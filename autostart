@@ -20,12 +20,14 @@ onboard &
 #fspanel &
 
 #lxpanel &
-which tint2  || xterm -title Nainstaluj -hold -e "sudo apt install -y tint2" && sleep10;tint2 -c ~/.config/openbox/tint2rc  &
+#which tint2  || xterm -title Nainstaluj -hold -e "sudo apt install -y tint2" && 
+sleep10;tint2 -c ~/.config/openbox/tint2rc &
 
 
 #informace
 
-which conky  || xterm -title Nainstaluj -hold -e "sudo apt install -y conky" && sleep10;conky --config=$HOME/.config/openbox/.conkyrc &
+#which conky  || xterm -title Nainstaluj -hold -e "sudo apt install -y conky" && sleep10;
+conky --config=$HOME/.config/openbox/.conkyrc &
 
 ##numericka klavesnice
 
@@ -55,7 +57,7 @@ volumeicon  &
 setxkbmap -layout cz,us -variant qwertz -option grp:alt_shift_toggle &
 
 ##wallpaper cerny
-xsetroot -solid "black" &
+#xsetroot -solid "black" &
 
 ##clipbord
 #(sleep 3s && clipit) &
