@@ -319,45 +319,45 @@ esac ;;
 
 "tvprogram") sensible-browser  https://www.tvprogram.cz/;;
 "tv_ceske") sensible-browser  https://www.tvonline.cz/;;
-"ct1") mpv --ytdl  --ytdl-format=worst https://www.ceskatelevize.cz/ivysilani/zive/ct1;;
-"ct2") mpv --ytdl  --ytdl-format=worst https://www.ceskatelevize.cz/ivysilani/zive/ct2;;
-"prima") sensible-browser  -new-window https://prima.iprima.cz/#main-wrapper;;
-"primamax") sensible-browser  -new-window https://max.iprima.cz/#main-wrapper;;
-"primacool") sensible-browser  -new-window https://cool.iprima.cz/#main-wrapper;;
-"primakrimi") sensible-browser  -new-window https://krimi.iprima.cz/#main-wrapper;;
-"primalove") sensible-browser  -new-window https://love.iprima.cz/#main-wrapper;;
-"primazoom") sensible-browser  -new-window https://zoom.iprima.cz/#main-wrapper;;
-"tvnatura") sensible-browser  -new-window https://www.tvnatura.cz;;
+"ct1") sensible-browser https://www.ceskatelevize.cz/ivysilani/zive/ct1;;
+"ct2") sensible-browser https://www.ceskatelevize.cz/ivysilani/zive/ct2;;
+"prima") sensible-browser https://prima.iprima.cz/#main-wrapper;;
+"primamax") sensible-browser https://max.iprima.cz/#main-wrapper;;
+"primacool") sensible-browser https://cool.iprima.cz/#main-wrapper;;
+"primakrimi") sensible-browser https://krimi.iprima.cz/#main-wrapper;;
+"primalove") sensible-browser https://love.iprima.cz/#main-wrapper;;
+"primazoom") sensible-browser https://zoom.iprima.cz/#main-wrapper;;
+"tvnatura") sensible-browser https://www.tvnatura.cz;;
 "nova") sensible-browser  https://novaplus.nova.cz/;;
 
 ##TV_NEMECKO##
 
 "tv_nemecke") sensible-browser https://www.2ix2.com/;;
 
-"ard") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/ard/;;
-"rtl2") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/rtl2-live/;;
-"ntv") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/n-tv-live/;;
-"rtlnitro") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/rtl-nitro-live/;;
-"superrtl") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/super-rtl-live/;;
-"tlc") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/tlc/;;
-"pro7") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/pro7/;;
-"pro7maxx") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/prosieben-maxx/;;
-"kabel1") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/kabel-1/;;
-"sat1") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/sat1/;;
-"sixx") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/sixx/;;
-"dmax") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/dmax/;;
-"kabel1doku") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/kabel-1-doku/;;
-"disney") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/disney-channel/;;
-"tele5") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/tele-5/;;
-"zdf") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/zdf/;;
+"ard") sensible-browser https://www.2ix2.com/ard/;;
+"rtl2") sensible-browser https://www.2ix2.com/rtl2-live/;;
+"ntv") sensible-browser https://www.2ix2.com/n-tv-live/;;
+"rtlnitro") sensible-browser https://www.2ix2.com/rtl-nitro-live/;;
+"superrtl") sensible-browser https://www.2ix2.com/super-rtl-live/;;
+"tlc") sensible-browser https://www.2ix2.com/tlc/;;
+"pro7") sensible-browser https://www.2ix2.com/pro7/;;
+"pro7maxx") sensible-browser https://www.2ix2.com/prosieben-maxx/;;
+"kabel1") sensible-browser https://www.2ix2.com/kabel-1/;;
+"sat1") sensible-browser https://www.2ix2.com/sat1/;;
+"sixx") sensible-browser https://www.2ix2.com/sixx/;;
+"dmax") sensible-browser https://www.2ix2.com/dmax/;;
+"kabel1doku") sensible-browser https://www.2ix2.com/kabel-1-doku/;;
+"disney") sensible-browser https://www.2ix2.com/disney-channel/;;
+"tele5") sensible-browser https://www.2ix2.com/tele-5/;;
+"zdf") sensible-browser https://www.2ix2.com/zdf/;;
 
 ##TV_VSE##
 
-"TV_1") palemoon https://www.2ix2.com/sat1-gold/;;
+"TV_1") sensible-browser https://www.2ix2.com/sat1-gold/;;
 
-"TV_2") palemoon https://nydus.org/stream/;;
+"TV_2") sensible-browser https://nydus.org/stream/;;
 
-"Erste") palemoon https://live.daserste.de/;;
+"Erste") sensible-browser https://live.daserste.de/;;
 
 "Das_erste") vlc --loop https://mcdn.daserste.de/daserste/de/master.m3u8;;
 
