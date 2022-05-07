@@ -52,7 +52,7 @@ echo "Exit";;
 2)
 dropbox start;;
 3)
-firefox https://www.dropbox.com/home;;
+sensible-browser https://www.dropbox.com/home;;
 4)
 xterm -hold -e sudo sysv-rc-conf;;
 5)
@@ -76,7 +76,7 @@ xterm -hold -e sudo mousepad .bash_aliases;;
 14)
 xterm -hold -e system-config-printer;;
 15)
-firefox http://localhost:631/admin/ ;;
+sensible-browser http://localhost:631/admin/ ;;
 16)
 xterm -hold -title CISTENI_SYSTEMU -e sudo bash -c "apt purge -y $(dpkg -l | awk '/^rc/ { print $2 }')";;
 17)
@@ -203,7 +203,7 @@ case $? in
 1)
 echo "Exit";;
 2)
-firefox https://online-radio.eu/country/Czech%20Republic;;
+sensible-browser https://online-radio.eu/country/Czech%20Republic;;
 3)
 echo "Humor"  | osd_cat -d 1 -s 1 -A center -l 1 -p middle -o 60 -c green -f '-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1' & mpv --volume=25 --stop-screensaver=no http://mp3stream4.abradio.cz:8000/humor.mp3;;
 4)
@@ -317,22 +317,22 @@ esac ;;
 
 ##TV_CESKO##
 
-"tvprogram") firefox https://www.tvprogram.cz/;;
-"tv_ceske") firefox https://www.tvonline.cz/;;
+"tvprogram") sensible-browser  https://www.tvprogram.cz/;;
+"tv_ceske") sensible-browser  https://www.tvonline.cz/;;
 "ct1") mpv --ytdl  --ytdl-format=worst https://www.ceskatelevize.cz/ivysilani/zive/ct1;;
 "ct2") mpv --ytdl  --ytdl-format=worst https://www.ceskatelevize.cz/ivysilani/zive/ct2;;
-"prima") firefox -new-window https://prima.iprima.cz/#main-wrapper;;
-"primamax") firefox -new-window https://max.iprima.cz/#main-wrapper;;
-"primacool") firefox -new-window https://cool.iprima.cz/#main-wrapper;;
-"primakrimi") firefox -new-window https://krimi.iprima.cz/#main-wrapper;;
-"primalove") firefox -new-window https://love.iprima.cz/#main-wrapper;;
-"primazoom") firefox -new-window https://zoom.iprima.cz/#main-wrapper;;
-"tvnatura") firefox -new-window https://www.tvnatura.cz;;
-"nova") firefox https://novaplus.nova.cz/;;
+"prima") sensible-browser  -new-window https://prima.iprima.cz/#main-wrapper;;
+"primamax") sensible-browser  -new-window https://max.iprima.cz/#main-wrapper;;
+"primacool") sensible-browser  -new-window https://cool.iprima.cz/#main-wrapper;;
+"primakrimi") sensible-browser  -new-window https://krimi.iprima.cz/#main-wrapper;;
+"primalove") sensible-browser  -new-window https://love.iprima.cz/#main-wrapper;;
+"primazoom") sensible-browser  -new-window https://zoom.iprima.cz/#main-wrapper;;
+"tvnatura") sensible-browser  -new-window https://www.tvnatura.cz;;
+"nova") sensible-browser  https://novaplus.nova.cz/;;
 
 ##TV_NEMECKO##
 
-"tv_nemecke") firefox https://www.2ix2.com/;;
+"tv_nemecke") sensible-browser https://www.2ix2.com/;;
 
 "ard") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/ard/;;
 "rtl2") mpv --ytdl  --ytdl-format=worst https://www.2ix2.com/rtl2-live/;;
@@ -463,81 +463,81 @@ esac ;;
 	
 ##WEB##
 
-   "openbox") firefox http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock;;
-   "filmy stazeni") firefox https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==;;
-"filmy nfa") firefox https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/;;
-   "kalendar") firefox https://time.is/calendar;;
-   "cas") firefox https://time.is/;;
-   "zdrojak") firefox https://zdrojak.cz/;;
-   "linuxexpress") firefox https://www.linuxexpres.cz/;;
-    "cs") chromium --incognito https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz ;;
-    "sparkasse") chromium --incognito https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html ;;
+   "openbox") sensible-browser  http://www.fastlinux.eu/_archiv/index.php?page=linux026#Lock;;
+   "filmy stazeni") sensible-browser  https://uloz.to/folder/dFY1yYQFavz0/name/Yperit-Paradise#!ZGAvMQR2ZGR0ZwIxZwV3LmL4Mwp5AGO6qzSIJTMUGJczDGVmZj==;;
+"filmy nfa") sensible-browser  https://nfa.cz/cz/obchod-a-distribuce/distribuce-v-cr/filmy-do-1964/;;
+   "kalendar") sensible-browser  https://time.is/calendar;;
+   "cas") sensible-browser  https://time.is/;;
+   "zdrojak") sensible-browser  https://zdrojak.cz/;;
+   "linuxexpress") sensible-browser  https://www.linuxexpres.cz/;;
+    "cs") sensible-browser  https://bezpecnost.csas.cz/login/?client_id=georgeclient_cz ;;
+    "sparkasse") sensible-browser  https://www.ostsaechsische-sparkasse-dresden.de/de/home/service/online-mobile-banking.html ;;
 
-   "gkeep") firefox https://keep.google.com/#home;;
-   "gmail") firefox https://mail.google.com/mail/u/0/#inbox;;
-   "yahoo_email") firefox https://login.yahoo.com;;
-   "seznam_email") firefox https://login.szn.cz/;;
-   "seznam_sweb") firefox https://login.szn.cz/?serviceId=sweb&loggedURL=http://webadmin.sweb.cz/;;
-   "seznam_ftp") firefox ftp://sweb.cz/;;
-   "ulozto") firefox https://uloz.to/login?key=logreg;;
-   "vinted") firefox https://www.vinted.cz/member/general/login?ref_url=%2F&__cf_chl_captcha_tk__=06e60c0838f1e7a7cfd5731145275268b2f8d333-1622574905-0-AWud745mERmzGs9xCMmTroN332YOMEB1XBdXrPdWOQb8DLHtVc_N12zsvulYXNXLllall03fFZTibqJOiwZAUE81L6fVqCpHHbu8-3razVqegPH9re-QEQZfqN_EzyWYJCjI2_q2ZBDKAAQnTeVwL2CdkgiuZvHgTuBg8Jd0sF0cqNidaj8mYoXU3bamvN5TBnyEWwS7CHFcmdRPpW1RfAfMRh40-evwGj-9EHUsXZrma23ik_BXVbhs2URb_mb-GVAXMaakFCT3XV5bppHKz3oSSQz9jTwc73S1Ym0l089x-QfVBsc4XUGYtDeykKIjTo1rm7h9RLIAkGRq8nPcFCcdZBznaFb779UgKQ-KLYomfrqAkRsCYDPIvNSiPs_R3WRyAR2Y-jpSJTaKdTb78nX5sCH8qsqJ9Q9ksbvWsFlMsUE15ua8lyGrnQsN8KmTWkanrIneuVfsDHqVyqzpRZNAvz5r-CDm1pA5x5M4FkYXcwPL_KOJ6fR96lPDrN1cWOAlMHY8oRnfqNJMqhEva-zZ-BC31NoXdbsXtNr6xJtd3qr331Bq237FcAWYvwHtAWUsXCwV_Dh95L4WR747luRvi9htOMEXK34CgQk1GWc52dUVjzxTaz52vX-YNdjiKSYxnYlWP1stZtGLkRBqNyWdj7uGW-kdlOaKtfBqkWEpvg1OgUdgB21cuPY-GsWc6Gyq2XGrc35xgFbVdouNQxg;;
-   "soundcloud") firefox https://soundcloud.com/signin;;
-   "difm") firefox https://www.di.fm/;;
-   "gdisk") firefox https://drive.google.com/drive/;;
-   "gdocs") firefox https://docs.google.com/document/u/0/;;
-   "gphotos") firefox https://photos.google.com/?hl=cs&pli=1;;
-   "gsites") firefox https://sites.google.com/site/bedjansite/;;
-   "gtranslate") firefox https://translate.google.cz/;;
-   "jobs") firefox https://www.jobs.cz/;;
-   "seznam") firefox https://www.seznam.cz/;;
-   "abclinuxu") firefox https://www.abclinuxu.cz/;;
+   "gkeep") sensible-browser  https://keep.google.com/#home;;
+   "gmail") sensible-browser  https://mail.google.com/mail/u/0/#inbox;;
+   "yahoo_email") sensible-browser  https://login.yahoo.com;;
+   "seznam_email") sensible-browser  https://login.szn.cz/;;
+   "seznam_sweb") sensible-browser  https://login.szn.cz/?serviceId=sweb&loggedURL=http://webadmin.sweb.cz/;;
+   "seznam_ftp") sensible-browser  ftp://sweb.cz/;;
+   "ulozto") sensible-browser  https://uloz.to/login?key=logreg;;
+   "vinted") sensible-browser  https://www.vinted.cz/member/general/login?ref_url=%2F&__cf_chl_captcha_tk__=06e60c0838f1e7a7cfd5731145275268b2f8d333-1622574905-0-AWud745mERmzGs9xCMmTroN332YOMEB1XBdXrPdWOQb8DLHtVc_N12zsvulYXNXLllall03fFZTibqJOiwZAUE81L6fVqCpHHbu8-3razVqegPH9re-QEQZfqN_EzyWYJCjI2_q2ZBDKAAQnTeVwL2CdkgiuZvHgTuBg8Jd0sF0cqNidaj8mYoXU3bamvN5TBnyEWwS7CHFcmdRPpW1RfAfMRh40-evwGj-9EHUsXZrma23ik_BXVbhs2URb_mb-GVAXMaakFCT3XV5bppHKz3oSSQz9jTwc73S1Ym0l089x-QfVBsc4XUGYtDeykKIjTo1rm7h9RLIAkGRq8nPcFCcdZBznaFb779UgKQ-KLYomfrqAkRsCYDPIvNSiPs_R3WRyAR2Y-jpSJTaKdTb78nX5sCH8qsqJ9Q9ksbvWsFlMsUE15ua8lyGrnQsN8KmTWkanrIneuVfsDHqVyqzpRZNAvz5r-CDm1pA5x5M4FkYXcwPL_KOJ6fR96lPDrN1cWOAlMHY8oRnfqNJMqhEva-zZ-BC31NoXdbsXtNr6xJtd3qr331Bq237FcAWYvwHtAWUsXCwV_Dh95L4WR747luRvi9htOMEXK34CgQk1GWc52dUVjzxTaz52vX-YNdjiKSYxnYlWP1stZtGLkRBqNyWdj7uGW-kdlOaKtfBqkWEpvg1OgUdgB21cuPY-GsWc6Gyq2XGrc35xgFbVdouNQxg;;
+   "soundcloud") sensible-browser  https://soundcloud.com/signin;;
+   "difm") sensible-browser  https://www.di.fm/;;
+   "gdisk") sensible-browser  https://drive.google.com/drive/;;
+   "gdocs") sensible-browser  https://docs.google.com/document/u/0/;;
+   "gphotos") sensible-browser  https://photos.google.com/?hl=cs&pli=1;;
+   "gsites") sensible-browser  https://sites.google.com/site/bedjansite/;;
+   "gtranslate") sensible-browser  https://translate.google.cz/;;
+   "jobs") sensible-browser  https://www.jobs.cz/;;
+   "seznam") sensible-browser  https://www.seznam.cz/;;
+   "abclinuxu") sensible-browser  https://www.abclinuxu.cz/;;
 
-   "root") firefox https://www.root.cz/;;
-   "simplenote") firefox https://app.simplenote.com/login/;;
-   "gtakeout") firefox https://takeout.google.com/settings/takeout?pli=1;;
-   "web") firefox http://janbednar.sweb.cz/;;
-   "dropbox") firefox https://www.dropbox.com/home;;
-   "github") firefox https://github.com/bedjan/;;
-   "github_all") firefox https://github.com/bedjan/debian/blob/master/skripty/all.sh;;
-   "facebook") firefox https://www.facebook.com/;;
-   "youtube") firefox https://www.youtube.com/;;
-   "bazos") firefox https://www.bazos.cz/;;
-   "ct") firefox https://www.ceskatelevize.cz/porady/a-z/;;
-   "ctzive") firefox https://www.ceskatelevize.cz/ivysilani/serialy;;
-   "csfd") firefox https://www.csfd.cz/;;
-   "tvonline") firefox https://www.spustit.cz/tv-ct1-online-zdarma/;;
-   "nemcina_youtube") firefox https://www.youtube.com/channel/UC4LQ7gUVS5w45ba1VubmJpg/videos;;
-   "thinfi") firefox https://thinfi.com/;;
-   "bitly") firefox https://bitly.com/;;
-   "jdem") firefox http://jdem.cz/;;
-   "protectedtext") firefox https://www.protectedtext.com/;;
-   "dillinger") firefox https://dillinger.io/;;
-   "githack") firefox https://raw.githack.com/;;
-   "tinyurl") firefox https://tinyurl.com/app;;
-   "github_poznamky") firefox https://github.com/bedjan/github/blob/master/README.md;;
-   "programovani") firefox https://www.itnetwork.cz/prace-a-podnikani-v-it/jak-zacit-programovat-tvorit-aplikace-programy/;;
-   "linux") firefox https://translate.google.cz/translate?sl=en&tl=cs&js=y&prev=_t&hl=cs&ie=UTF-8&u=linux.press&edit-text=&act=url;;
-   "github_linux") firefox https://github.com/bedjan/debian/blob/master/poznamky/linux_cli.md;;
-   "enviweb") firefox http://www.enviweb.cz/;;
-   "mzp") firefox https://www.mzp.cz/;;
-   "pronaladu") firefox https://www.pronaladu.cz/;;
-   "github_akupresura") firefox https://github.com/bedjan/akupresura/blob/master/akupresura_prvni_pomoc.md;;
-   "psychologie") firefox https://psychologie.cz/clanky/;;
-   "epsychologie") firefox https://e-psycholog.eu/archiv;;
-   "statistiky") firefox https://www.czso.cz/csu/czso/statistiky;;
-   "zw") firefox https://arnika.org/zero-waste;;
-   "zw1") firefox https://www.czechzerowaste.cz/;;
-   "zw2") firefox http://zerowaste.bezobalu.org/;;
-   "zw3") firefox https://translate.google.cz/translate?sl=en&tl=cs&js=y&prev=_t&hl=cs&ie=UTF-8&u=zerowasteeurope.eu&edit-text=&act=url;;
-   "minimalismus") firefox https://zijememinimalismem.cz/minimalismus-co-to-je-prosim-te/;;
-   "minimalismus1") firefox https://translate.google.cz/translate?hl=cs?sl=en&tl=cs&u=www.becomingminimalist.com/most-popular-posts/;;
-   "github_zajmy") firefox https://github.com/bedjan/zajmy;;
-   "github_manipulace") firefox https://github.com/bedjan/manipulace;;
-   "github_windows") firefox https://github.com/bedjan/windows;;
-   "github_home") firefox https://github.com/bedjan/home;;
-   "cr_online") firefox https://www.mujrozhlas.cz/zive;;
-   "ulice") firefox https://novaplus.nova.cz/porad/ulice/cele-dily;;
-   "ruzovka") firefox https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2;;
+   "root") sensible-browser  https://www.root.cz/;;
+   "simplenote") sensible-browser  https://app.simplenote.com/login/;;
+   "gtakeout") sensible-browser  https://takeout.google.com/settings/takeout?pli=1;;
+   "web") sensible-browser  http://janbednar.sweb.cz/;;
+   "dropbox") sensible-browser  https://www.dropbox.com/home;;
+   "github") sensible-browser  https://github.com/bedjan/;;
+   "github_all") sensible-browser  https://github.com/bedjan/debian/blob/master/skripty/all.sh;;
+   "facebook") sensible-browser  https://www.facebook.com/;;
+   "youtube") sensible-browser  https://www.youtube.com/;;
+   "bazos") sensible-browser  https://www.bazos.cz/;;
+   "ct") sensible-browser  https://www.ceskatelevize.cz/porady/a-z/;;
+   "ctzive") sensible-browser  https://www.ceskatelevize.cz/ivysilani/serialy;;
+   "csfd") sensible-browser  https://www.csfd.cz/;;
+   "tvonline") sensible-browser  https://www.spustit.cz/tv-ct1-online-zdarma/;;
+   "nemcina_youtube") sensible-browser  https://www.youtube.com/channel/UC4LQ7gUVS5w45ba1VubmJpg/videos;;
+   "thinfi") sensible-browser  https://thinfi.com/;;
+   "bitly") sensible-browser  https://bitly.com/;;
+   "jdem") sensible-browser  http://jdem.cz/;;
+   "protectedtext") sensible-browser  https://www.protectedtext.com/;;
+   "dillinger") sensible-browser  https://dillinger.io/;;
+   "githack") sensible-browser  https://raw.githack.com/;;
+   "tinyurl") sensible-browser  https://tinyurl.com/app;;
+   "github_poznamky") sensible-browser  https://github.com/bedjan/github/blob/master/README.md;;
+   "programovani") sensible-browser  https://www.itnetwork.cz/prace-a-podnikani-v-it/jak-zacit-programovat-tvorit-aplikace-programy/;;
+   "linux") sensible-browser  https://translate.google.cz/translate?sl=en&tl=cs&js=y&prev=_t&hl=cs&ie=UTF-8&u=linux.press&edit-text=&act=url;;
+   "github_linux") sensible-browser  https://github.com/bedjan/debian/blob/master/poznamky/linux_cli.md;;
+   "enviweb") sensible-browser  http://www.enviweb.cz/;;
+   "mzp") sensible-browser  https://www.mzp.cz/;;
+   "pronaladu") sensible-browser  https://www.pronaladu.cz/;;
+   "github_akupresura") sensible-browser  https://github.com/bedjan/akupresura/blob/master/akupresura_prvni_pomoc.md;;
+   "psychologie") sensible-browser  https://psychologie.cz/clanky/;;
+   "epsychologie") sensible-browser  https://e-psycholog.eu/archiv;;
+   "statistiky") sensible-browser  https://www.czso.cz/csu/czso/statistiky;;
+   "zw") sensible-browser  https://arnika.org/zero-waste;;
+   "zw1") sensible-browser  https://www.czechzerowaste.cz/;;
+   "zw2") sensible-browser  http://zerowaste.bezobalu.org/;;
+   "zw3") sensible-browser  https://translate.google.cz/translate?sl=en&tl=cs&js=y&prev=_t&hl=cs&ie=UTF-8&u=zerowasteeurope.eu&edit-text=&act=url;;
+   "minimalismus") sensible-browser  https://zijememinimalismem.cz/minimalismus-co-to-je-prosim-te/;;
+   "minimalismus1") sensible-browser  https://translate.google.cz/translate?hl=cs?sl=en&tl=cs&u=www.becomingminimalist.com/most-popular-posts/;;
+   "github_zajmy") sensible-browser  https://github.com/bedjan/zajmy;;
+   "github_manipulace") sensible-browser  https://github.com/bedjan/manipulace;;
+   "github_windows") sensible-browser  https://github.com/bedjan/windows;;
+   "github_home") sensible-browser  https://github.com/bedjan/home;;
+   "cr_online") sensible-browser  https://www.mujrozhlas.cz/zive;;
+   "ulice") sensible-browser  https://novaplus.nova.cz/porad/ulice/cele-dily;;
+   "ruzovka") sensible-browser  https://novaplus.nova.cz/porad/ordinace-v-ruzove-zahrade-2;;
 
 ##FIREFOX_ROZSIRENI##
    "firefox_ucet") firefox https://accounts.firefox.com/signin?context=fx_desktop_v3&entrypoint=fxa_app_menu&action=email&service=sync;;
