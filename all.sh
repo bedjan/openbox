@@ -111,7 +111,7 @@ xterm -e 'mousepad $HOME/.config/openbox/rc.xml';;
 10)
 xterm -hold -e lxappearance;;
 11)
-killall conky;sleep 2;conky --config=$HOME/.config/openbox/.conkyrc ;;
+killall conky;sleep 2;conky --config=$HOME/.config/openbox/conky.conf ;;
 12)
 killall tint2;sleep 2;tint2 -c $HOME/.config/openbox/tint2rc ;;
 13)
