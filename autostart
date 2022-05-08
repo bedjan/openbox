@@ -27,7 +27,7 @@ sleep10;tint2 -c ~/.config/openbox/tint2rc &
 #informace
 
 #which conky  || xterm -title Nainstaluj -hold -e "sudo apt install -y conky" && sleep10;
-conky --config=$HOME/.config/openbox/.conkyrc &
+conky --config=$HOME/.config/openbox/conky.conf &
 
 ##numericka klavesnice
 
