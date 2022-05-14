@@ -4,7 +4,7 @@
 http://mp3stream4.abradio.cz:8000/humor.mp3
 
 #EXTINF:0,4U_radio
-http://mpc.mediacp.eu:8302/stream
+http://mpc1.mediacp.eu:8342/stream
 
 #EXTINF:0,Tranceup
 http://5.39.71.159:8223/stream
