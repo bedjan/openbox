@@ -283,7 +283,7 @@ esac ;;
 
 ##ZACHOVAT VIDEO##
 
-"VIDEO") xmessage -center  -geometry 1280x50 "Vyber" -timeout 60 -center -title "VIDEO" -default "Opustit" -buttons "Zrusit":1,"mpv_youtube_mute":2,"mpv_youtube":3,"mpv_youtube_worst":4,"mpv_youtube_audio":5,"ytdl_download":6,"pip_all_upgrade":7  >/dev/null
+"VIDEO") xmessage -center  -geometry 1280x50 "Vyber" -timeout 60 -center -title "VIDEO" -default "Opustit" -buttons "Zrusit":1,"mpv_youtube_mute":2,"mpv_youtube":3,"mpv_youtube_worst":4,"mpv_youtube_audio":5,"ytdl_download":6,"pip_all_upgrade":7,"ulozto-downloader":8  >/dev/null
 
 case $? in
 1)
@@ -300,6 +300,8 @@ XSEL=$(xsel --clipboard);stterm -t Audio_youtube -g 80x20-40-40 -e bash -c "echo
 xterm -title Youtube-dl-update -hold -e "pip install --upgrade youtube-dl";;
 7)
 xterm -title Pip-dl-update -hold -e "pip install --upgrade pip";;
+8)
+xterm -title ulozto-downloader -hold -e "pip3 install --upgrade ulozto-downloader";;
 esac ;;
 
 "KLAVESNICE") xmessage -center  -geometry 1280x50 "Vyber" -timeout 60 -center -title "KLAVESNICE" -default "Opustit" -buttons "Zrusit":1,"ZAPNOUT":2,"VYPNOUT":3,"VIRTUAL KLAV.":4  >/dev/null
