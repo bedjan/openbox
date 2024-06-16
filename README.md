@@ -28,3 +28,7 @@ pandoc -s index.md | lynx -stdin
 
 mpv  --player-operation-mode=pseudo-gui   --fs=no  --cache-secs=60 --demuxer-readahead-secs=0 --ytdl-raw-options=no-check-certificate=
 
+# Vzhled mac osx
+
+https://github.com/vinceliuice/WhiteSur-gtk-theme
+
